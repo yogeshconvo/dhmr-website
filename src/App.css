@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap");
+
+.font-oswald-medium {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+.font-oswald-light {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.font-helvetica {
+  font-family: "Helvetica LT Std", sans-serif;
+}
+
+@font-face {
+  font-family: "HelveticaLTStd-BoldCond";
+  src: url("/fonts/HelveticaLTStd-BoldCond.ttf") format("truetype");
+  /* Adjust path */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaLTStd-Condensed";
+  src: url("/fonts/HelveticaLTStd-Condensed.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.blink-animation {
+  animation: blink 1s infinite;
+}
+
+@keyframes colorPulse {
+  0% {
+    color: #ff4f37;
+  }
+
+  25% {
+    color: #ff9900;
+  }
+
+  50% {
+    color: #1bc47d;
+  }
+
+  75% {
+    color: #377dff;
+  }
+
+  100% {
+    color: #ff4f37;
+  }
+}
+
+.color-pulse {
+  animation: colorPulse 1s infinite;
+}
