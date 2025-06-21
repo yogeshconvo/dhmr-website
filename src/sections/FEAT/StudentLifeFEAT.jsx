@@ -145,7 +145,6 @@ const allClubs = [
   { title: "Sports", image: Img6 },
 ];
 
-
 const StudentLifeFEATFEAT = () => {
   const [slide, setSlide] = useState(0);
   const [showMore, setShowMore] = useState(false);
@@ -255,7 +254,13 @@ const StudentLifeFEATFEAT = () => {
               </div>
             )}
             <div className="absolute inset-0 bg-opacity-30 flex w-full items-end">
-              <p className="text-white text-xm bg-gradient-to-r from-black to-transparent font-medium p-3">
+              <p
+                className="absolute bottom-3 left-0 right-0 bg-gradient-to-r from-black to-transparent text-white text-xm py-2 px-4"
+                style={{
+                  fontFamily: "'Oswald', sans-serif",
+                  fontWeight: 300,
+                }}
+              >
                 {club.title}
               </p>
             </div>

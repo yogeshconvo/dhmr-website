@@ -1,8 +1,7 @@
 import React from "react";
-
-import message1 from "../../../assets/Nursing/college/message1.png";
-import message2 from "../../../assets/Nursing/college/message2.png";
-import message3 from "../../../assets/Nursing/college/message3.jpg";
+import message1 from "../../../assets/Nursing/Nursing/Principal/Dr. Vaishali Taksande (Chahande).jpg";
+import message2 from "../../../assets/Nursing/Nursing/Principal/Dr. Ranjana Sharma.jpg";
+import message3 from "../../../assets/Nursing/Nursing/Principal/Dr. Nilima Rakhsale.jpg";
 
 const collegeData = [
   {
@@ -50,7 +49,7 @@ function CollegeMessage({ collegeTabNumber }) {
 
   if (currentCollegeData)
     return (
-      <div className=" mt-[125px] bg-primary py-18 text-white">
+      <div className="  bg-primary py-18 text-white">
         <div className="container">
           <h2 className="text-3xl font-[500] text-[#FFF] mb-8 tracking-wider font-oswald-medium">
             <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
@@ -58,10 +57,20 @@ function CollegeMessage({ collegeTabNumber }) {
           </h2>
 
           <div className="flex items-center justify-center gap-10 flex-wrap">
-            <div className="flex-1 rounded-lg overflow-hidden mb-6 min-w-[300px]">
-              <img src={message1} alt="" />
+            {/* <img
+              src={currentCollegeData.image}
+              alt={currentCollegeData.drName}
+              className="h-[300px] rounded-xl object-cover"
+            /> */}
+            <div className="flex-1 rounded-xl overflow-hidden min-w-[300px] max-w-[350px] h-[350px]">
+              <img
+                src={currentCollegeData.image}
+                alt={currentCollegeData.drName}
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="flex-2 tracking-wide text-[16px] min-w-[250px]">
+
+            <div className="flex-2 tracking-wide  text-[16px] min-w-[250px]">
               <p className="mb-6  md:max-w-2xl">{currentCollegeData.para}</p>
               <a
                 href={currentCollegeData.linkHref}
@@ -73,7 +82,7 @@ function CollegeMessage({ collegeTabNumber }) {
           </div>
 
           <div>
-            <p className="text-[#E1CD67] *:block  max-sm:mt-4">
+            <p className="text-[#E1CD67] *:block  pt-5 max-sm:mt-4">
               <b className="*:block">
                 <span>{currentCollegeData.drName} </span>
                 <span>{currentCollegeData.drTitle}</span>

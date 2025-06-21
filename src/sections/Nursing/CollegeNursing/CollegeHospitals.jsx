@@ -1,7 +1,8 @@
 import React from "react";
-import hospital1 from "../../../assets/Nursing/college/hospital1.png";
-import hospital2 from "../../../assets/Nursing/college/hospital1.png";
-import hospital3 from "../../../assets/Nursing/college/hospital1.png";
+import hospital1 from "../../../assets/Nursing/Nursing/Institutes/1.png";
+import hospital2 from "../../../assets/Nursing/Nursing/Institutes/2.jpg";
+import hospital3 from "../../../assets/Nursing/Nursing/Institutes/3.png";
+
 const collegeData = [
   {
     college: 1,

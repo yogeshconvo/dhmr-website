@@ -8,7 +8,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const tabs = ["Students", "Parents", "Alumni", "Faculty"];
+const tabs = ["Students", "Parents"];
 
 const data = {
   Students: [
@@ -41,40 +41,6 @@ const data = {
     },
     {
       img: testimonial3,
-      para: "SRMMCON stands out as a beacon of excellence in nursing education, and my journey within its corridors has been nothing short of transformative. The faculty at SRMMCON comprises some of the most knowledgeable and supportive mentors, their unwavering dedication to our growth and success is palpable in every lecture, clinical session, and interaction. They not only impart theoretical knowledge but also instill in us the values of compassion, empathy, and integrity that are the hallmark of nursing practice.",
-      info: `Darshan Vidhate\nBSc Nursing\n2020-2024`,
-    },
-  ],
-  Alumni: [
-    {
-      img: testimonial3,
-      para: "SRMMCON stands out as a beacon of excellence in nursing education, and my journey within its corridors has been nothing short of transformative. The faculty at SRMMCON comprises some of the most knowledgeable and supportive mentors, their unwavering dedication to our growth and success is palpable in every lecture, clinical session, and interaction. They not only impart theoretical knowledge but also instill in us the values of compassion, empathy, and integrity that are the hallmark of nursing practice.",
-      info: `Darshan Vidhate\nBSc Nursing\n2020-2024`,
-    },
-    {
-      img: testimonial2,
-      para: "SRMMCON stands out as a beacon of excellence in nursing education, and my journey within its corridors has been nothing short of transformative. The faculty at SRMMCON comprises some of the most knowledgeable and supportive mentors, their unwavering dedication to our growth and success is palpable in every lecture, clinical session, and interaction. They not only impart theoretical knowledge but also instill in us the values of compassion, empathy, and integrity that are the hallmark of nursing practice.",
-      info: `Darshan Vidhate\nBSc Nursing\n2020-2024`,
-    },
-    {
-      img: testimonial1,
-      para: "SRMMCON stands out as a beacon of excellence in nursing education, and my journey within its corridors has been nothing short of transformative. The faculty at SRMMCON comprises some of the most knowledgeable and supportive mentors, their unwavering dedication to our growth and success is palpable in every lecture, clinical session, and interaction. They not only impart theoretical knowledge but also instill in us the values of compassion, empathy, and integrity that are the hallmark of nursing practice.",
-      info: `Darshan Vidhate\nBSc Nursing\n2020-2024`,
-    },
-  ],
-  Faculty: [
-    {
-      img: testimonial1,
-      para: "SRMMCON stands out as a beacon of excellence in nursing education, and my journey within its corridors has been nothing short of transformative. The faculty at SRMMCON comprises some of the most knowledgeable and supportive mentors, their unwavering dedication to our growth and success is palpable in every lecture, clinical session, and interaction. They not only impart theoretical knowledge but also instill in us the values of compassion, empathy, and integrity that are the hallmark of nursing practice.",
-      info: `Darshan Vidhate\nBSc Nursing\n2020-2024`,
-    },
-    {
-      img: testimonial1,
-      para: "SRMMCON stands out as a beacon of excellence in nursing education, and my journey within its corridors has been nothing short of transformative. The faculty at SRMMCON comprises some of the most knowledgeable and supportive mentors, their unwavering dedication to our growth and success is palpable in every lecture, clinical session, and interaction. They not only impart theoretical knowledge but also instill in us the values of compassion, empathy, and integrity that are the hallmark of nursing practice.",
-      info: `Darshan Vidhate\nBSc Nursing\n2020-2024`,
-    },
-    {
-      img: testimonial1,
       para: "SRMMCON stands out as a beacon of excellence in nursing education, and my journey within its corridors has been nothing short of transformative. The faculty at SRMMCON comprises some of the most knowledgeable and supportive mentors, their unwavering dedication to our growth and success is palpable in every lecture, clinical session, and interaction. They not only impart theoretical knowledge but also instill in us the values of compassion, empathy, and integrity that are the hallmark of nursing practice.",
       info: `Darshan Vidhate\nBSc Nursing\n2020-2024`,
     },
