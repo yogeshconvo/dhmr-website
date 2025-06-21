@@ -86,7 +86,7 @@ const HeroNursing = () => {
                 <span className="text-[#E1CD67]">{slide.highlight}</span>
               </h1>
               <p
-                className={`mt-6 text-lg font-normal text-white drop-shadow-lg text-left max-w-[545px] ${
+                className={`mt-3 text-lg font-[Oswald] font-light text-white drop-shadow-lg text-left max-w-[545px] ${
                   slide.textPosition === "right" ? "lg:ml-30" : ""
                 }`}
               >

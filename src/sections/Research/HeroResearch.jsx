@@ -167,6 +167,7 @@ import ResearchBanner3 from "../../assets/ResearchBanner3.png";
 import ResearchBannerMB1 from "../../assets/ResearchGrid/Banner1MB.jpg";
 import ResearchBannerMB2 from "../../assets/ResearchGrid/Banner2MB.jpg";
 import ResearchBannerMB3 from "../../assets/ResearchGrid/Banner3MB.jpg";
+import FloatingButtons from "../../components/FloatingButtons";
 
 const HeroResearch = () => {
   const navigate = useNavigate();
@@ -279,7 +280,7 @@ const HeroResearch = () => {
       </div> */}
 
       {/* Floating Vertical Buttons */}
-      <div className="flex flex-col gap-32 fixed top-[23%] max-sm:top-[30%] right-[22px] font-[500] z-20">
+      {/* <div className="flex flex-col gap-32 fixed top-[23%] max-sm:top-[30%] right-[22px] font-[500] z-20">
         <div className="transform -rotate-90 origin-right">
           <a
             href="https://dmiher.edu.in/admissionform"
@@ -304,7 +305,8 @@ const HeroResearch = () => {
             Admission Enquiry
           </button>
         </div>
-      </div>
+      </div> */}
+      <FloatingButtons />
     </div>
   );
 };

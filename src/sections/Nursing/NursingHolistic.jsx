@@ -22,7 +22,7 @@ const slides = [
 
 function NursingHolistic() {
   return (
-    <div className="mt-[125px] py-[100px] bg-[#f2f2f2]">
+    <div className=" py-20 bg-[#f2f2f2]">
       <div className="container flex flex-wrap items-center justify-center gap-18">
         <div className="flex-2 min-w-[315px] holistic-text">
           <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">

@@ -9,12 +9,11 @@ import NursingHolistic from "../NursingHolistic";
 const CollegeNursing = () => {
   const [collegeTabNumber, setCollegeTabNumber] = useState(1);
   return (
-    <div className=" mt-[125px]">
+    <div className=" py-10">
       <div className="container">
         <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
           <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
-          THE DMIHER
-          <br /> NURSING ADVANTAGE
+          OUR NURSING COLLEGES
         </h2>
       </div>
 

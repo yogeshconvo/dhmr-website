@@ -61,8 +61,8 @@ function CollegeMessage({ collegeTabNumber }) {
             <div className="flex-1 rounded-lg overflow-hidden mb-6 min-w-[300px]">
               <img src={message1} alt="" />
             </div>
-            <div className="flex-2 min-w-[250px]">
-              <p className="mb-6">{currentCollegeData.para}</p>
+            <div className="flex-2 tracking-wide text-[16px] min-w-[250px]">
+              <p className="mb-6  md:max-w-2xl">{currentCollegeData.para}</p>
               <a
                 href={currentCollegeData.linkHref}
                 className="text-sm  text-[#269BFF] underline"
@@ -73,7 +73,7 @@ function CollegeMessage({ collegeTabNumber }) {
           </div>
 
           <div>
-            <p className="text-[#E1CD67] *:block text-sm max-sm:mt-4">
+            <p className="text-[#E1CD67] *:block  max-sm:mt-4">
               <b className="*:block">
                 <span>{currentCollegeData.drName} </span>
                 <span>{currentCollegeData.drTitle}</span>

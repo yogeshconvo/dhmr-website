@@ -67,9 +67,9 @@ export default function GlobalOppNursing() {
         </div>
       </div>
 
-      <button className="btn primary-btn my-[100px] m-auto block">
+      {/* <button className="btn primary-btn  m-auto block">
         <a href="#">Higher education and Placement</a>
-      </button>
+      </button> */}
     </>
   );
 }

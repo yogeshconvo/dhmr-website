@@ -194,6 +194,7 @@ import slide2 from "../../assets/heroslide2.png";
 import slide1 from "../../assets/heroslide1.png";
 import HeroMobile from "../../assets/HomeMobile.jpg";
 import PopupModal from "./PopupModal";
+import FloatingButtons from "../../components/FloatingButtons";
 const NoPaperFormWidget = () => {
   useEffect(() => {
     console.log("[NoPaperForm] useEffect triggered - injecting script");
@@ -378,7 +379,7 @@ const HeroSection = () => {
         </Swiper>
 
         {/* Vertical Sticky Buttons */}
-        <div className="flex flex-col gap-32 fixed top-[23%] max-sm:top-[30%] right-[22px] font-[500] pointer-events-none z-50">
+        {/* <div className="flex flex-col gap-32 fixed top-[23%] max-sm:top-[30%] right-[22px] font-[500] pointer-events-none z-50">
           <div className="transform -rotate-90 origin-right pointer-events-auto">
             <a
               href="https://dmiher.edu.in/admissionform"
@@ -404,9 +405,9 @@ const HeroSection = () => {
               Admission Enquiry
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
-      <PopupModal
+      {/* <PopupModal
         show={showModal}
         onClose={() => setShowModal(false)}
         title="Admission Enquiry"
@@ -414,8 +415,9 @@ const HeroSection = () => {
         <div className="flex-grow p-0 m-0 overflow-auto">
           <NoPaperFormWidget />
         </div>
-      </PopupModal>
+      </PopupModal> */}
       {/* Yellow Strip */}
+      <FloatingButtons />
       <div className="w-full sm:h-[60px] bg-[#E1CD67] text-gray-600 text-[11px] sm:text-sm px-3 py-3 flex flex-col sm:flex-row justify-between items-start sm:items-center z-20">
         <span className="mb-2 sm:mb-0 text-sm sm:ml-25">
           Admissions open for 2025-26

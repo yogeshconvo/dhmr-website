@@ -1,6 +1,6 @@
 import React from "react";
 import hospital1 from "../../../assets/Nursing/college/hospital1.png";
-import hospital2 from "../../../assets/Nursing/college/hospital2.png";
+import hospital2 from "../../../assets/Nursing/college/hospital3.jpg";
 import hospital3 from "../../../assets/Nursing/college/hospital3.jpg";
 const collegeData = [
   {
@@ -51,24 +51,24 @@ function CollegeHospitals({ collegeTabNumber }) {
 
   if (currentCollegeData)
     return (
-      <div className="container my-[125px]  ">
+      <div className="container py-20  ">
         <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
           <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
           AFFILIATED HOSPITALS
         </h2>
 
         <div
-          className="flex flex-wrap items-center justify-center gap-12 max-w-[1000px] m-auto rounded-lg mt-14  "
+          className="flex flex-wrap items-center justify-center gap-5 max-w-[1000px] m-auto rounded-lg mt-14  "
           style={{ backgroundColor: currentCollegeData.bg }}
         >
-          <div className="min-w-[315px] flex-1">
-            <img src={currentCollegeData.image} alt="" />
+          <div className="min-w-[315px] h-full flex-1">
+            <img src={currentCollegeData.image} alt="" className="object-contain"/>
           </div>
           <div className="flex-1 min-w-[315px]">
-            <span className="font-bold text-[#F04E30]">
+            <span className="font-oswald-medium text-[#F04E30]">
               {currentCollegeData.title}
             </span>
-            <p>{currentCollegeData.para}</p>
+            <p className="font-[Arial] leading-1 text-sm tracking-tight">{currentCollegeData.para}</p>
 
             <div className="my-6  ">
               <a

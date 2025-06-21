@@ -63,7 +63,7 @@ const adventureData = [
 
 const HighlightCard = ({ item }) => (
   <div
-    className={`rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden flex flex-col items-center ${item.bgColor} ${item.textColor} w-full sm:w-64 md:w-60 min-h-[320px]`}
+    className={`rounded-lg shadow-md hover:shadow-lg font-oswald-medium transition-shadow overflow-hidden flex flex-col  ${item.bgColor} ${item.textColor} w-full sm:w-64 md:w-55 min-h-[300px]`}
   >
     {item.img && (
       <img
@@ -75,9 +75,9 @@ const HighlightCard = ({ item }) => (
     <div
       className={`flex flex-col flex-1 ${
         item.img ? "justify-start" : "justify-center"
-      } items-center p-4 text-center w-full`}
+      } items-center p-4 text-left w-full`}
     >
-      <p className="mb-2 text-xl">
+      <p className="mb-2 text-[20px]">
         <span
           className={` ${item.boldPara == "top" ? "font-bold" : undefined} ${
             item.boldPara == "top-big"
