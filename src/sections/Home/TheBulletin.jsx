@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import Guidlinepdf from "../../assets/TestimonialHome/ABSTRACT SUBMISSION GUIDELINES.pdf";
-import Conclavepdf from "../../assets/TestimonialHome/Conclave.pdf";
+// import Guidlinepdf from "../../assets/TestimonialHome/ABSTRACT SUBMISSION GUIDELINES.pdf";
+// import Conclavepdf from "../../assets/TestimonialHome/Conclave.pdf";
 
 const TheBulletin = () => {
   const [activeTab, setActiveTab] = useState("News");
@@ -41,11 +41,11 @@ const TheBulletin = () => {
         title:
           "National Conclave on Postgraduate Research, Trauma in Orthopaedics & Physical Medicine",
         date: "1st - 3rd August, 2025",
-        pdf: Conclavepdf,
+        // pdf: Conclavepdf,
       },
       {
         title: "Abstract Submission Guidelines",
-        pdf: Guidlinepdf,
+        // pdf: Guidlinepdf,
       },
       {
         title:

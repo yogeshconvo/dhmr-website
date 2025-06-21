@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 // Import thumbnails and videos
-import StudentThumb from "../../assets/TestimonialHome/student.png";
-import StudentVideo from "../../assets/Testimonials/student.mp4";
+// import StudentThumb from "../../assets/TestimonialHome/student.png";
+// import StudentVideo from "../../assets/Testimonials/student.mp4";
 
-import ParentsThumb from "../../assets/TestimonialHome/Parents.png";
-import ParentsVideo from "../../assets/Testimonials/parents.mp4";
+// import ParentsThumb from "../../assets/TestimonialHome/Parents.png";
+// import ParentsVideo from "../../assets/Testimonials/parents.mp4";
 
-import AlumniThumb from "../../assets/TestimonialHome/Alumini.png";
-import AlumniVideo from "../../assets/Testimonials/Dr. Shivam.mp4";
+// import AlumniThumb from "../../assets/TestimonialHome/Alumini.png";
+// import AlumniVideo from "../../assets/Testimonials/Dr. Shivam.mp4";
 
 import { PlayCircle } from "lucide-react";
 
@@ -23,8 +23,8 @@ const testimonialsData = {
           FEAT
         </>
       ),
-      video: StudentVideo,
-      thumbnail: StudentThumb,
+      // video: StudentVideo,
+      // thumbnail: StudentThumb,
       type: "video",
     },
   ],
@@ -40,8 +40,8 @@ const testimonialsData = {
           <b>Vikram Sarabhai Space Centre, ISRO, Thiruvananthapuram, Kerala</b>
         </>
       ),
-      video: ParentsVideo,
-      thumbnail: ParentsThumb,
+      // video: ParentsVideo,
+      // thumbnail: ParentsThumb,
       type: "video",
     },
   ],
@@ -61,8 +61,8 @@ const testimonialsData = {
           <b>International Parkinson and Movement Disorder Society</b>
         </>
       ),
-      video: AlumniVideo,
-      thumbnail: AlumniThumb,
+      // video: AlumniVideo,
+      // thumbnail: AlumniThumb,
       type: "video",
     },
   ],

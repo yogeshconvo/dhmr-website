@@ -8,6 +8,7 @@ import Research from "../pages/Research";
 import SPDC from "../pages/SPDC";
 import FEAT from "../pages/FEAT";
 import Nursing from "../pages/Nursing";
+import SaS from "../pages/SaS";
 import IQAC from "../pages/IQAC";
 import SHER from "../pages/SHER";
 
@@ -25,6 +26,7 @@ export default function AppRoutes() {
         <Route path="/feat" element={<FEAT />} />
         {/* <Route path="/global-connects" element={<SHER />} /> */}
         <Route path="/nursing" element={<Nursing />} />
+        <Route path="/sas" element={<SaS />} />
       </Route>
     </Routes>
   );
