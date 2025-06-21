@@ -42,6 +42,7 @@ const HeroNursing = () => {
       <Swiper
         modules={[Autoplay, Pagination]}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
+        loop={true}
         onSlideChange={(swiper) => setCurrentSlide(swiper.activeIndex)}
         className="w-full h-full"
       >

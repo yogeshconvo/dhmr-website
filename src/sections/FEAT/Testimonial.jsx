@@ -616,9 +616,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { PlayCircle } from "lucide-react";
 
-import AkashVideo from "../../assets/Testimonials/FEAT/Aayushi Chondhe.mp4";
-import MGNVideo from "../../assets/Testimonials/FEAT/Mayur Ganwande and Nikita Zade_1.mp4";
-import RuchiVideo from "../../assets/Testimonials/FEAT/Ruchika Vaidya_1.mp4";
+// import AkashVideo from "../../assets/Testimonials/FEAT/Aayushi Chondhe.mp4";
+// import MGNVideo from "../../assets/Testimonials/FEAT/Mayur Ganwande and Nikita Zade_1.mp4";
+// import RuchiVideo from "../../assets/Testimonials/FEAT/Ruchika Vaidya_1.mp4";
 
 import icon1 from "../../assets/Testimonials/FEAT/1.png";
 import icon2 from "../../assets/Testimonials/FEAT/2.png";
@@ -640,19 +640,19 @@ const testimonialsData = {
   Students: [
     {
       type: "video",
-      videoUrl: AkashVideo,
+      // videoUrl: AkashVideo,
       thumbnail: icon1,
       name: "Miss Aayushi Chondhe",
     },
     {
       type: "video",
-      videoUrl: MGNVideo,
+      // videoUrl: MGNVideo,
       thumbnail: icon3,
       name: "Mr. Mayur Ganwande and Miss Nikita Zade",
     },
     {
       type: "video",
-      videoUrl: RuchiVideo,
+      // videoUrl: RuchiVideo,
       thumbnail: icon2,
       name: "Miss Ruchika Vaidya",
     },
