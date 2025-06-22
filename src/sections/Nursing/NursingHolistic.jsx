@@ -198,7 +198,7 @@ function NursingHolistic() {
               <hr className="my-1 last:not-last:" />
             </div>
           ))} */}
-          <div className="max-h-[500px] overflow-y-auto pr-2">
+          <div className="max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
             {sections.map((section, idx) => (
               <div key={idx} className="mb-1">
                 <p>

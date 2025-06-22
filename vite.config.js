@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react-swc'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/dmiher-uat',
+  // base: '/dmiher-uat',
+  base: '/',
   plugins: [react(), tailwindcss()],
   build: {
     outDir: 'dist',

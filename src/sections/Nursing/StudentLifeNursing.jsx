@@ -219,9 +219,11 @@
 // }
 
 // export default StudentLifeNursing;
-import React from "react";
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
-// Import images
+// Import images (same as your code)
 import AcedemicFacilitesImg1 from "../../assets/Nursing/studentLife/facilitiesimg1.png";
 import AcedemicFacilitesImg2 from "../../assets/Nursing/studentLife/facilitiesimg2.png";
 import AcedemicFacilitesImg3 from "../../assets/Nursing/studentLife/facilitiesimg3.png";
@@ -241,7 +243,7 @@ import CoCurricularImg5 from "../../assets/Nursing/Nursing/student Life/Sports.j
 import CoCurricularImg6 from "../../assets/Nursing/Nursing/student Life/Walkathon.jpg";
 import CoCurricularImg7 from "../../assets/Nursing/Nursing/student Life/Yoga Day.jpg";
 
-// Data array with academic and co-curricular entries
+// Data array
 const academicFacilities = [
   {
     title: "School of Experiential Learning & Simulation Centre",
@@ -266,7 +268,7 @@ const academicFacilities = [
   { title: "Yoga Day", image: CoCurricularImg7 },
 ];
 
-// Header Component
+// Header
 const SectionHeader = ({ title }) => (
   <div className="mb-6">
     <div className="h-1 w-20 bg-red-500 mt-1" />
@@ -281,33 +283,71 @@ const SectionHeader = ({ title }) => (
 
 // Main Component
 function StudentLifeNursing() {
-  return (
-    <section className="bg-gray-50 px-4 py-10">
-      <div className="max-w-6xl mx-auto">
-        {/* Section Title */}
-        <SectionHeader title="STUDENT LIFE" />
+  const sliderRef = useRef(null);
 
-        {/* Grid: 3 columns on medium+ screens, 2 on small, 1 on mobile */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {academicFacilities.slice(0, 6).map((item, index) => (
-            <div key={index} className="relative">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-56 object-cover rounded-md"
-              />
-              <p
-                className="absolute bottom-3 left-0 right-0 bg-gradient-to-r from-black to-transparent text-white text-xm py-2 px-4"
-                style={{
-                  fontFamily: "'Oswald', sans-serif",
-                  fontWeight: 300,
-                }}
-              >
-                {item.title}
-              </p>
+  const chunkedSlides = [];
+  for (let i = 0; i < academicFacilities.length; i += 6) {
+    chunkedSlides.push(academicFacilities.slice(i, i + 6));
+  }
+
+  const settings = {
+    arrows: false,
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  return (
+    <section className="bg-gray-50 px-4 py-10 relative">
+      <div className="max-w-6xl mx-auto">
+        {/* Header + Arrows */}
+        <div className="flex justify-between items-center mb-4">
+          <SectionHeader title="STUDENT LIFE" />
+          <div className="flex gap-2">
+            <button
+              onClick={() => sliderRef.current?.slickPrev()}
+              className="border p-2 rounded-full hover:bg-gray-100 transition"
+            >
+              <ArrowLeft size={20} />
+            </button>
+            <button
+              onClick={() => sliderRef.current?.slickNext()}
+              className="border p-2 rounded-full hover:bg-gray-100 transition"
+            >
+              <ArrowRight size={20} />
+            </button>
+          </div>
+        </div>
+
+        {/* Slider */}
+        <Slider ref={sliderRef} {...settings}>
+          {chunkedSlides.map((slideGroup, index) => (
+            <div key={index}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {slideGroup.map((item, idx) => (
+                  <div key={idx} className="relative">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-56 object-cover rounded-md"
+                    />
+                    <p
+                      className="absolute bottom-3 left-0 right-0 bg-gradient-to-r from-black to-transparent text-white text-xm py-2 px-4"
+                      style={{
+                        fontFamily: "'Oswald', sans-serif",
+                        fontWeight: 300,
+                      }}
+                    >
+                      {item.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
     </section>
   );
