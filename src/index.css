@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-
 }
 
 body {
@@ -110,8 +109,6 @@ button {
   .hero-slider-hight * {
     /* font-size: 1.8vh !important; */
   }
-
-
 }
 
 @media (max-height: 750px) {
@@ -121,9 +118,11 @@ button {
 }
 
 @media (max-height: 650px) {
-  .swipper-height {}
+  .swipper-height {
+  }
 
-  .swipper-height {}
+  .swipper-height {
+  }
 }
 
 .why-study-with-du .slick-dots {
@@ -150,7 +149,6 @@ button {
   scale: 1;
   background-color: #a5a2a2 !important;
 }
-
 
 .slick-dots li.slick-active div {
   background-color: #6b7280;
@@ -181,8 +179,6 @@ button {
 .hero-slider-hight {
   height: 78vh;
 }
-
-
 
 .swiper-pagination-bullet {
   width: 12px;
@@ -475,13 +471,15 @@ button {
 }
 
 .clip-path-message {
-  clip-path: polygon(0 23%,
-      100% 23%,
-      100% 75%,
-      100% 75%,
-      100% 100%,
-      82% 75%,
-      0% 75%);
+  clip-path: polygon(
+    0 23%,
+    100% 23%,
+    100% 75%,
+    100% 75%,
+    100% 100%,
+    82% 75%,
+    0% 75%
+  );
   width: 154px;
   height: 98px;
   background: #f04e30;
@@ -492,13 +490,15 @@ button {
 
 .clip-path-message .clip-path-message-inner {
   position: absolute;
-  clip-path: polygon(0 23%,
-      100% 23%,
-      100% 75%,
-      100% 75%,
-      100% 100%,
-      82% 75%,
-      0% 75%);
+  clip-path: polygon(
+    0 23%,
+    100% 23%,
+    100% 75%,
+    100% 75%,
+    100% 100%,
+    82% 75%,
+    0% 75%
+  );
   left: 2px;
   top: 4px;
   width: 150px;
@@ -518,6 +518,43 @@ button {
 
 .holistic-text {
   position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: 1rem;
+  /* min-width: 315px; */
+  max-height: 700px;
+  /* ...existing code... */
+}
+
+/* Custom scrollbar for holistic-text */
+.holistic-text::-webkit-scrollbar {
+  width: 10px;
+  background: #c4c4c4; /* scrollbar track color */
+  border-radius: 5px;
+}
+
+.holistic-text::-webkit-scrollbar-thumb {
+  background: #707070; /* scrollbar thumb color */
+  border-radius: 5px;
+}
+
+.holistic-text::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+.holistic-text {
+  /* scrollbar-width: thin; */
+  scrollbar-color: #707070 #d1d1d1;
+}
+
+/* 
+.holistic-text {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-width: 400px;
+  max-height: 800px;
 }
 
 .holistic-text::after {
@@ -543,12 +580,11 @@ button {
 }
 
 @media (max-width: 762px) {
-
   .holistic-text::after,
   .holistic-text::before {
     display: none;
   }
-}
+} */
 
 .btn a {
   display: block;

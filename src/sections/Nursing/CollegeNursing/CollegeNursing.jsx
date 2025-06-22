@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CollegeTabs from "./CollegeTabs";
 import CollegeBrief from "./CollegeBrief";
 import CollegeMessage from "./CollegeMessage";
@@ -6,8 +6,14 @@ import CollegePrograms from "./CollegePrograms";
 import CollegeHospitals from "./CollegeHospitals";
 import NursingHolistic from "../NursingHolistic";
 
-const CollegeNursing = () => {
+const CollegeNursing = ({ setShowPlacementBtn }) => {
   const [collegeTabNumber, setCollegeTabNumber] = useState(1);
+
+  useEffect(() => {
+    if (collegeTabNumber != 1) {
+      setShowPlacementBtn(false);
+    }
+  }, [collegeTabNumber]);
   return (
     <div className=" mt-[125px]">
       <div className="container">

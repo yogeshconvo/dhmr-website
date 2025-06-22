@@ -20,7 +20,7 @@ const slides = [
     alt: "SRMMCON Students",
   },
 ];
-export default function GlobalOppNursing() {
+export default function GlobalOppNursing({ showPlacementBtn }) {
   return (
     <>
       <div className="bg-[#fcfaf1] mt-[125px] py-[100px]">
@@ -67,9 +67,11 @@ export default function GlobalOppNursing() {
         </div>
       </div>
 
-      <button className="btn primary-btn my-[100px] m-auto block">
-        <a href="#">Higher education and Placement</a>
-      </button>
+      {showPlacementBtn ? (
+        <button className="btn primary-btn my-[100px] m-auto block">
+          <a href="#">Higher education and Placement</a>
+        </button>
+      ) : null}
     </>
   );
 }
