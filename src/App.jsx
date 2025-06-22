@@ -10,7 +10,7 @@ function App() {
   return (
     // <Router basename="/dmiher-newsite/duat/dhmr-web/dist">
     // <Router basename="/dmiher-web">
-    <Router basename="/dmiher-uat"> 
+    <Router basename="/dmiher-uat">
     {/* <Router> */}
       <ScrollToTop />
       <AppRoutes />

@@ -23,7 +23,7 @@ const slides = [
 export default function GlobalOppNursing() {
   return (
     <>
-      <div className="bg-[#fcfaf1] mt-[125px] py-[100px]">
+      <div className="bg-[#fcfaf1]">
         <div className="container flex flex-wrap gap-12">
           <div className="flex-1 min-w-[315px]">
             <h2 className="text-3xl font-[500] text-[#707070] mb-2 tracking-wider font-oswald-medium">
@@ -67,7 +67,7 @@ export default function GlobalOppNursing() {
         </div>
       </div>
 
-      <button className="btn primary-btn my-[100px] m-auto block">
+      <button className="btn primary-btn block">
         <a href="#">Higher education and Placement</a>
       </button>
     </>

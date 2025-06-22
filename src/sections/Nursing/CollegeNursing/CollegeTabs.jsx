@@ -2,12 +2,12 @@ import React from "react";
 
 function CollegeTabs({ collegeTabNumber, setCollegeTabNumber }) {
   return (
-    <ul className="container flex items-center justify-center gap-[5%] border-b my-8 w-fit m-auto max-sm:flex-col">
+    <ul className="container flex items-center font-oswald-medium justify-center gap-[8%] border-b my-8 w-fit m-auto max-sm:flex-col">
       <li
         onClick={() => setCollegeTabNumber(1)}
-        className={`cursor-pointer text-center py-4 max-w-[300px]  ${
+        className={`cursor-pointer text-center text-xl py-4 max-w-[410px]  ${
           collegeTabNumber == 1
-            ? "font-bold text-[#122E5E] border-b-4  border-[#F04E30]"
+            ? "font-[500] text-[#122E5E] border-b-4  border-[#F04E30]"
             : "text-[#58595B]"
         }`}
       >
@@ -15,9 +15,9 @@ function CollegeTabs({ collegeTabNumber, setCollegeTabNumber }) {
       </li>
       <li
         onClick={() => setCollegeTabNumber(2)}
-        className={`cursor-pointer text-center py-4 max-w-[300px]  ${
+        className={`cursor-pointer text-center text-xl py-4 max-w-[300px]  ${
           collegeTabNumber == 2
-            ? "font-bold text-[#122E5E] border-b-4   border-[#F04E30]"
+            ? "font-[500] text-[#122E5E] border-b-4   border-[#F04E30]"
             : "text-[#58595B]"
         }`}
       >
@@ -25,9 +25,9 @@ function CollegeTabs({ collegeTabNumber, setCollegeTabNumber }) {
       </li>
       <li
         onClick={() => setCollegeTabNumber(3)}
-        className={`cursor-pointer text-center py-4 max-w-[300px]  ${
+        className={`cursor-pointer text-xl text-center py-4 max-w-[300px]  ${
           collegeTabNumber == 3
-            ? "font-bold text-[#122E5E] border-b-4  border-[#F04E30]"
+            ? "font-[500] text-[#122E5E] border-b-4  border-[#F04E30]"
             : "text-[#58595B]"
         }`}
       >

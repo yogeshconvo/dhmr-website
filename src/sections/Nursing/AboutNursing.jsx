@@ -6,7 +6,7 @@ const AboutNursing = () => {
       At DMIHER, nursing isn’t just a profession—it’s a calling. Our colleges of
       nursing across Wardha and Nagpur embrace a shared purpose:<br></br> to
       empower nurses with the skills, compassion, and courage, through hands-on
-      training, global collaborations, and a deep commitment to research and
+      training, global collaborations, and a deep commitment <br/> to research and
       innovation.
     </p>
   );

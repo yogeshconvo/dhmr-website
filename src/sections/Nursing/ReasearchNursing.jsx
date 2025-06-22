@@ -40,7 +40,7 @@ const reasearchData = [
 ];
 function ReasearchNursing() {
   return (
-    <div className="container my-[125px] flex gap-12 flex-wrap ">
+    <div className="container pt-15 flex gap-12 flex-wrap ">
       <div className="text-[#58595B] max-w-[365px] flex-1">
         <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
           <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
@@ -54,7 +54,7 @@ function ReasearchNursing() {
           challenges. Through national and international collaborations, we are
           shaping the future of nursing education and patient care. Know more
         </p>
-        <a href="#" className="know-more my-12 block">
+        <a href="#" className="know-more my-10 block">
           Know more
         </a>
 

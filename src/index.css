@@ -56,14 +56,6 @@ body {
 
 /* } */
 
-.widget_container {
-  background: white !important;
-}
-
-button {
-  cursor: pointer;
-}
-
 @media (max-width: 728px) {
   .swipper-height {
     height: 60vh;
@@ -557,7 +549,7 @@ button {
   max-height: 800px;
 }
 
-.holistic-text::after {
+/* .holistic-text::after {
   content: "";
   position: absolute;
   right: -2rem;
@@ -577,7 +569,7 @@ button {
   height: 10%;
   top: 50%;
   z-index: 1;
-}
+} */
 
 @media (max-width: 762px) {
   .holistic-text::after,

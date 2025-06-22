@@ -7,6 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import logo from "../../assets/nav-logo-tran.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -185,7 +186,7 @@ const Footer = () => {
                 },
                 {
                   name: "Faculty Of Engineering And Technology",
-                  url: "https://www.dmiher.edu.in/faculty-of-engineering-and-technology-fet",
+                  url: "/feat",
                 },
                 {
                   name: "School Of Allied Sciences",
@@ -203,18 +204,29 @@ const Footer = () => {
                   name: "Shalinitai Meghe College Of Nursing",
                   url: "https://www.dmiher.edu.in/About-SMCON-Wardha",
                 },
-              ].map((college) => (
-                <li key={college.name} className="mt-1">
-                  <a
-                    href={college.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:underline"
-                  >
-                    {college.name}
-                  </a>
-                </li>
-              ))}
+              ].map((college) =>
+                college.url.startsWith("/") ? (
+                  <li key={college.name} className="mt-1">
+                    <Link
+                      href={college.url}
+                      className="text-white hover:underline"
+                    >
+                      {college.name}
+                    </Link>
+                  </li>
+                ) : (
+                  <li key={college.name} className="mt-1">
+                    <a
+                      href={college.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:underline"
+                    >
+                      {college.name}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
 
             <p className="font-medium mt-4">Off Campus - Wanadongri, Nagpur</p>
@@ -236,18 +248,29 @@ const Footer = () => {
                   name: "Shalinitai Meghe Homeopathy Hospital College And Research Centre",
                   url: "https://smhhcrc.com/",
                 },
-              ].map((college) => (
-                <li key={college.name} className="mt-1">
-                  <a
-                    href={college.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:underline"
-                  >
-                    {college.name}
-                  </a>
-                </li>
-              ))}
+              ].map((college) =>
+                college.url.startsWith("/") ? (
+                  <li key={college.name} className="mt-1">
+                    <Link
+                      href={college.url}
+                      className="text-white hover:underline"
+                    >
+                      {college.name}
+                    </Link>
+                  </li>
+                ) : (
+                  <li key={college.name} className="mt-1">
+                    <a
+                      href={college.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:underline"
+                    >
+                      {college.name}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
 
             <div className="grid grid-cols-2 text-sm sm:text-base mt-4 text-yellow-400 font-oswald-medium gap-y-2">
@@ -477,7 +500,7 @@ const Footer = () => {
                 },
                 {
                   name: "Faculty Of Engineering And Technology",
-                  url: "https://www.dmiher.edu.in/faculty-of-engineering-and-technology-fet",
+                  url: "/feat",
                 },
                 {
                   name: "School Of Allied Sciences",
@@ -495,18 +518,29 @@ const Footer = () => {
                   name: "Shalinitai Meghe College Of Nursing",
                   url: "https://www.dmiher.edu.in/About-SMCON-Wardha",
                 },
-              ].map((college) => (
-                <li key={college.name} className="mt-0 text-lg">
-                  <a
-                    href={college.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:underline"
-                  >
-                    {college.name}
-                  </a>
-                </li>
-              ))}
+              ].map((college) =>
+                college.url.startsWith("/") ? (
+                  <li key={college.name} className="mt-1">
+                    <Link
+                      href={college.url}
+                      className="text-white hover:underline"
+                    >
+                      {college.name}
+                    </Link>
+                  </li>
+                ) : (
+                  <li key={college.name} className="mt-1">
+                    <a
+                      href={college.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:underline"
+                    >
+                      {college.name}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
 
             <p className="font-medium mt-4">Off Campus - Wanadongri, Nagpur</p>
@@ -528,18 +562,29 @@ const Footer = () => {
                   name: "Shalinitai Meghe Homeopathy Hospital College And Research Centre",
                   url: "https://smhhcrc.com/",
                 },
-              ].map((college) => (
-                <li key={college.name} className="mt-0 text-lg">
-                  <a
-                    href={college.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:underline"
-                  >
-                    {college.name}
-                  </a>
-                </li>
-              ))}
+              ].map((college) =>
+                college.url.startsWith("/") ? (
+                  <li key={college.name} className="mt-1">
+                    <Link
+                      href={college.url}
+                      className="text-white hover:underline"
+                    >
+                      {college.name}
+                    </Link>
+                  </li>
+                ) : (
+                  <li key={college.name} className="mt-1">
+                    <a
+                      href={college.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:underline"
+                    >
+                      {college.name}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 

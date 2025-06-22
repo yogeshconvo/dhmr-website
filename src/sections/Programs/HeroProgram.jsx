@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import outcomeImg from "../../assets/ProgramBanner.jpg";
+import FloatingButtons from "../../components/FloatingButtons";
 
 const SecondHeroSection = () => {
   const navigate = useNavigate();
@@ -37,8 +38,8 @@ const SecondHeroSection = () => {
           </span>
         </h1>
       </div>
-
-      <div className="flex flex-col gap-32 fixed top-[23%] max-sm:top-[20%] right-[22px] font-[500] z-20">
+      <FloatingButtons />
+      {/* <div className="flex flex-col gap-32 fixed top-[23%] max-sm:top-[20%] right-[22px] font-[500] z-20">
         <div className="transform -rotate-90 origin-right">
           <a
             href="https://dmiher.edu.in/admissionform"
@@ -63,7 +64,7 @@ const SecondHeroSection = () => {
             Admission Enquiry
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

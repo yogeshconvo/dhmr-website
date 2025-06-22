@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ButtonsNursing() {
   return (
-    <div className="container my-[100px] flex flex-center gap-10 flex-wrap">
+    <div className="container py-10 flex flex-center gap-10 flex-wrap">
       <button className="orange-btn btn">
         <a href="#">Transcripts – UG & PG</a>
       </button>
