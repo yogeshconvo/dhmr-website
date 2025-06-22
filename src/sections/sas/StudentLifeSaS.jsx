@@ -102,7 +102,7 @@ function StudentLifeSaS() {
           {currentItems.map((item, index) => (
             <div
               key={index}
-              className="relative h-64 sm:h-72 md:h-80 lg:h-80 rounded-xl overflow-hidden shadow-md bg-gray-200"
+              className="relative h-64 rounded-xl overflow-hidden shadow-md bg-gray-200"
             >
               {item.image ? (
                 <img
@@ -116,7 +116,13 @@ function StudentLifeSaS() {
                 </div>
               )}
               <div className="absolute inset-0 bg-opacity-30 flex w-full items-end">
-                <p className="text-white text-xm bg-gradient-to-r from-black to-transparent font-medium p-3">
+                <p
+                  className="absolute bottom-3 left-0 right-0 bg-gradient-to-r from-black to-transparent text-white text-xm py-2 px-4"
+                  style={{
+                    fontFamily: "'Oswald', sans-serif",
+                    fontWeight: 300,
+                  }}
+                >
                   {item.title}
                 </p>
               </div>

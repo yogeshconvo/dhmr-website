@@ -136,7 +136,7 @@ export default function GlobalOppNursing({ showPlacementBtn }) {
 
       {showPlacementBtn ? (
         <button className="btn primary-btn my-[100px] m-auto block">
-          <a href="#">Higher education and Placement</a>
+          <a href="#" className="text-white text-xl rounded-xl">Higher education and Placement</a>
         </button>
       ) : null}
     </>

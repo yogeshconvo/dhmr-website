@@ -33,9 +33,7 @@ const CollegeNursing = ({ setShowPlacementBtn }) => {
       <CollegePrograms collegeTabNumber={collegeTabNumber} />
       <CollegeHospitals collegeTabNumber={collegeTabNumber} />
 
-      {collegeTabNumber === 1 && (
-        <GlobalOppNursing collegeTabNumber={collegeTabNumber} />
-      )}
+      
     </div>
   );
 };

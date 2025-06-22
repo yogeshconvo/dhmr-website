@@ -175,7 +175,7 @@ function NursingHolistic() {
     <div className="py-20 bg-[#f2f2f2]">
       <div className="container flex flex-wrap items-start justify-center gap-18">
         {/* Text */}
-        <div ref={textRef} className="flex-2 min-w-[315px] holistic-text">
+        <div ref={textRef} className="flex-2 min-w-[315px] ">
           <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
             <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
             HOLISTIC LEARNING AND <br /> INFRASTRUCTURE

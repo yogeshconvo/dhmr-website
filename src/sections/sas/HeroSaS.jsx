@@ -4,9 +4,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 // Replace with your Nursing banner images
-import NursingBanner1 from "../../assets/sas/Banner1.jpg";
-import NursingBanner2 from "../../assets/sas/Banner2.png";
-import NursingBanner3 from "../../assets/sas/Banner3.png";
+import NursingBanner1 from "../../assets/sas/sas website content pics/Banner1.jpeg";
+import NursingBanner2 from "../../assets/sas/sas website content pics/Banner2.jpg";
+import NursingBanner3 from "../../assets/sas/sas website content pics/Banner4.jpg";
 
 const slides = [
   {
@@ -57,8 +57,8 @@ function HeroSaS() {
             <div
               className={`absolute top-auto md:top-0 bottom-0 w-full h-1/2 md:h-full z-10 bg-gradient-to-t ${
                 slide.textPosition === "right"
-                  ? "right-0 md:bg-gradient-to-l md:from-black/70 md:to-transparent"
-                  : "hidden lg:block left-0 md:bg-gradient-to-r md:from-black/70 md:to-transparent"
+                  ? "right-0 md:bg-gradient-to-l md:from-black/50 md:to-transparent"
+                  : "hidden lg:block left-0 md:bg-gradient-to-r md:from-black/50 md:to-transparent"
               }`}
             />
 

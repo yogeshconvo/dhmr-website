@@ -1,18 +1,19 @@
-// import { Download } from "lucide-react";
+// DownloadBrochureButton.jsx
 import { saveAs } from "file-saver";
 import AdmissionBrochure from "../../assets/AdmissionBrochure/National Brochure.pdf";
 import { Download } from "lucide-react";
 
 export default function DownloadBrochureButton() {
   const handleDownload = () => {
-    // Fetch the file as blob and trigger download
     fetch(AdmissionBrochure)
       .then((response) => response.blob())
       .then((blob) => {
         saveAs(blob, "National_Brochure.pdf");
+        alert("Brochure downloaded successfully!");
       })
       .catch((error) => {
         console.error("Download failed:", error);
+        alert("Failed to download the brochure. Please try again.");
       });
   };
 
@@ -29,74 +30,69 @@ export default function DownloadBrochureButton() {
   );
 }
 
+// import React, { useEffect, useRef } from "react";
 
+// const EnquiryForm = () => {
+//   const iframeRef = useRef(null);
+//   const popupRef = useRef(null);
 
-
-// import React, { useEffect, useRef, useState } from "react";
-
-// const EnquiryButton = () => {
-//   const handleClick = () => {
-//     // Avoid loading the script multiple times
-//     if (!document.getElementById("npf-widget-popup-script")) {
-//       const script = document.createElement("script");
-//       script.id = "npf-widget-popup-script";
-//       script.src = "https://in6cdn.npfs.co/js/widget/npfwpopup.js";
-//       script.async = true;
-
-//       script.onload = () => {
-//         // Poll until widget init function is available
-//         const interval = setInterval(() => {
-//           if (typeof window.NpfWidgetsInit === "function") {
-//             clearInterval(interval);
-//             new window.NpfWidgetsInit({
-//               widgetId: "985f42eaefa1b745c7a8e27ca95ff76d",
-//               baseurl: "widgets.in6.nopaperforms.com",
-//               formTitle: "Enquiry Form",
-//               titleColor: "#FF0033",
-//               backgroundColor: "#ddd",
-//               iframeHeight: "500px",
-//               buttonbgColor: "#4c79dc",
-//               buttonTextColor: "#FFF",
-//             });
-
-//             // Automatically click the widget trigger button
-//             const triggerBtn = document.querySelector(
-//               ".npfWidgetButton.npfWidget-985f42eaefa1b745c7a8e27ca95ff76d"
-//             );
-//             if (triggerBtn) triggerBtn.click();
-//           }
-//         }, 200);
-//       };
-
-//       document.body.appendChild(script);
-//     } else {
-//       // If already loaded, directly click the trigger button
-//       const triggerBtn = document.querySelector(
-//         ".npfWidgetButton.npfWidget-985f42eaefa1b745c7a8e27ca95ff76d"
-//       );
-//       if (triggerBtn) triggerBtn.click();
+//   useEffect(() => {
+//     // IFrame Script
+//     const iframeScript = document.createElement("script");
+//     iframeScript.type = "text/javascript";
+//     iframeScript.async = true;
+//     iframeScript.src = "https://widgets.in6.nopaperforms.com/emwgts.js";
+//     if (iframeRef.current) {
+//       iframeRef.current.appendChild(iframeScript);
 //     }
-//   };
+
+//     // PopUp Script
+//     const popupScript = document.createElement("script");
+//     popupScript.src = "https://in6cdn.npfs.co/js/widget/npfwpopup.js";
+//     popupScript.async = true;
+//     if (popupRef.current) {
+//       popupRef.current.appendChild(popupScript);
+//     }
+
+//     // Init PopUp Config
+//     const initScript = document.createElement("script");
+//     initScript.innerHTML = `
+//       new NpfWidgetsInit({
+//         widgetId: "7089981ea2624eae75f32ce93269b444",
+//         baseurl: "widgets.in6.nopaperforms.com",
+//         formTitle: "Enquiry Form",
+//         titleColor: "#FF0033",
+//         backgroundColor: "#ddd",
+//         iframeHeight: "500px",
+//         buttonbgColor: "#4c79dc",
+//         buttonTextColor: "#FFF"
+//       });
+//     `;
+//     popupRef.current?.appendChild(initScript);
+//   }, []);
 
 //   return (
-//     <>
-//       <button
-//         onClick={handleClick}
-//         className="bg-[#122E5E] text-white text-sm px-6 py-3 rounded hover:bg-[#0e244b] transition"
-//       >
-//         Admission Enquiry
-//       </button>
+//     <div className="space-y-8">
+//       {/* IFrame Embed */}
+//       <div ref={iframeRef}>
+//         <div
+//           className="npf_wgts"
+//           data-height="400px"
+//           data-w="7089981ea2624eae75f32ce93269b444"
+//         ></div>
+//       </div>
 
-//       {/* Hidden button needed by the widget for programmatic trigger */}
-//       <button
-//         type="button"
-//         style={{ display: "none" }}
-//         className="npfWidgetButton npfWidget-985f42eaefa1b745c7a8e27ca95ff76d"
-//       >
-//         Enquiry
-//       </button>
-//     </>
+//       {/* Popup Button */}
+//       <div ref={popupRef}>
+//         <button
+//           type="button"
+//           className="npfWidgetButton npfWidget-7089981ea2624eae75f32ce93269b444"
+//         >
+//           Enquire Now!
+//         </button>
+//       </div>
+//     </div>
 //   );
 // };
 
-// export default EnquiryButton;
+// export default EnquiryForm;

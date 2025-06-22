@@ -4,10 +4,14 @@ function ButtonsSaS() {
   return (
     <div className="container my-[100px] flex flex-center gap-10 flex-wrap">
       <button className="primary-btn btn">
-        <a href="#">Electives Offered</a>
+        <a href="#" className="text-white font-[500] text-xl rounded-xl">
+          Electives Offered
+        </a>
       </button>
       <button className="orange-btn btn">
-        <a href="#">Know More</a>
+        <a href="#" className="text-white text-xl px-10 py-4 rounded-xl">
+          Know More
+        </a>
       </button>
     </div>
   );
