@@ -87,8 +87,7 @@ const slides = [
   { img: Img2, alt: "SRMMCON Labs" },
   { img: Img3, alt: "SRMMCON Students" },
 ];
-
-export default function GlobalOppNursing({ collegeTabNumber }) {
+export default function GlobalOppNursing({ showPlacementBtn }) {
   return (
     <>
       <div className="bg-[#fcfaf1]  py-20">
@@ -135,11 +134,11 @@ export default function GlobalOppNursing({ collegeTabNumber }) {
         </div>
       </div>
 
-      {collegeTabNumber === 1 && (
-        <button className="btn primary-btn pt-10 m-auto block ">
+      {showPlacementBtn ? (
+        <button className="btn primary-btn my-[100px] m-auto block">
           <a href="#">Higher education and Placement</a>
         </button>
-      )}
+      ) : null}
     </>
   );
 }
