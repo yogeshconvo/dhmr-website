@@ -112,25 +112,6 @@ const HeroFEAT = () => {
             <div className="absolute top-auto md:top-0 bottom-0 w-full h-1/2 md:h-full z-10 bg-gradient-to-t md:bg-gradient-to-r from-black/20 to-transparent" />
             <div className="lg:hidden absolute inset-0 bg-opacity-60 bg-gradient-to-b from-black/20 to-transparent z-10" />
 
-            {/* <div
-              className={`absolute px-4 sm:px-6 
-          top-auto bottom-12 sm:top-1/2 sm:bottom-auto sm:transform sm:-translate-y-1/2
-          text-white sm:w-[100%] w-[60%] lg:w-[40%] max-w-none z-20
-          ${
-            idx === 2
-              ? "right-0 mr-6 sm:mr-10 text-left"
-              : idx === 0
-              ? "left-8 mt-26 text-left"
-              : "left-0 ml-6 sm:ml-10 text-left"
-          }`}
-            >
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-oswald-medium font-medium leading-snug whitespace-pre-line drop-shadow-[2px_2px_4px_rgba(0,0,0,0.7)]">
-                {parseTitle(slide.title)}
-              </h1>
-              <p className="text-base sm:text-xl mt-3 font-light whitespace-pre-line">
-                {slide.highlight}
-              </p>
-            </div> */}
             <div
               className={`absolute px-4 sm:px-6 
     top-auto bottom-12 sm:top-1/2 sm:bottom-auto sm:transform sm:-translate-y-1/2
@@ -154,33 +135,6 @@ const HeroFEAT = () => {
         ))}
       </Swiper>
       <FloatingButtons />
-      {/* Side Buttons */}
-      {/* <div className="flex flex-col gap-32 fixed top-[23%] max-sm:top-[30%] right-[22px] font-[500] pointer-events-none z-50">
-        <div className="transform -rotate-90 origin-right pointer-events-auto">
-          <a
-            href="https://dmiher.edu.in/admissionform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#122E5E] text-white text-sm px-6 py-3 inline-block"
-          >
-            Announcements
-          </a>
-        </div>
-        <div className="transform -rotate-90 origin-right pointer-events-auto">
-          <button
-            type="button"
-            onClick={() =>
-              window.open(
-                "https://www.dmiher.edu.in/lp/national-admission",
-                "_blank"
-              )
-            }
-            className="bg-[#122E5E] text-white text-sm px-6 py-3"
-          >
-            Admission Enquiry
-          </button>
-        </div>
-      </div> */}
     </div>
   );
 };

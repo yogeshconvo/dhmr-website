@@ -172,10 +172,7 @@ const Footer = () => {
                   name: "Mahatma Gandhi Ayurvedic College Hospital And Research Centre",
                   url: "https://www.mgachrc.org/",
                 },
-                {
-                  name: "Smt Radhikabai Meghe Memorial College Of Nursing",
-                  url: "https://www.dmiher.edu.in/about-srmmcon",
-                },
+
                 {
                   name: "Ravi Nair Physiotherapy College",
                   url: "https://www.dmiher.edu.in/about-rnpc",
@@ -189,6 +186,18 @@ const Footer = () => {
                   url: "/feat",
                 },
                 {
+                  name: "Smt Radhikabai Meghe Memorial College Of Nursing",
+                  url: "/SRMMCON",
+                },
+                {
+                  name: "Shalinitai Meghe College Of Nursing",
+                  url: "/SMCON-W",
+                },
+                {
+                  name: "School Of Allied Health Sciences",
+                  url: "https://www.dmiher.edu.in/about-sahes",
+                },
+                {
                   name: "School Of Allied Sciences",
                   url: "https://www.dmiher.edu.in/about-sas",
                 },
@@ -196,19 +205,11 @@ const Footer = () => {
                   name: "Centre For Distance And Online Education",
                   url: "https://www.dmiheronline.edu.in/",
                 },
-                {
-                  name: "School Of Allied Health Sciences",
-                  url: "https://www.dmiher.edu.in/about-sahes",
-                },
-                {
-                  name: "Shalinitai Meghe College Of Nursing",
-                  url: "https://www.dmiher.edu.in/About-SMCON-Wardha",
-                },
               ].map((college) =>
                 college.url.startsWith("/") ? (
                   <li key={college.name} className="mt-1">
                     <Link
-                      href={college.url}
+                      to={college.url}
                       className="text-white hover:underline"
                     >
                       {college.name}
@@ -237,22 +238,22 @@ const Footer = () => {
                   url: "https://www.dmmcnagpur.com/",
                 },
                 {
-                  name: "School Of Allied Health Sciences",
-                  url: "https://www.dmiher.edu.in/school-of-allied-health-sciences-nagpur-a-constituent-unit-of-dmiher",
+                  name: "Shalinitai Meghe Homeopathy Hospital College And Research Centre",
+                  url: "https://smhhcrc.com/",
                 },
                 {
                   name: "Shalinitai Meghe College Of Nursing",
-                  url: "https://www.dmiher.edu.in/about-smcon-nagpur",
+                  url: "/SMCON-N",
                 },
                 {
-                  name: "Shalinitai Meghe Homeopathy Hospital College And Research Centre",
-                  url: "https://smhhcrc.com/",
+                  name: "School Of Allied Health Sciences",
+                  url: "https://www.dmiher.edu.in/school-of-allied-health-sciences-nagpur-a-constituent-unit-of-dmiher",
                 },
               ].map((college) =>
                 college.url.startsWith("/") ? (
                   <li key={college.name} className="mt-1">
                     <Link
-                      href={college.url}
+                      to={college.url}
                       className="text-white hover:underline"
                     >
                       {college.name}
@@ -486,10 +487,7 @@ const Footer = () => {
                   name: "Mahatma Gandhi Ayurvedic College Hospital And Research Centre",
                   url: "https://www.mgachrc.org/",
                 },
-                {
-                  name: "Smt Radhikabai Meghe Memorial College Of Nursing",
-                  url: "https://www.dmiher.edu.in/about-srmmcon",
-                },
+
                 {
                   name: "Ravi Nair Physiotherapy College",
                   url: "https://www.dmiher.edu.in/about-rnpc",
@@ -503,6 +501,18 @@ const Footer = () => {
                   url: "/feat",
                 },
                 {
+                  name: "Smt Radhikabai Meghe Memorial College Of Nursing",
+                  url: "/SRMMCON",
+                },
+                {
+                  name: "Shalinitai Meghe College Of Nursing",
+                  url: "/SMCON-W",
+                },
+                {
+                  name: "School Of Allied Health Sciences",
+                  url: "https://www.dmiher.edu.in/about-sahes",
+                },
+                {
                   name: "School Of Allied Sciences",
                   url: "https://www.dmiher.edu.in/about-sas",
                 },
@@ -510,19 +520,11 @@ const Footer = () => {
                   name: "Centre For Distance And Online Education",
                   url: "https://www.dmiheronline.edu.in/",
                 },
-                {
-                  name: "School Of Allied Health Sciences",
-                  url: "https://www.dmiher.edu.in/about-sahes",
-                },
-                {
-                  name: "Shalinitai Meghe College Of Nursing",
-                  url: "https://www.dmiher.edu.in/About-SMCON-Wardha",
-                },
               ].map((college) =>
                 college.url.startsWith("/") ? (
                   <li key={college.name} className="mt-1">
                     <Link
-                      href={college.url}
+                      to={college.url}
                       className="text-white hover:underline"
                     >
                       {college.name}
@@ -551,22 +553,22 @@ const Footer = () => {
                   url: "https://www.dmmcnagpur.com/",
                 },
                 {
+                  name: "Shalinitai Meghe Homeopathy Hospital College And Research Centre",
+                  url: "https://smhhcrc.com/",
+                },
+                {
                   name: "School Of Allied Health Sciences",
                   url: "https://www.dmiher.edu.in/school-of-allied-health-sciences-nagpur-a-constituent-unit-of-dmiher",
                 },
                 {
-                  name: "Shalinitai Meghe College Of Nursing",
-                  url: "https://www.dmiher.edu.in/about-smcon-nagpur",
-                },
-                {
-                  name: "Shalinitai Meghe Homeopathy Hospital College And Research Centre",
-                  url: "https://smhhcrc.com/",
+                  name: "Shalinitai Meghe College Of Nursing,Nagpur",
+                  url: "/SMCON-N",
                 },
               ].map((college) =>
                 college.url.startsWith("/") ? (
                   <li key={college.name} className="mt-1">
                     <Link
-                      href={college.url}
+                      to={college.url}
                       className="text-white hover:underline"
                     >
                       {college.name}

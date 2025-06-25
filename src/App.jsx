@@ -11,7 +11,7 @@ function App() {
     // <Router basename="/dmiher-newsite/duat/dhmr-web/dist">
     // <Router basename="/dmiher-web">
     // <Router basename="/dmiher-uat">
-    <Router> 
+    <Router>
       <ScrollToTop />
       <AppRoutes />
     </Router>

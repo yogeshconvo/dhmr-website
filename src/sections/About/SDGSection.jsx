@@ -153,7 +153,11 @@ export default function SDGSection() {
           />
         </div>
       </div>
-      <a href="#" className="text-[#269BFF] ml-10 text-xs  underline pt-1">
+      <a
+        href="https://dmiher.edu.in/sustainable-development-goals"
+        target="_blank"
+        className="text-[#269BFF] ml-10 text-xs  underline pt-1"
+      >
         Visit SDG to <span className="font-medium">Know More</span>
       </a>
     </div>

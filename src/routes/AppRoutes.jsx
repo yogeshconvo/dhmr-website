@@ -10,7 +10,9 @@ import FEAT from "../pages/FEAT";
 import Nursing from "../pages/Nursing";
 import SaS from "../pages/SaS";
 import IQAC from "../pages/IQAC";
+import CDOE from "../pages/CDOE";
 import SHER from "../pages/SHER";
+import SAHS from "../pages/SAHS";
 
 export default function AppRoutes() {
   return (
@@ -24,8 +26,13 @@ export default function AppRoutes() {
         <Route path="/spdc" element={<SPDC />} />
         {/* <Route path="/global-connects" element={} /> */}
         <Route path="/feat" element={<FEAT />} />
+        <Route path="/cdoe" element={<CDOE />} />
         {/* <Route path="/global-connects" element={<SHER />} /> */}
-        <Route path="/nursing" element={<Nursing />} />
+        <Route path="/SMCON-W" element={<Nursing />} />
+        <Route path="/SMCON-N" element={<Nursing />} />
+        <Route path="/SRMMCON" element={<Nursing />} />
+        <Route path="/sahs" element={<SAHS />} />
+
         <Route path="/sas" element={<SaS />} />
       </Route>
     </Routes>

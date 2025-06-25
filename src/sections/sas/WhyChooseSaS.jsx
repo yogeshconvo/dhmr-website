@@ -109,7 +109,7 @@ const cards = [
 
 function WhyChooseSaS() {
   return (
-    <div className="py-16 px-15 bg-[#FAFAF6] flex justify-center">
+    <div className=" px-5 py-5 md:py-12 md:px-10 bg-[#FAFAF6] flex justify-center">
       <div className="w-full max-w-6xl">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-normal text-[#707070] font-[600] mb-10">
@@ -137,9 +137,16 @@ function WhyChooseSaS() {
           }}
         >
           {cards.map((card, index) => (
-            <SwiperSlide key={index} className="flex justify-center">
+            // <SwiperSlide key={index} className="flex justify-center">
+            //   <div
+            //     className={`w-[250px] h-[320px] p-4 items-center rounded-xl shadow-md ${card.bg} font-oswald-light flex flex-col justify-center`}
+            //   >
+            //     {card.content}
+            //   </div>
+            // </SwiperSlide>
+            <SwiperSlide key={index} className="!flex !justify-center">
               <div
-                className={`w-[250px] h-[320px] p-4 rounded-xl shadow-md ${card.bg} font-oswaldLight flex flex-col justify-center`}
+                className={`w-[250px] h-[320px] p-4 items-center rounded-xl shadow-md ${card.bg} font-oswald-light flex flex-col justify-center`}
               >
                 {card.content}
               </div>

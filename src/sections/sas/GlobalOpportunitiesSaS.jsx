@@ -64,33 +64,6 @@ function GlobalOpportunitiesSaS() {
             ))}
           </div>
         </div> */}
-
-        {/* Partners Logos */}
-        <div>
-          <h3 className="text-lg font-oswald-medium text-[#269BFF] mb-4">
-            Industry Partners and Collaborations
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center px-12 pt-4">
-            {partners.map((partner, idx) => (
-              <div key={idx} className="flex flex-col items-center text-center">
-                <img
-                  src={partner.src}
-                  alt={partner.alt}
-                  className="object-contain max-h-auto w-full mb-2"
-                  style={{ maxWidth: 120 }}
-                />
-                {/* <span className="text-[#58595B] text-xs">{partner.alt}</span> */}
-              </div>
-            ))}
-          </div>
-          <p className="text-gray-600 text-xs mt-4 max-w-4xl">
-            Wadhwani Foundation – Entrepreneurial skills, incubation, and
-            industry mentorship | Lemon Ideas – Startup accelerator with
-            mentorship and funding support | Coursera – Global certifications
-            from top universities and companies | 2COMS – National and
-            international placements, internships, work-integrated programs
-          </p>
-        </div>
       </div>
     </section>
   );

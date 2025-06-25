@@ -245,6 +245,13 @@ import CoCurricularImg7 from "../../assets/Nursing/Nursing/student Life/Yoga Day
 
 // Data array
 const academicFacilities = [
+  { title: "Co-Curricular Activities", image: CoCurricularImg1 },
+  { title: "Christmas Day", image: CoCurricularImg2 },
+  { title: "Lamp Lighting", image: CoCurricularImg3 },
+  { title: "Research", image: CoCurricularImg4 },
+  { title: "Sports", image: CoCurricularImg5 },
+  { title: "Walkathon", image: CoCurricularImg6 },
+  { title: "Yoga Day", image: CoCurricularImg7 },
   {
     title: "School of Experiential Learning & Simulation Centre",
     image: AcedemicFacilitesImg9,
@@ -259,13 +266,6 @@ const academicFacilities = [
   { title: "Computer Labs", image: AcedemicFacilitesImg6 },
   { title: "Library & Digital Library", image: AcedemicFacilitesImg7 },
   { title: "Reading Rooms", image: AcedemicFacilitesImg8 },
-  { title: "Co-Curricular Activities", image: CoCurricularImg1 },
-  { title: "Christmas Day", image: CoCurricularImg2 },
-  { title: "Lamp Lighting", image: CoCurricularImg3 },
-  { title: "Research", image: CoCurricularImg4 },
-  { title: "Sports", image: CoCurricularImg5 },
-  { title: "Walkathon", image: CoCurricularImg6 },
-  { title: "Yoga Day", image: CoCurricularImg7 },
 ];
 
 // Header

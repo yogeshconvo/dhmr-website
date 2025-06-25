@@ -40,11 +40,11 @@ const researchData = [
 
 function ResearchSaS() {
   return (
-    <div className="container my-[125px] flex gap-12 flex-wrap">
+    <div className="container py-10 flex gap-12 flex-wrap">
       <div className="text-[#58595B] max-w-[365px] flex-1">
         <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
           <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
-          RESEARCH
+          {"Research and Collaboration".toUpperCase()}
         </h2>
         <b>Engineering Ideas, Impacting Futures</b>
         <p>

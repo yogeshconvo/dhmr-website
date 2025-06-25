@@ -313,7 +313,7 @@ const Outcome = () => {
                         key={index}
                         src={icon}
                         alt={`Icon ${index + 1}`}
-                        className="w-full h-auto object-contain"
+                        className="w-full h-[80px] object-contain"
                         loading="lazy"
                       />
                     ))}

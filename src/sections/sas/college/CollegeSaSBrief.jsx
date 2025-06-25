@@ -112,7 +112,7 @@ function CollegeSaSBrief({ collegeTabNumber }) {
         <div className="flex-2 min-w-[315px] h-full rounded-md overflow-hidden shadow-lg flex-shrink-0">
           <Swiper
             modules={[Autoplay, Pagination, Navigation]}
-            navigation={true}
+            // navigation={true}
             autoplay={{ delay: 3500, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             spaceBetween={0}

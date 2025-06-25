@@ -43,21 +43,22 @@ function CollabarationSaS() {
           {partners.map((partner, idx) => (
             <div
               key={partner.title}
-              className="rounded-xl shadow-md p-6 flex flex-col items-center text-center h-full"
+              className="rounded-xl shadow-md p-6 w-[90%] flex flex-col items-center text-center h-full"
               style={{ background: partner.bg }}
             >
-              <div className="w-24 h-24 flex items-center justify-center mb-3">
+              <div className="w-full flex items-center justify-center mb-3"
+                style={{
+                  height: (idx === 2 || idx === 3) ? "110px" : "88px" // Increase height for 3rd and 4th logo
+                }}
+              >
                 <img
                   src={partner.img}
                   alt={partner.title}
-                  className="object-contain w-full h-full"
+                  className="object-cover w-full h-full"
                   style={{ background: "transparent" }}
                 />
               </div>
-              <h3 className="font-oswald-medium text-lg text-[#269BFF] mb-2">
-                {partner.title}
-              </h3>
-              <p className="text-[#58595B] text-sm">{partner.desc}</p>
+              <p className="text-[#58595B] text-sm pt-5">{partner.desc}</p>
             </div>
           ))}
         </div>

@@ -42,20 +42,44 @@ function CollegePrograms({ collegeTabNumber }) {
         <ul className="flex flex-wrap justify-center gap-20">
           {currentCollegeData.messages.map((message) => (
             <li>
-              <span className="clip-path-message">
+              <span
+                className="clip-path-message group"
+                onClick={() =>
+                  window.open("https://www.dmiher.edu.in/courses", "_blank")
+                }
+              >
                 <span className="clip-path-message-inner">
-                  <span>{message}</span>
+                  <span className="curser group-hover:cursor-pointer cursor-default">
+                    {message}
+                  </span>
                 </span>
               </span>
             </li>
           ))}
         </ul>
 
-        <div className="mt-14 ml-auto w-fit">
-          <a href={currentCollegeData.linkHref} className="text-[#269BFF]">
-            {currentCollegeData.linkTitle}
-            <span className="underline">Here</span>
-          </a>
+        <h2 className="text-3xl font-[500] text-[#707070] pt-20 mb-8 tracking-wider font-oswald-medium">
+          <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
+          MANDATORY DISCLOSURES
+        </h2>
+        {/* Bottom Link */}
+        <div className="sm:flex flex-col sm:flex-row sm:items-center gap-4">
+          <div className="flex justify-center">
+            {/* <a
+              href="#"
+              className="text-[19px] bg-[#E3F2FD] text-[#F04E30] font-oswald-medium px-8 py-2 tracking-wide rounded-md font-[300] hover:bg-blue-100 transition"
+            >
+              Check all Mandatory Disclosures{" "}
+              <span className="font-[400] underline">Click Here</span>
+            </a> */}
+            <a
+              href="#"
+              className="text-xl tracking-wide font-oswald-medium  text-gray-600  rounded-md font-[300] hover:bg-blue-100 transition"
+            >
+              Check all Mandatory Disclosures{" "}
+              <span className="font-[400] underline">Click Here</span>
+            </a>
+          </div>
         </div>
       </div>
     );

@@ -63,13 +63,13 @@ const adventureData = [
 
 const HighlightCard = ({ item }) => (
   <div
-    className={`rounded-lg shadow-md hover:shadow-lg font-oswald-medium transition-shadow overflow-hidden flex flex-col  ${item.bgColor} ${item.textColor} w-full sm:w-64 md:w-55 min-h-[300px]`}
+    className={`rounded-lg shadow-md hover:shadow-lg font-oswald-medium transition-shadow overflow-hidden flex flex-col  ${item.bgColor} ${item.textColor} w-full sm:w-56 md:w-55 min-h-[300px]`}
   >
     {item.img && (
       <img
         src={item.img}
         alt="adventure"
-        className="mt-4 w-60 h-24 object-contain"
+        className="mt-4 w-60 h-25 object-contain"
       />
     )}
     <div
@@ -125,16 +125,16 @@ export default function AdventureNursing() {
 
   return (
     <div className="bg-[#fdf8e7] py-12 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="md:max-w-6xl mx-auto">
         <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
           <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
           THE DMIHER
           <br /> NURSING ADVANTAGE
         </h2>
-        <div className="max-w-5xl mx-auto">
+        <div className="md:max-w-5xl  mx-auto">
           <Slider {...sliderSettings} className="-mx-1">
             {adventureData.map((item, idx) => (
-              <div key={idx} className="px-1 mb-4">
+              <div key={idx} className="px-8 mb-4">
                 <HighlightCard item={item} />
               </div>
             ))}

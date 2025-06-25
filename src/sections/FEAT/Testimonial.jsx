@@ -793,15 +793,15 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <div className="px-4 md:px-8 py-10 bg-[#F4F4F4]">
-      <div className="mb-6">
+    <div className="px-4 md:px-8 pt-10 bg-[#F4F4F4]">
+      <div className="">
         <h2 className="text-3xl sm:text-4xl ml-4 sm:ml-15 font-medium text-gray-500 font-oswald-medium mb-4">
           <hr className="border-red-500 border-2 w-12 mb-2" />
           TESTIMONIALS
         </h2>
 
         {/* Tabs */}
-        <div className="text-center flex justify-center pb-8 gap-4 flex-wrap">
+        <div className="text-center flex justify-center gap-4 flex-wrap">
           {tabs.map((tab, index) => (
             <button
               key={tab}

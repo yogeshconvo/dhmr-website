@@ -11,7 +11,7 @@ import DownloadBrochureButton from "../sections/Admissions/DownloadBrochureButto
 
 const Admissions = () => {
   return (
-    <div>
+    <div className="min-w-screen">
       <EducationEnquiryPage />
       <ProgramsGrid />
       <WhyStudySection />

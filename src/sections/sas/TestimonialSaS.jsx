@@ -1,87 +1,84 @@
 import React, { useState } from "react";
-import student1 from "../../assets/sas/testimonials/student1.png";
-import student2 from "../../assets/sas/testimonials/student2.png";
-import parent1 from "../../assets/sas/testimonials/parent1.png";
-import faculty1 from "../../assets/sas/testimonials/faculty1.png";
+
+import testimonial1 from "../../assets/Testimonials/SAS/picture1.png";
+import testimonial2 from "../../assets/Testimonials/SAS/picture2.jpg";
+import testimonial3 from "../../assets/Testimonials/SAS/picture3.png";
+import testimonial4 from "../../assets/Testimonials/SAS/picture4.jpg";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const tabs = ["Students", "Parents", "Faculty"];
+const tabs = ["Students", "Alumni"];
 
 const data = {
   Students: [
     {
-      img: student1,
-      para: "SAS gave me the confidence and skills to pursue my dream career in AI. The hands-on projects and global exposure were truly life-changing!",
-      info: `Aarav Sharma\nB.Sc. Data Science\nBatch 2024`,
+      img: testimonial1,
+      para: "Akshit Yadav	MBA	2024-2026	The School of Allied Sciences (SAS), DMIHER (DU), provided me with incredible opportunities to grow beyond the classroom. Through SAS, I had the privilege of participating in the International Immersion Program at UCSI University, Malaysia, where I gained global business insights, industry exposure, and cross-cultural learning experiences. Additionally, the exceptional faculty at DMIHER played a crucial role in shaping my knowledge and skills, offering both academic excellence and real-world perspectives. I truly appreciate the learning environment and the mentorship I received at SAS.",
+      name: `Mr. Akshit Yadav`,
+      info: "MBA (FoCMS, SAS) | International Immersion Program Participant, UCSI University, Malaysia",
+      batch: "2024-2026",
     },
     {
-      img: student2,
-      para: "The placement support and industry tie-ups at SAS are outstanding. I landed a paid internship at Max Healthcare and secured a full-time job before graduation.",
-      info: `Priya Deshmukh\nMBA Healthcare Management\nBatch 2023`,
-    },
-  ],
-  Parents: [
-    {
-      img: parent1,
-      para: "I am grateful to SAS for nurturing my son’s talents and providing a safe, inspiring environment. The faculty is supportive and the campus is vibrant.",
-      info: `Mrs. Sunita Patil\nParent of Rohan Patil (B.Sc. IT 2025)`,
-    },
-    {
-      img: parent1,
-      para: "I am grateful to SAS for nurturing my son’s talents and providing a safe, inspiring environment. The faculty is supportive and the campus is vibrant.",
-      info: `Mrs. Sunita Patil\nParent of Rohan Patil (B.Sc. IT 2025)`,
+      img: testimonial2,
+      para: "The School of Allied Sciences (SAS), DMIHER (DU), provided me with an invaluable opportunity to participate in the Global Immersion Program at NUS Singapore, where I gained world-class entrepreneurial insights and business strategies. The experience, along with the mentorship and practical learning at SAS, has played a crucial role in helping me support my father in reviving and expanding our family business. I am truly grateful to SAS for equipping me with the skills, exposure, and confidence to take on real-world business challenges.",
+      name: `Mr, Aaryan Kale`,
+      info: "BBA Final Year | Global Immersion Program Participant, NUS Singapore ",
+      batch: "2022-2025",
     },
   ],
-  Faculty: [
+  Alumni: [
     {
-      img: faculty1,
-      para: "At SAS, we focus on holistic student development—academics, research, and life skills. It’s rewarding to see our students excel globally.",
-      info: `Dr. Meenal Joshi\nFaculty, Allied Sciences`,
+      img: testimonial3,
+      para: "My journey at the School of Allied Sciences (SAS), DMIHER (DU), was truly transformative. The holistic education, leadership opportunities, and industry exposure I received shaped my entrepreneurial mindset. The support from faculty and the enriching academic environment played a pivotal role in my success. Today, as I run a thriving furniture business in Wardha, I credit SAS for equipping me with the skills, confidence, and vision to lead and grow in the business world",
+      name: `Mr. Indrajit Chudiwale`,
+      info: "MBA (Gold Medalist, 2020-21) | Entrepreneur",
+      batch: "2020-2022",
     },
     {
-      img: faculty1,
-      para: "At SAS, we focus on holistic student development—academics, research, and life skills. It’s rewarding to see our students excel globally.",
-      info: `Dr. Meenal Joshi\nFaculty, Allied Sciences`,
-    },
-    {
-      img: faculty1,
-      para: "At SAS, we focus on holistic student development—academics, research, and life skills. It’s rewarding to see our students excel globally.",
-      info: `Dr. Meenal Joshi\nFaculty, Allied Sciences`,
+      img: testimonial4,
+      para: "The School of Allied Sciences (SAS), DMIHER (DU), provided me with the perfect blend of academic excellence, practical exposure, and leadership opportunities. The faculty’s guidance and the industry-focused curriculum helped me build a strong foundation in management. Today, as a Floor Manager at DMMC, Nagpur, I apply the skills and knowledge I gained at SAS every day. I am grateful to my alma mater for shaping my professional journey and preparing me for real-world challenges.",
+      name: "Miss. Mansi Malelar",
+      batch: "2021- 23",
     },
   ],
 };
 
-function TestimonialSaS() {
+function TestimonialsSAS() {
   const [tab, setTab] = useState("Students");
+
+  const handleTabClick = (selectedTab) => {
+    setTab(selectedTab);
+  };
+
   return (
-    <div className="container my-[125px] ">
-      <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
-        <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
+    <div className="px-4 md:px-8 py-10 bg-[#F4F4F4]">
+      <h2 className="text-3xl sm:text-4xl ml-4 sm:ml-15 font-medium text-gray-500 font-oswald-medium mb-4">
+        <hr className="border-red-500 border-2 w-12 mb-2" />
         TESTIMONIALS
       </h2>
 
-      <ul className="flex gap-2 mx-auto w-fit -mt-2">
-        {tabs.map((tabItem, idx) => (
-          <>
-            <li
-              key={idx}
-              onClick={() => setTab(tabItem)}
-              className="cursor-pointer hover:underline border-b-2 border-b-transparent"
-              style={{
-                textDecoration: tabItem === tab ? "underline" : undefined,
-              }}
-            >
-              {tabItem}
-            </li>
-            {idx < tabs.length - 1 && <span>|</span>}
-          </>
+      <div className="text-center flex justify-center pb-8 gap-4 flex-wrap">
+        {tabs.map((tabName, index) => (
+          <button
+            key={tabName}
+            onClick={() => handleTabClick(tabName)}
+            className={`px-3 py-1 text-sm sm:text-base transition-all ${
+              tab === tabName
+                ? "underline text-black"
+                : "text-gray-500 hover:text-gray-700"
+            } ${
+              index < tabs.length - 1 ? "border-r border-gray-300 pr-4" : ""
+            }`}
+          >
+            {tabName}
+          </button>
         ))}
-      </ul>
+      </div>
 
-      <div className="my-24 lg:ml-[20%]">
+      <div className="my-10 ">
         <Swiper
           style={{
             paddingBottom: 80,
@@ -101,13 +98,17 @@ function TestimonialSaS() {
                 <img
                   src={testimonial.img}
                   alt=""
-                  className="w-[200px] h-[200px] rounded-full object-cover"
+                  className="w-45 h-45 object-cover rounded-full"
                 />
-                <div>
-                  <p className="text-[#707070]">{testimonial.para}</p>
-                  <pre className="font-bold text-[#707070] leading-5 mt-2">
+
+                <div className="max-w-2xl font-[Arial] text-base">
+                  {" "}
+                  <p className="mb-4">{testimonial.para}</p>
+                  <p className="font-[600] text-xm mt-1">{testimonial.name}</p>
+                  <pre className="font-[Arial]  text-[#707070] leading-5 mt-2">
                     {testimonial.info}
                   </pre>
+                  <p className="font-[Arial]  text-[#707070] leading-5 mt-2">{testimonial.batch}</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -118,4 +119,4 @@ function TestimonialSaS() {
   );
 }
 
-export default TestimonialSaS;
+export default TestimonialsSAS;

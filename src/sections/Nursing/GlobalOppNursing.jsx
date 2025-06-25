@@ -112,7 +112,7 @@ export default function GlobalOppNursing({ showPlacementBtn }) {
           <div className="flex-2 min-w-[315px] h-full rounded-md overflow-hidden shadow-lg flex-shrink-0">
             <Swiper
               modules={[Autoplay, Pagination, Navigation]}
-              navigation={true}
+              // navigation={true}
               autoplay={{ delay: 3500, disableOnInteraction: false }}
               pagination={{ clickable: true }}
               spaceBetween={0}
@@ -136,7 +136,7 @@ export default function GlobalOppNursing({ showPlacementBtn }) {
 
       {showPlacementBtn ? (
         <button className="btn primary-btn my-[100px] m-auto block">
-          <a href="#" className="text-white text-xl rounded-xl">Higher education and Placement</a>
+          <a href="#" className="text-white text-xm md:text-xl  rounded-xl">Higher education and Placement</a>
         </button>
       ) : null}
     </>

@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  max-width: 1800px;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
 }
+
 
 .font-arial {
   font-family: Arial, sans-serif;
@@ -110,11 +114,9 @@ body {
 }
 
 @media (max-height: 650px) {
-  .swipper-height {
-  }
+  .swipper-height {}
 
-  .swipper-height {
-  }
+  .swipper-height {}
 }
 
 .why-study-with-du .slick-dots {
@@ -463,15 +465,13 @@ button {
 }
 
 .clip-path-message {
-  clip-path: polygon(
-    0 23%,
-    100% 23%,
-    100% 75%,
-    100% 75%,
-    100% 100%,
-    82% 75%,
-    0% 75%
-  );
+  clip-path: polygon(0 23%,
+      100% 23%,
+      100% 75%,
+      100% 75%,
+      100% 100%,
+      82% 75%,
+      0% 75%);
   width: 154px;
   height: 98px;
   background: #f04e30;
@@ -482,15 +482,13 @@ button {
 
 .clip-path-message .clip-path-message-inner {
   position: absolute;
-  clip-path: polygon(
-    0 23%,
-    100% 23%,
-    100% 75%,
-    100% 75%,
-    100% 100%,
-    82% 75%,
-    0% 75%
-  );
+  clip-path: polygon(0 23%,
+      100% 23%,
+      100% 75%,
+      100% 75%,
+      100% 100%,
+      82% 75%,
+      0% 75%);
   left: 2px;
   top: 4px;
   width: 150px;
@@ -521,12 +519,14 @@ button {
 /* Custom scrollbar for holistic-text */
 .holistic-text::-webkit-scrollbar {
   width: 10px;
-  background: #c4c4c4; /* scrollbar track color */
+  background: #c4c4c4;
+  /* scrollbar track color */
   border-radius: 5px;
 }
 
 .holistic-text::-webkit-scrollbar-thumb {
-  background: #707070; /* scrollbar thumb color */
+  background: #707070;
+  /* scrollbar thumb color */
   border-radius: 5px;
 }
 
@@ -609,13 +609,14 @@ button {
 } */
 
 @media (max-width: 762px) {
+
   .holistic-text::after,
   .holistic-text::before {
     display: none;
   }
-} */
+}
 
-.btn a {
+*/ .btn a {
   display: block;
   padding: 1rem 4rem;
   color: white;

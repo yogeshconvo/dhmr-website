@@ -12,7 +12,7 @@ import SDGSection from "../sections/About/SDGSection";
 
 const About = () => {
   return (
-    <div>
+    <div className="">
       <HeroAbout />
       <ExcellenceSection />
       <VisionMissionSection />

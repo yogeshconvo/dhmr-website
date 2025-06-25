@@ -16,7 +16,7 @@ import ProgramSection from "../sections/FEAT/ProgramsSection";
 
 const FEAT = () => {
   return (
-    <div>
+    <div className="min-w-screen">
       <HeroFEAT />
       <FEATInfoSection />
       <WhyChooseFEAT />

@@ -62,7 +62,7 @@ function CollegeMessage({ collegeTabNumber }) {
               alt={currentCollegeData.drName}
               className="h-[300px] rounded-xl object-cover"
             /> */}
-            <div className="flex-1 rounded-xl overflow-hidden min-w-[300px] max-w-[350px] h-[350px]">
+            <div className="flex-1 rounded-xl overflow-hidden min-w-[300px] max-w-[350px] h-[250px]">
               <img
                 src={currentCollegeData.image}
                 alt={currentCollegeData.drName}
