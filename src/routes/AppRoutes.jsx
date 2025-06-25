@@ -13,6 +13,11 @@ import IQAC from "../pages/IQAC";
 import CDOE from "../pages/CDOE";
 import SHER from "../pages/SHER";
 import SAHS from "../pages/SAHS";
+<<<<<<< HEAD
+=======
+import CDOE from "../pages/CDOE";
+import RNPC from "../pages/RNPC";
+>>>>>>> c0b206998fde489064a735526d2847598df56a7b
 
 export default function AppRoutes() {
   return (
@@ -34,6 +39,9 @@ export default function AppRoutes() {
         <Route path="/sahs" element={<SAHS />} />
 
         <Route path="/sas" element={<SaS />} />
+        <Route path="/sahs" element={<SAHS />} />
+        <Route path="/cdoe" element={<CDOE />} />
+        <Route path="/rnpc" element={<RNPC />} />
       </Route>
     </Routes>
   );
