@@ -13,6 +13,7 @@ import IQAC from "../pages/IQAC";
 import SHER from "../pages/SHER";
 import SAHS from "../pages/SAHS";
 import CDOE from "../pages/CDOE";
+import RNPC from "../pages/RNPC";
 
 export default function AppRoutes() {
   return (
@@ -29,8 +30,9 @@ export default function AppRoutes() {
         {/* <Route path="/global-connects" element={<SHER />} /> */}
         <Route path="/nursing" element={<Nursing />} />
         <Route path="/sas" element={<SaS />} />
-        <Route path="/sahs" element={<SAHS />}/>
+        <Route path="/sahs" element={<SAHS />} />
         <Route path="/cdoe" element={<CDOE />} />
+        <Route path="/rnpc" element={<RNPC />} />
       </Route>
     </Routes>
   );
