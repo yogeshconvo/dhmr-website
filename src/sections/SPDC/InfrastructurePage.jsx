@@ -54,11 +54,11 @@ export default function InfrastructurePage() {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-10 pr-10">
-          <div className="space-y-6 text-gray-500">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-10 pr-10 ">
+          <div className="space-y-6 text-gray-500 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
             {sections.map(({ key, title, text }) => (
               <div
-                key={key}
+                key={key} 
                 onClick={() => setSelected(key)}
                 className={`cursor-pointer border-t pt-3 ${
                   selected === key ? "text-blue-900" : ""

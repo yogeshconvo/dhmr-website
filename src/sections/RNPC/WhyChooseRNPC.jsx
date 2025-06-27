@@ -9,10 +9,11 @@ const cards = [
     bg: "bg-[#F04E30]/90 text-white",
     content: (
       <>
-        <p className="font-bold font-oswald-medium text-[24px] mt-8">
-          Constituent of DMIHER (Deemed to be University), NAAC A++, Category-I
+        <p className="font-bold tracking-wide font-oswald-medium text-[25px] ">
+          Constituent of DMIHER (Deemed to be University), NAAC A++,{" "}
+          <span className="text-200">Category-I</span>
         </p>
-        <p className="text-base mt-2 font-oswald-medium">
+        <p className="text-base mt-2 font-[400] font-oswald-medium">
           Attached 1500+ bed multi-specialty hospital for clinical training
         </p>
       </>
@@ -22,8 +23,8 @@ const cards = [
     bg: "bg-[#E1CD67] text-[#122E5E]",
     content: (
       <>
-        <p className="font-bold font-oswald-medium text-[28px] mt-8">
-          First in India to adopt
+        <p className="font-[600] font-oswald-medium uppercase text-[30px]">
+          First In India to Adopt
         </p>
         <p className="text-base font-oswald-medium">
           Competency-Based Physiotherapy Education (CBPE)
@@ -32,10 +33,10 @@ const cards = [
     ),
   },
   {
-    bg: "bg-[#122E5E] text-white",
+    bg: "bg-[#122E5E] font-oswald-medium text-white",
     content: (
       <>
-        <p className="font-bold text-xl mt-8">
+        <p className="font-bold text-xl  mt-8">
           Early research exposure with APC funding, workshops, and UG support
         </p>
         <p className="text-base font-oswald-medium mt-2">
@@ -51,7 +52,10 @@ const cards = [
     bg: "bg-[#FFFFFF] text-[#F04E30]",
     content: (
       <>
-        <p className="font-bold text-xl mt-8">
+        <p
+          className="font-oswald-medium font-[600]
+         text-2xl "
+        >
           Academic tie-ups: Plymouth Institute (UK), Sports Authority of India
         </p>
         <p className="text-base font-oswald-medium text-[#707070] mt-2">
@@ -65,11 +69,13 @@ const cards = [
     bg: "bg-[#F7941D]/90 text-white",
     content: (
       <>
-        <p className="font-bold text-lg mt-8">Skill-building courses</p>
-        <p className="text-base font-oswald-medium mt-2">
+        <p className="font-oswald-medium font-[600] text-xl">
+          Skill-building courses
+        </p>
+        <p className="text-base font-oswald-medium mt-1">
           Get Set Go, BLS & ACLS, Presenter/Researcher in Me
         </p>
-        <p className="text-base font-oswald-medium mt-2">
+        <p className="text-base font-oswald-medium mt-1">
           Career readiness: GD, PI, Resume Writing, Financial Literacy, Excel
         </p>
         <p className="text-base font-oswald-medium mt-2">
@@ -78,19 +84,21 @@ const cards = [
       </>
     ),
   },
-  {
-    bg: "bg-[#269BFF] text-white",
-    content: (
-      <>
-        <p className="font-bold text-2xl mt-8">Coursera courses</p>
-        <p className="text-base font-oswald-medium mt-2">
-          Students have completed 2,800+ courses from Harvard University,
-          Stanford University, Johns Hopkins University, University of London
-          and many more
-        </p>
-      </>
-    ),
-  },
+  // {
+  //   bg: "bg-[#269BFF] text-white",
+  //   content: (
+  //     <>
+  //       <p className="font-oswald-medium font-[500] text-2xl mt-8">
+  //         Coursera courses
+  //       </p>
+  //       <p className="text-base font-oswald-medium mt-2">
+  //         Students have completed 2,800+ courses from Harvard University,
+  //         Stanford University, Johns Hopkins University, University of London
+  //         and many more
+  //       </p>
+  //     </>
+  //   ),
+  // },
 ];
 
 function WhyChooseRNPC() {

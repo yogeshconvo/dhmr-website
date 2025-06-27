@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import SPDCBanner1 from "../../assets/SPDCBanner1.png";
-import SPDCBanner2 from "../../assets/SPDCBanner2.png";
-import SPDCBanner3 from "../../assets/SPDCBanner3.png";
+import SPDCBanner1 from "../../assets/SPDC/b1.jpg";
+import SPDCBanner2 from "../../assets/SPDC/b2.jpg";
+import SPDCBanner3 from "../../assets/SPDC/b3.jpg";
 
 // Simple parser using [[color]]text[[/color]]
 const parseTitle = (title) => {
@@ -36,19 +36,18 @@ const parseTitle = (title) => {
 };
 
 const HeroSPDC = () => {
-  const navigate = useNavigate();
 
   const slides = [
     {
-      img: SPDCBanner2,
+      img: SPDCBanner1,
       title:
-        "[[#E1CD67]]325+ DENTAL CHAIRS[[/#E1CD67]] with\n(Affiliated to 1,500+ Bedded Multi-Specialty Hospital)",
+        "[[#E1CD67]]325+ DENTAL CHAIRS[[/#E1CD67]] \n(Affiliated To – write this in small case) with 1,500+ Bedded Multi-Specialty Hospital",
       highlight:
         "Sharad Pawar Dental College & Hospital —\nA Landmark of Dental Excellence",
       textPosition: "left",
     },
     {
-      img: SPDCBanner3,
+      img: SPDCBanner2,
       title:
         "[[#E1CD67]]75% DOCTORAL[[/#E1CD67]] FACULTY,\n[[#E1CD67]]850+[[/#E1CD67]] YEARS OF TEACHING EXPERIENCE",
       highlight:
@@ -56,7 +55,7 @@ const HeroSPDC = () => {
       textPosition: "right",
     },
     {
-      img: SPDCBanner1,
+      img: SPDCBanner3,
       title:
         "[[#E1CD67]]8 PG[[/#E1CD67]] PROGRAMS,\n[[#E1CD67]]2880+[[/#E1CD67]] GRADUATES",
       highlight:
@@ -106,11 +105,13 @@ const HeroSPDC = () => {
         alt="Campus"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-opacity-40" />
+      {/* <div className="absolute inset-0 bg-opacity-40" /> */}
+      {/* Overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40 sm:bg-black/30 z-10" />
 
       {/* Text Content */}
       <div
-        className={`absolute px-4 sm:px-6 ${
+        className={`absolute z-20 px-4 sm:px-6 ${
           current.textPosition === "right"
             ? "right-0 text-left mr-10"
             : "left-0 text-left ml-10"

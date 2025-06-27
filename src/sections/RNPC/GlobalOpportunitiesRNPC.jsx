@@ -12,7 +12,6 @@ import yeshiva from "../../assets/rnpc/Opportunities/5.png";
 import deusto from "../../assets/rnpc/Opportunities/6.png";
 import kazan from "../../assets/rnpc/Opportunities/7.png";
 import plymouth from "../../assets/rnpc/Opportunities/8.png";
-import GO from "../../assets/GO.png";
 
 const logos = [
   { src: nevada, alt: "University of Nevada" },
@@ -92,11 +91,6 @@ function GlobalOpportunitiesRNPC() {
             </div>
           ))}
         </div> */}
-        <img
-          src={GO}
-          alt=""
-          className=" hidden md:block  max-w-7xl  h-85 ml-[-40px]"
-        />
       </div>
     </section>
   );

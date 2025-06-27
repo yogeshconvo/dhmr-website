@@ -42,7 +42,7 @@ function DeansMessageRNPC() {
           </div>
 
           {/* Message */}
-          <div className="text-lg tracking-wide font-sans text-[16px] mt-4 leading-6 text-[#FFFFFF] max-w-2xl font-[400]">
+          <div className="text-lg tracking-wide font-sans text-[16px]  leading-6 text-[#FFFFFF] max-w-3xl font-[400]">
             <p className="mb-6">
               I am privileged to welcome you to Ravi Nair Physiotherapy College,
               a pioneering institution in physiotherapy education since 1998. As
@@ -63,12 +63,9 @@ function DeansMessageRNPC() {
               experiences, ensuring our students receive a well-rounded
               education.
             </p>
-            <a
-              href="/leadership"
-              className="text-[#E1CD67] text-sm underline font-oswaldLight"
-            >
-              More &rarr;
-            </a>
+            <button className="mt-2 mb-4 px-6 py-2 bg-[#F04E30] text-white rounded font-semibold transition hover:bg-[#d13d22]">
+              know More
+            </button>
           </div>
         </div>
       </div>

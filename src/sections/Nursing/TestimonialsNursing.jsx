@@ -63,24 +63,6 @@ function TestimonialsNursing() {
         TESTIMONIALS
       </h2>
 
-      {/* <ul className="flex gap-2 mx-auto w-fit -mt-2">
-        <>
-       {tabs.map((tab, index) => (
-            <button
-              key={tab}
-              onClick={() => handleTabClick(tab)}
-              className={`px-3 py-1 text-sm sm:text-base transition-all ${
-                activeTab === tab
-                  ? "underline text-black"
-                  : "text-gray-500 hover:text-gray-700"
-              } ${
-                index < tabs.length - 1 ? "border-r border-gray-300 pr-4" : ""
-              }`}
-            >
-              {tab}
-         </button>
-         </>
-      </ul> */}
       <div className="text-center flex justify-center pb-8 gap-4 flex-wrap">
         {tabs.map((tabName, index) => (
           <button

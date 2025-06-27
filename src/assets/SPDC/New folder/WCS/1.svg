@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="480" viewBox="0 0 390 480">
+  <defs>
+    <filter id="college" x="0" y="0" width="390" height="480" filterUnits="userSpaceOnUse">
+      <feOffset dy="9" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1804" data-name="Group 1804" transform="translate(-170 -3490)">
+    <g transform="matrix(1, 0, 0, 1, 170, 3490)" filter="url(#college)">
+      <rect id="college-2" data-name="college" width="330" height="420" rx="10" transform="translate(30 21)" fill="#e1cd67" opacity="0.354"/>
+    </g>
+    <text id="Ranked_among_India_s_Top_25_dental_institutions_NIRF_for_5_consecutive_years_-_24th_rank_in_NIRF_2024" data-name="Ranked among India’s Top 25 dental institutions (NIRF) for 5 consecutive years - 24th rank in NIRF 2024" transform="translate(219 3711)" fill="#122e5e" font-size="31" font-family="HelveticaLTStd-Cond, Helvetica LT Std"><tspan x="0" y="22">Ranked among </tspan><tspan y="22" fill="#f04e30" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std" font-weight="700">India’s </tspan><tspan x="0" y="60" fill="#f04e30" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std" font-weight="700">Top 25 dental </tspan><tspan x="0" y="98" fill="#f04e30" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std" font-weight="700">institutions (NIRF)</tspan><tspan y="98" xml:space="preserve"> for </tspan><tspan x="0" y="136">5 consecutive years - </tspan><tspan x="0" y="174">24th rank in NIRF 2024</tspan></text>
+    <g id="Group_1470" data-name="Group 1470" transform="translate(-2007.98 2443.688)">
+      <path id="Path_4246" data-name="Path 4246" d="M53.237,48.635c20.782-7.6,37.522-7.242,52.446-2.809v6.968C90.114,47.866,73,47.031,53.327,52.956v.057l-.09-.029-.093.029v-.057C33.47,47.031,16.356,47.866.789,52.794V45.826c14.919-4.433,31.659-4.788,52.448,2.809m0,6.653a82.574,82.574,0,0,0-52.222-.921v1.239C18.3,50.23,35.69,51.415,53.144,56.655v.055l.093-.029.09.029v-.055c17.446-5.24,34.838-6.426,52.127-1.049V54.367a82.557,82.557,0,0,0-52.217.921" transform="translate(2317.403 1144.047)" fill="#e60019" fill-rule="evenodd"/>
+      <g id="Group_304" data-name="Group 304" transform="translate(2304.326 1101.418)">
+        <path id="Path_4242" data-name="Path 4242" d="M.561,17.764H15.473v7.975c1.546-1.616,3.095-3.456,4.643-4.989C29.4,12.735,44.876,18.034,44.6,29.709V62.835H28.838V34.866c-.152-5.3-9.382-6.557-12.236,1.477V62.7H.561V17.764Z" transform="translate(-0.561 16.494)" fill="#1e2050" fill-rule="evenodd"/>
+        <path id="Path_4243" data-name="Path 4243" d="M26.772,17.345H48.44V68.389A41.9,41.9,0,0,0,37.187,53.321,34.593,34.593,0,0,0,26.772,68.389Z" transform="translate(24.996 16.912)" fill="#1e2050" fill-rule="evenodd"/>
+        <path id="Path_4244" data-name="Path 4244" d="M68.173,25.921h.022c.152-8.6,1.56-14.752,12.222-16.97a36.788,36.788,0,0,1,17.866,1.631Q96.452,15.6,94.627,20.626c-5.236-.841-10.136-1.321-10.839,2.581-.14,1.489-.282,2.984-.423,4.475H90.4q-1.893,5.294-3.8,10.592l-4.063.081-.016.326h1.124V70.86H68.173v-32.7c-5.862.573-9.269,3.2-10.975,7.245V70.86H41.162V25.921H56.076v8.734c2.688-3.642,5.866-6.6,12.1-6.563Z" transform="translate(39.028 8.336)" fill="#1e2050" fill-rule="evenodd"/>
+        <path id="Path_4245" data-name="Path 4245" d="M39.461,3.786c.178,0,.354.006.529.014L39.5,0l2.4,4.047a10.951,10.951,0,0,1,1.746.527l.78-3.8.972,4.657a10.46,10.46,0,0,1,.932.62l1.774-3.472-.306,4.768a10.768,10.768,0,0,1,.723.833L51.17,5.3,49.607,9.814a10.231,10.231,0,0,1,.482.993l3.3-2.066-2.7,3.907c.091.361.16.733.215,1.106l3.715-1.1-3.61,3.016a10.568,10.568,0,0,1-.089,1.149l3.834-.071-4.221,1.92a10.993,10.993,0,0,1-.4,1.124l3.658.932-4.509.717a12.136,12.136,0,0,1-.705,1.019l3.231,1.853L47.36,23.8a11.583,11.583,0,0,1-.986.83l2.568,2.6-4.077-1.651a10.643,10.643,0,0,1-1.219.561L45.4,29.282l-3.435-2.631a12.759,12.759,0,0,1-1.369.217l.841,3.445L38.867,26.9a12.485,12.485,0,0,1-1.408-.154l-.122,3.5-1.545-3.922a11.859,11.859,0,0,1-1.347-.547l-1.031,3.308-.446-4.158a13.6,13.6,0,0,1-1.169-.907l-1.864,2.9.675-4.122a12.045,12.045,0,0,1-.881-1.191l-2.57,2.3,1.758-3.8a10.622,10.622,0,0,1-.521-1.381l-3.1,1.541,2.728-3.221A11.986,11.986,0,0,1,27.9,15.6l-3.445.658,3.539-2.4a11.819,11.819,0,0,1,.269-1.394l-3.533-.288,4.1-1.394a13.148,13.148,0,0,1,.626-1.234L26.073,8.309l4.412-.249a9.9,9.9,0,0,1,.9-.986L28.4,4.94l4.4.956a12,12,0,0,1,1.092-.681L31.557,2.321l4.049,2.125A9.992,9.992,0,0,1,36.793,4.1L35.282.632l3.4,3.184c.263-.018.519-.03.782-.03" transform="translate(22.733)" fill="#e60019" fill-rule="evenodd"/>
+      </g>
+      <text id="RANKINGS_2024" data-name="RANKINGS 2024" transform="translate(2304.326 1207.312)" fill="#707070" font-size="18" font-family="HelveticaLTStd-Cond, Helvetica LT Std" letter-spacing="0.03em"><tspan x="-63" y="13">RANKINGS 2024</tspan></text>
+    </g>
+  </g>
+</svg>

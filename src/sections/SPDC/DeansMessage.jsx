@@ -3,8 +3,9 @@ import DeanImage from "../../assets/SPDC/DEANSPDC.png";
 
 const DeansMessage = () => {
   return (
-    <div className="bg-[#0C2C5B]   text-white px-10  md:px-40 py-40">
-      <h2 className="text-3xl md:text-4xl font-oswaldMedium  border-l-4 border-[#F25022] pl-3 mb-10">
+    <div className="bg-[#0C2C5B]   text-white px-10  md:px-38 py-20">
+      <h2 className="text-3xl md:text-4xl font-oswaldMedium mb-10">
+        <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
         DEAN’S MESSAGE
       </h2>
 
@@ -16,18 +17,18 @@ const DeansMessage = () => {
             alt="Dean"
             className="rounded-lg w-[370px] h-auto object-cover mb-4"
           />
-          <div className="text-sm leading-6 font-oswaldLight text-white mt-2">
+          <div className="text-sm leading-6 font-oswaldLight text-white mt-2 text-[#F7B733]">
             <p className="text-[#F7B733] font-bold">Dr. Manoj Chandak</p>
-            <p>
+            <p className="text-[#F7B733]">
               Dean, SPDC MDS, PhD, Fellowship, Dept. <br />
               of Conservative Dentistry and Endodontics
             </p>
-            <p>deanspdc@dmimsu.edu.in</p>
+            <p className="text-[#F7B733]">deanspdc@dmimsu.edu.in</p>
           </div>
         </div>
 
         {/* Message */}
-        <div className="text-sm font-oswaldLight leading-6 text-white">
+        <div className="text-base font-oswaldLight leading-6 text-white">
           <p className="mb-6">
             It is a matter of immense pleasure and pride to be part of this
             esteemed institute. Being a member of the healthcare team engaged in

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="480" viewBox="0 0 390 480">
+  <defs>
+    <filter id="IMG-20250325-WA0094" x="0" y="0" width="390" height="480" filterUnits="userSpaceOnUse">
+      <feOffset dy="9" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1807" data-name="Group 1807" transform="translate(-1225 -3491)">
+    <g transform="matrix(1, 0, 0, 1, 1225, 3491)" filter="url(#IMG-20250325-WA0094)">
+      <rect id="IMG-20250325-WA0094-2" data-name="IMG-20250325-WA0094" width="330" height="420" rx="10" transform="translate(30 21)" fill="#f7941d"/>
+    </g>
+    <text id="from_ICMR_SERB_DST_Erasmus_EU_Smile_Train_NewGen_IEDC_NSTEBD_-_100_International_Adjunct_Faculty_Research_collaborations:_IISc_Bengaluru_IITs" data-name="from ICMR, SERB, DST, Erasmus EU, Smile Train, NewGen IEDC, NSTEBD - 100+ International Adjunct Faculty
+
+Research collaborations: 
+IISc Bengaluru, IITs" transform="translate(1275 3710)" fill="#fff" font-size="21" font-family="HelveticaLTStd-Cond, Helvetica LT Std"><tspan x="0" y="15">from ICMR, SERB, DST, Erasmus </tspan><tspan x="0" y="43">EU, Smile Train, NewGen IEDC, </tspan><tspan x="0" y="71">NSTEBD - 100+ International </tspan><tspan x="0" y="99">Adjunct Faculty</tspan><tspan fill="#707070" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std" font-weight="700"><tspan x="0" y="127"></tspan></tspan><tspan fill="#122e5e" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std" font-weight="700"><tspan x="0" y="155">Research collaborations:</tspan><tspan y="155" font-family="HelveticaLTStd-Cond, Helvetica LT Std" font-weight="400"> </tspan></tspan><tspan x="0" y="183">IISc Bengaluru, IITs</tspan></text>
+    <text id="_10_crore_Research_funding_" data-name="₹10+ crore Research funding " transform="translate(1275 3612)" fill="#122e5e" font-size="55" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="42">₹</tspan><tspan y="42" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std">10+ crore</tspan><tspan y="42" font-size="31" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std"> </tspan><tspan x="0" y="76" font-size="31" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std">Research funding </tspan></text>
+  </g>
+</svg>

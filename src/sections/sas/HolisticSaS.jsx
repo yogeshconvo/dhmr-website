@@ -73,7 +73,7 @@ function HolisticSaS() {
 
   return (
     <div className="py-20 bg-[#f2f2f2]">
-      <div className="container flex flex-wrap items-start justify-center gap-18">
+      <div className="container flex flex-wrap items-start justify-center gap-8">
         {/* Text Section */}
         <div ref={textRef} className="flex-2 min-w-[315px]">
           <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">

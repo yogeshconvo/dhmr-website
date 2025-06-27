@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function InfoSectionRNPC() {
+  const [showMore, setShowMore] = useState(false);
   return (
     <div className="py-12 px-4">
       <h2 className="flex flex-wrap items-center justify-center sm:justify-between text-[#F04E30] font-oswald-medium text-3xl tracking-wider uppercase mb-6 text-center">
@@ -14,7 +15,7 @@ function InfoSectionRNPC() {
       <section className="bg-white text-center text-sm mx-auto max-w-7xl px-2 sm:px-4">
         {/* Main Heading */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-[500] font-oswald-medium text-[#58595B] leading-snug mb-6">
-          Advancing the Science of Movement
+          {"Advancing the Science of Movement".toUpperCase()}
         </h1>
 
         {/* Body Text */}
@@ -38,24 +39,35 @@ function InfoSectionRNPC() {
             innovation with direct patient impact.
           </p>
 
-          <p className="mb-4">
-            <b>
-              First institution in India to adopt the Competency-Based Medical
-              Education (CBME) curriculum for Physiotherapy
-            </b>
-            &nbsp;|&nbsp;
-            <b>Attached hospital, offering unparalleled clinical exposure</b>
-            &nbsp;|&nbsp;
-            <b>
-              Partnerships and affiliations with prestigious organisations,
-              including Sports Authority of India
-            </b>
-            &nbsp;|&nbsp;
-            <b>
-              Workshops and sessions with National and International adjunct
-              faculties
-            </b>
-          </p>
+          {!showMore && (
+            <button
+              className="mt-2 mb-4 px-6 py-2 bg-[#F04E30] text-white rounded font-semibold transition hover:bg-[#d13d22]"
+              onClick={() => setShowMore(true)}
+            >
+              View More
+            </button>
+          )}
+
+          {showMore && (
+            <p className="mb-4">
+              <b>
+                First institution in India to adopt the Competency-Based Medical
+                Education (CBME) curriculum for Physiotherapy
+              </b>
+              &nbsp;|&nbsp;
+              <b>Attached hospital, offering unparalleled clinical exposure</b>
+              &nbsp;|&nbsp;
+              <b>
+                Partnerships and affiliations with prestigious organisations,
+                including Sports Authority of India
+              </b>
+              &nbsp;|&nbsp;
+              <b>
+                Workshops and sessions with National and International adjunct
+                faculties
+              </b>
+            </p>
+          )}
         </div>
       </section>
     </div>

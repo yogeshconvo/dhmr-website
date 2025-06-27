@@ -199,7 +199,7 @@ const Footer = () => {
                 },
                 {
                   name: "School Of Allied Sciences",
-                  url: "https://www.dmiher.edu.in/about-sas",
+                  url: "/sas",
                 },
                 {
                   name: "Centre For Distance And Online Education",
@@ -514,7 +514,7 @@ const Footer = () => {
                 },
                 {
                   name: "School Of Allied Sciences",
-                  url: "https://www.dmiher.edu.in/about-sas",
+                  url: "sas",
                 },
                 {
                   name: "Centre For Distance And Online Education",

@@ -3,10 +3,11 @@ import HeroCDOE from "../sections/CDOE/HeroCDOE";
 import CDOEInfoSection from "../sections/CDOE/infoCDOE";
 import WhyChooseCDOE from "../sections/CDOE/WhyChooseCDOE";
 import ProgramSectionCDOE from "../sections/CDOE/ProgramSection";
-import FacultyCDOE from "../sections/CDOE/Faculty";
-import LearningOpportunitieCDOE from "../sections/CDOE/learningOpportunitieSection";
+import FacultyCDOE from "../sections/CDOE/HolisticsCDOE";
+// import LearningOpportunitieCDOE from "../sections/CDOE/learningOpportunitieSection";
 import PlacementCDOE from "../sections/CDOE/PlacementSupportCDOE";
 import DirectorsMessageCDOE from "../sections/CDOE/DirectorsMessage";
+import TestimonialsSectionCDOE from "../sections/CDOE/TestimonialsCDOE";
 
 const CDOE = () => {
   return (
@@ -14,13 +15,14 @@ const CDOE = () => {
       <HeroCDOE />
       <CDOEInfoSection />
       <WhyChooseCDOE />
+      <DirectorsMessageCDOE />
       <ProgramSectionCDOE />
       <FacultyCDOE />
-      <LearningOpportunitieCDOE />
+      {/* <LearningOpportunitieCDOE /> */}
       <PlacementCDOE />
-      <DirectorsMessageCDOE />
+      {/* <TestimonialsSectionCDOE /> */}
     </div>
   );
-}; 
+};
 
 export default CDOE;

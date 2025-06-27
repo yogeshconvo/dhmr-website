@@ -33,14 +33,13 @@ const researchStats = [
 
 function ResearchRNPC() {
   return (
-    <section className="bg-[#f2f2f2] py-24 ">
-      <div className="container flex gap-18 flex-wrap items-center">
+    <section className="bg-[#f2f2f2] py-10">
+      <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-16 px-4">
         {/* Left Side: Text */}
-        <div className="text-[#58595B] max-w-[400px] flex-1">
+        <div className="text-[#58595B]  flex-1">
           <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
             <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
-            RESEARCH &
-            <br /> COLLABORATIONS
+            RESEARCH &<br /> COLLABORATIONS
           </h2>
           <b>Advancing Knowledge, Impacting Lives</b>
           <p className="mt-2 mb-4">
@@ -54,6 +53,7 @@ function ResearchRNPC() {
           <a href="#" className="know-more my-8 block">
             Know more
           </a>
+
           <h4 className="font-bold text-primary text-xl mt-6">Thrust Areas</h4>
           <p className="text-sm mt-2">
             Biomechanical & Kinematics &nbsp;|&nbsp; Neuroplasticity & Brain
@@ -70,11 +70,15 @@ function ResearchRNPC() {
         </div>
 
         {/* Right Side: Stats */}
-        <ul className="flex gap-10 flex-wrap max-w-[740px] min-w-[315px] md:min-w-[450px] flex-1">
+        <ul className="grid grid-cols-3 gap-8 max-w-[740px] w-full">
           {researchStats.map((card, idx) => (
             <li
               key={idx}
-              className="w-[46%] sm:w-[22%] max-sm:w-[100%] flex flex-col items-center gap-4 mb-6"
+              className={`flex flex-col items-center gap-4 text-center ${
+                idx === 0 || idx === 1
+                  ? "sm:border-r sm:pr-6 border-[#dcdcdc]"
+                  : ""
+              } ${idx === 3 ? "col-span-3 justify-self-center" : ""}`}
             >
               <div
                 className="flex items-center justify-center rounded-full"
@@ -86,7 +90,7 @@ function ResearchRNPC() {
               >
                 <img src={card.icon} alt={card.title} width={55} />
               </div>
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-center">
                 <span className="text-[#F04E30] font-bold text-2xl max-sm:text-3xl">
                   {card.number}
                 </span>

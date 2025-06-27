@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import React from "react";
 // import Slider from "react-slick";
 
@@ -101,8 +100,6 @@
 //   );
 // }
 
-=======
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
 import React from "react";
 import Slider from "react-slick";
 
@@ -117,10 +114,7 @@ import yeshiva from "../../assets/FEAT/Opportunities/5.png";
 import deusto from "../../assets/FEAT/Opportunities/6.png";
 import kazan from "../../assets/FEAT/Opportunities/7.png";
 import plymouth from "../../assets/FEAT/Opportunities/8.png";
-<<<<<<< HEAD
 import GO from "../../assets/GO.png";
-=======
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
 
 const logos = [
   { src: nevada, alt: "University of Nevada" },
@@ -133,21 +127,12 @@ const logos = [
   { src: plymouth, alt: "Plymouth Marjon University" },
 ];
 
-<<<<<<< HEAD
 export default function GlobalOpportunitiesSection() {
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-=======
-export default function GlobalOpportunities() {
-      const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -162,7 +147,6 @@ export default function GlobalOpportunities() {
     ],
   };
 
-<<<<<<< HEAD
   return (
     <section className="bg-white px-6 py-16">
       <div className="max-w-6xl font-[Arial] mx-auto">
@@ -182,26 +166,6 @@ export default function GlobalOpportunities() {
             Nutrition and Dietetics at Leeds Bucket University, USA. I
             International Placement Opportunities for the Students through BAPIO
             Training Academy, Bedford, UK
-=======
-   return (
-    <section className="bg-white px-6 py-16">
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#707070] mb-2 uppercase relative">
-            <span className="block border-t-4 border-[#F04E30] w-16 mb-4"></span>
-            Global Opportunities <br /> 
-          </h2>
-          <p className="text-gray-600 text-sm max-w-2xl tracking-normal leading-relaxed">
-           SAHS opens pathways to global education through semester-abroad programs, 
-           international degree transitions, and placement opportunities with renowned 
-           global partners. 
-          </p>
-          <p className="font-semibold">
-            MS BME (Biotechnology, Management and Entrepreneurship) program at Yeshiva 
-            University, USA I Semester abroad for M.Sc. Clinical Nutrition and Dietetics 
-            at Leeds Bucket University, USA. I International Placement Opportunities for 
-            the Students through BAPIO Training Academy, Bedford, UK
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
           </p>
         </div>
 
@@ -220,12 +184,7 @@ export default function GlobalOpportunities() {
           </Slider>
         </div>
 
-<<<<<<< HEAD
         {/* <div className="hidden sm:grid grid-cols-4 gap-y-8 items-center justify-items-stretch">
-=======
-        {/* Tablet/Desktop: Grid layout unchanged */}
-        <div className="hidden sm:grid grid-cols-4 gap-y-8 items-center justify-items-stretch">
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
           {logos.map((logo, idx) => (
             <div
               key={idx}
@@ -238,7 +197,6 @@ export default function GlobalOpportunities() {
               />
             </div>
           ))}
-<<<<<<< HEAD
         </div> */}
         <img
           src={GO}
@@ -249,10 +207,3 @@ export default function GlobalOpportunities() {
     </section>
   );
 }
-=======
-        </div>
-      </div>
-    </section>
-  );
-}
->>>>>>> c0b206998fde489064a735526d2847598df56a7b

@@ -5,7 +5,6 @@ import About from "../pages/About";
 import Admissions from "../pages/Admissions";
 import Program from "../pages/Program";
 import Research from "../pages/Research";
-import SPDC from "../pages/SPDC";
 import FEAT from "../pages/FEAT";
 import Nursing from "../pages/Nursing";
 import SaS from "../pages/SaS";
@@ -13,12 +12,9 @@ import IQAC from "../pages/IQAC";
 import CDOE from "../pages/CDOE";
 import SHER from "../pages/SHER";
 import SAHS from "../pages/SAHS";
-<<<<<<< HEAD
-=======
-import CDOE from "../pages/CDOE";
 import RNPC from "../pages/RNPC";
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
-
+import DMCP from "../pages/DMCP";
+import SPDC from "../pages/SPDC"
 export default function AppRoutes() {
   return (
     <Routes>
@@ -42,6 +38,7 @@ export default function AppRoutes() {
         <Route path="/sahs" element={<SAHS />} />
         <Route path="/cdoe" element={<CDOE />} />
         <Route path="/rnpc" element={<RNPC />} />
+        <Route path="/dmcp" element={<DMCP />} />
       </Route>
     </Routes>
   );

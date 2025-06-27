@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="480" viewBox="0 0 390 480">
+  <defs>
+    <filter id="IMG-20250325-WA0094" x="0" y="0" width="390" height="480" filterUnits="userSpaceOnUse">
+      <feOffset dy="9" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1810" data-name="Group 1810" transform="translate(-522 -4020)">
+    <g transform="matrix(1, 0, 0, 1, 522, 4020)" filter="url(#IMG-20250325-WA0094)">
+      <rect id="IMG-20250325-WA0094-2" data-name="IMG-20250325-WA0094" width="330" height="420" rx="10" transform="translate(30 21)" fill="#269bff"/>
+    </g>
+    <text id="_-_Smile_Train_for_cleft_care_-_Head_neck_cancer_surgeries_microvascular_surgeries_-_Pioneers_in_Micro-Endodontics_Lingual_Orthodontics_Full_Mouth_Implants_Maxillofacial_Prosthesis_Orthognathic_Surgery_-_Aesthetic_Surgeries" data-name="- Smile Train for cleft care
+- Head &amp; neck cancer surgeries, microvascular surgeries
+- Pioneers in Micro-Endodontics, Lingual Orthodontics, Full Mouth Implants, Maxillofacial Prosthesis, Orthognathic Surgery
+- Aesthetic Surgeries" transform="translate(579 4212)" fill="#fff" font-size="21" font-family="HelveticaLTStd-Cond, Helvetica LT Std"><tspan x="0" y="15">- Smile Train for cleft care</tspan><tspan x="0" y="43">- Head &amp; neck cancer surgeries, </tspan><tspan x="0" y="71">microvascular surgeries</tspan><tspan x="0" y="99">- Pioneers in Micro-Endodontics, </tspan><tspan x="0" y="127">Lingual Orthodontics, Full Mouth </tspan><tspan x="0" y="155">Implants, Maxillofacial </tspan><tspan x="0" y="183">Prosthesis, Orthognathic Surgery</tspan><tspan x="0" y="211">- Aesthetic Surgeries</tspan></text>
+    <text id="Comprehensive_Oral_Cancer_Therapy_Unit_experience_" data-name="Comprehensive Oral Cancer Therapy Unit experience – " transform="translate(579 4087)" fill="#122e5e" font-size="31" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std" font-weight="700"><tspan x="0" y="22">Comprehensive Oral </tspan><tspan x="0" y="58">Cancer Therapy Unit </tspan><tspan x="0" y="94">experience – </tspan></text>
+  </g>
+</svg>

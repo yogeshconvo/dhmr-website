@@ -1,7 +1,7 @@
 import React from "react";
 import message1 from "../../../assets/Nursing/Nursing/Principal/Dr. Vaishali Taksande (Chahande).jpg";
 import message2 from "../../../assets/Nursing/Nursing/Principal/Dr. Ranjana Sharma.jpg";
-import message3 from "../../../assets/Nursing/Nursing/Principal/Dr. Nilima Rakhsale.jpg";
+import message3 from "../../../assets/Nursing/Nursing/Principal/Dr. Nilima Rakhsale.jpeg";
 
 const collegeData = [
   {
@@ -62,7 +62,7 @@ function CollegeMessage({ collegeTabNumber }) {
               alt={currentCollegeData.drName}
               className="h-[300px] rounded-xl object-cover"
             /> */}
-            <div className="flex-1 rounded-xl overflow-hidden min-w-[300px] max-w-[350px] h-[250px]">
+            <div className="flex-1 rounded-xl overflow-hidden min-w-[300px] max-w-[350px] h-[300px]">
               <img
                 src={currentCollegeData.image}
                 alt={currentCollegeData.drName}

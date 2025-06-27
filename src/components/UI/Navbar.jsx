@@ -61,7 +61,7 @@ const Navbar = () => {
       },
       {
         label: "School of Allied Sciences",
-        to: "https://www.dmiher.edu.in/about-sas",
+        to: "/sas",
       },
       {
         label: "Centre for Distance and Online Education",

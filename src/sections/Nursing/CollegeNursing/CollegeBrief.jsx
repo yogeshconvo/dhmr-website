@@ -3,7 +3,6 @@ import Img1 from "../../../assets/Nursing/Nursing/Institutes/1.png";
 import Img2 from "../../../assets/Nursing/Nursing/Institutes/2.jpg";
 import Img3 from "../../../assets/Nursing/Nursing/Institutes/3.png";
 
-
 const collegeData = [
   {
     college: 1,
@@ -51,7 +50,7 @@ function CollegeBrief({ collegeTabNumber }) {
             className="text-[#122E5E] font-oswald-medium text-xl font-[500] mb-4"
             dangerouslySetInnerHTML={{ __html: currentCollegeData.title }}
           ></h3>
-          <p className="text-[#58595B] leading-5 text-[13px] mb-6">
+          <p className="text-[#58595B] leading-5 mb-6">
             {currentCollegeData.para}
           </p>
           <a
@@ -63,13 +62,11 @@ function CollegeBrief({ collegeTabNumber }) {
         </div>
 
         <div className="flex-2 min-w-[300px] h-full rounded-md overflow-hidden shadow-lg flex-shrink-0">
-
-                <img
-                  src={currentCollegeData.sliderImages}
-                  alt={currentCollegeData.title.replace(/<br\s*\/?>/gi, " ")}
-                  className="object-fill object-cover w-full h-full"
-                />
-          
+          <img
+            src={currentCollegeData.sliderImages}
+            alt={currentCollegeData.title.replace(/<br\s*\/?>/gi, " ")}
+            className="object-fill object-cover w-full h-full"
+          />
         </div>
       </div>
     );

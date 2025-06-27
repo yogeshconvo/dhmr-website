@@ -62,7 +62,7 @@ const slides = [
     img: Banner8,
     part1: "Where Movement Meets Measurement:",
     part2: "Sports Physiotherapy",
-    textPosition: "left",
+    textPosition: "right",
   },
   {
     img: Banner9,
@@ -92,11 +92,9 @@ function HeroRNPC() {
         pagination={{ clickable: true }}
       >
         {slides.map((slide, idx) => {
-          // في الموبايل: حتى = فوق، فردي = تحت
           const mobilePosition =
             idx % 2 === 0 ? "top-10 bottom-auto" : "top-auto bottom-10";
 
-          // في الديسكتوب: يمين أو شمال حسب textPosition
           const desktopPosition =
             slide.textPosition === "right"
               ? "sm:right-0 sm:text-right sm:mr-10 sm:items-end"
@@ -109,8 +107,8 @@ function HeroRNPC() {
                 alt="RNPC Banner"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              {/* Gradient Overlay يغطي كل الخلفية */}
-              <div className="absolute inset-0 w-full h-full z-10 bg-gradient-to-tr from-black/80 via-black/40 to-transparent" />
+
+              <div className="absolute inset-0 w-full h-full z-10 bg-gradient-to-tr from-black/30 via-black/10 to-transparent" />
               {/* Text Content */}
               <div
                 className={`
@@ -125,7 +123,7 @@ function HeroRNPC() {
                   right: slide.textPosition === "right" ? 0 : "auto",
                 }}
               >
-                <h1 className="text-4xl sm:text-5xl font-oswald-medium font-[500] leading-[1.1] max-w-full uppercase  text-left">
+                <h1 className="text-5xl font-oswald-medium font-[500] leading-[1.1] max-w-full uppercase text-left drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
                   <span className="text-white">
                     {slide.part1.toUpperCase()}
                   </span>

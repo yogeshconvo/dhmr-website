@@ -11,7 +11,7 @@ const SPDCHInfoSection = () => {
           </span>
           <hr className="flex-grow border-t border-[#F04E30] " />
         </h2>
-        <section className="bg-white text-center px-4 sm:px-8 md:px-16 py-12  mx-auto">
+        <section className="bg-white text-center px-4 sm:px-8 md:px-16 py-2  mx-auto">
           {/* Main Heading */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-oswald-medium text-[#707070] font-[500] leading-snug mb-6">
             REDEFINING DENTAL LEARNING WITH <br />

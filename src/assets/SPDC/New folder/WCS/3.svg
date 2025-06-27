@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="480" viewBox="0 0 390 480">
+  <defs>
+    <filter id="Picture10" x="0" y="0" width="390" height="480" filterUnits="userSpaceOnUse">
+      <feOffset dy="9" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1806" data-name="Group 1806" transform="translate(-875 -3491)">
+    <g transform="matrix(1, 0, 0, 1, 875, 3491)" filter="url(#Picture10)">
+      <rect id="Picture10-2" data-name="Picture10" width="330" height="420" rx="10" transform="translate(30 21)" fill="#122e5e"/>
+    </g>
+    <text id="high-fidelity_mannequins_CAD-CAM_3D_theater_skill_labs_self-learning_museums_" data-name="high-fidelity mannequins, CAD-CAM, 3D theater, skill labs, self-learning museums
+" transform="translate(925 3752)" fill="#fff" font-size="21" font-family="HelveticaLTStd-Cond, Helvetica LT Std"><tspan x="0" y="15">high-fidelity mannequins, CAD-</tspan><tspan x="0" y="47">CAM, 3D theater, skill labs, self-</tspan><tspan x="0" y="79">learning museums</tspan></text>
+    <text id="Advanced_Simulation_Digital_Skill_Lab:_" data-name="Advanced Simulation &amp; Digital Skill Lab: " transform="translate(925 3612)" fill="#e1cd67" font-size="40" font-family="HelveticaLTStd-BoldCond, Helvetica LT Std" font-weight="700"><tspan x="0" y="29">Advanced </tspan><tspan x="0" y="73">Simulation &amp; </tspan><tspan x="0" y="117">Digital Skill Lab: </tspan></text>
+  </g>
+</svg>

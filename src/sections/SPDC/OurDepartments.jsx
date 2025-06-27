@@ -22,14 +22,14 @@ const departmentItems = [
 
 const OurDepartment = () => {
   return (
-    <section className="py-20 px-20 sm:px-8 md:px-20 max-w-7xl mx-auto">
+    <section className="py-20 px-5 sm:px-8 md:px-20 max-w-7xl mx-auto">
       <div className="mb-10">
         <hr className="w-16 sm:w-20 border-[#F25022] border-t-4 mb-2" />
         <h2 className="text-3xl sm:text-4xl text-gray-800 uppercase font-oswald font-medium">
           Our Departments
         </h2>
       </div>
-      <div className="grid grid-cols-1 pl-20 pr-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-2 sm:pl-20 sm:pr-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {departmentItems.map((item, idx) => (
           <div
             key={idx}

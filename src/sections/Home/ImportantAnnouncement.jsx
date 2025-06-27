@@ -17,6 +17,19 @@ import examinationAnnouncementsDoc13 from "../../assets/ImportantAnnouncementDoc
 import examinationAnnouncementsDoc14 from "../../assets/ImportantAnnouncementDoc/THEORY + PRACTICAL TIME TABLE OF MHA ( 1 2 3 4 SEMESTER)_SUMMER 2025.pdf";
 import examinationAnnouncementsDoc15 from "../../assets/ImportantAnnouncementDoc/THEORY + PRACTICAL TIME TABLE OF M-OPTOMETRY ( 1 2 SEMESTER)_SUMMER 2025.pdf";
 
+// Update on 25/06
+import examinationAnnouncementsDoc16 from "../../assets/ImportantAnnouncementDoc/result-3 sem b pharm-s2025-23.06.2025-1 stud chall to eval.pdf";
+import examinationAnnouncementsDoc17 from "../../assets/ImportantAnnouncementDoc/result-4 sem b pharm-s2025-23.06.2025.pdf";
+import examinationAnnouncementsDoc18 from "../../assets/ImportantAnnouncementDoc/result-5 sem b pharm-s2025-23.06.2025.pdf";
+import examinationAnnouncementsDoc19 from "../../assets/ImportantAnnouncementDoc/result-6 sem b pharm-s2025-23.06.2025.pdf";
+
+import examinationAnnouncementsDoc20 from "../../assets/ImportantAnnouncementDoc/result-1 sem b sc aids-s2025-23.06.2025.pdf";
+import examinationAnnouncementsDoc21 from "../../assets/ImportantAnnouncementDoc/result-6 sem b sc aids-s2025-23.06.2025.pdf";
+import examinationAnnouncementsDoc22 from "../../assets/ImportantAnnouncementDoc/result-6 sem_bba-s2025-23.06.2025.pdf";
+
+// Update on 25/06
+import examinationAnnouncementsDoc23 from "../../assets/ImportantAnnouncementDoc/Examination Notification _Second MBBS(CBME+OLD)_S-25.pdf";
+
 const ImportantAnnouncements = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeTab, setActiveTab] = useState("admissions");
@@ -38,6 +51,47 @@ const ImportantAnnouncements = () => {
   ];
 
   const ResultAnnouncements = [
+    //update on 25/06
+    {
+      text: "3 Semester B. Pharm-Summer,2025",
+      college: "Datta Meghe College of Pharmacy, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc16,
+    },
+    {
+      text: "4 Semester B. Pharm-Summer,2025",
+      college: "Datta Meghe College of Pharmacy, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc17,
+    },
+    {
+      text: "5 Semester B. Pharm-Summer,2025",
+      college: "Datta Meghe College of Pharmacy, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc18,
+    },
+    {
+      text: "6 Semester B. Pharm-Summer,2025",
+      college: "Datta Meghe College of Pharmacy, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc19,
+    },
+
+    {
+      text: "1 Semester B.Sc. -AIDS- Summer,2025",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc20,
+    },
+
+    {
+      text: "6 Semester B.Sc. -AIDS- Summer,2025",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc21,
+    },
+    {
+      text: "6 Semester BBA- Summer,2025-Regular Mode",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc22,
+    },
+
+    /////////////////////////////////////////////////////////////////////
+
     {
       text: "FIRST SEMESTER MASTER OF COMMERCE (M.COM)- SUMMER, 2025",
       college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
@@ -55,6 +109,14 @@ const ImportantAnnouncements = () => {
     },
   ];
   const examinationAnnouncements = [
+    //update on 25/06
+    {
+      text: "Examination of Summer 2025, SECOND MBBS (CBME) AND SECOND MBBS (OLD)",
+      url: examinationAnnouncementsDoc23,
+      college: `Jawaharlal Nehru Medical College, Sawangi (Meghe), Wardha, and Datta
+Meghe Medical College, Wanadongri (Hingna), Nagpur`,
+    },
+    /*--------- */
     {
       text: "THEORY + PRACTICAL TIME TABLE OF MPH ( 1 2 3 4 SEMESTER)_SUMMER 2025",
       url: examinationAnnouncementsDoc13,

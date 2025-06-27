@@ -5,17 +5,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { useNavigate } from "react-router-dom";
 
-<<<<<<< HEAD
 import Banner1 from "../../assets/SAHS/Images/New folder/Banner1.jpeg";
 import Banner2 from "../../assets/SAHS/Images/New folder/Banner2.jpg";
 import Banner3 from "../../assets/SAHS/Images/New folder/Banner3.jpg";
 import Banner4 from "../../assets/SAHS/Images/New folder/Banner4.jpg";
 import FloatingButtons from "../../components/FloatingButtons";
-=======
-import Banner1 from "../../assets/SAHS/Banner1.jpg";
-import Banner2 from "../../assets/SAHS/Banner2.jpg";
-import Banner3 from "../../assets/SAHS/Banner3.jpg";
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
 
 // Parser for [[color]]text[[/color]]
 const parseTitle = (title) => {
@@ -55,29 +49,18 @@ const HeroSAHS = () => {
       img: Banner1,
       title:
         "Affiliated to 3000+ Multispecialty and super [[#E1CD67]] specialty hospital for training[[/#E1CD67]]",
-<<<<<<< HEAD
 
-=======
-      // highlight:
-      //   "Global exposure. Interdisciplinary learning.\nA campus built for innovation.",
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
       textPosition: "right",
     },
     {
       img: Banner2,
       title:
         "Maharashtra Paramedical [[#E1CD67]] Council Approved Programs [[/#E1CD67]]",
-<<<<<<< HEAD
 
-=======
-      // highlight:
-      //   "AI-powered diagnostics. Biomedical \ninnovation. Real-world clinical engineering",
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
       textPosition: "left",
     },
     {
       img: Banner3,
-<<<<<<< HEAD
       title:
         "24 UG, 15 PG Programs and  [[#E1CD67]]2500+ Allied Health Students enrolled[[/#E1CD67]]",
 
@@ -87,18 +70,6 @@ const HeroSAHS = () => {
       img: Banner4,
       title:
         "NEP aligned curriculum with  [[#E1CD67]]Academic Flexibility[[/#E1CD67]]",
-=======
-      title: "24 UG, 15 PG Programs and  [[#E1CD67]]2500+ Allied Health Students enrolled[[/#E1CD67]]",
-      // highlight:
-      //   "Where technology meets patient care and \ncareers take flight.",
-      textPosition: "right",
-    },
-     {
-      img: Banner1,
-      title: "NEP aligned curriculum with  [[#E1CD67]]Academic Flexibility[[/#E1CD67]]",
-      // highlight:
-      //   "Where technology meets patient care and \ncareers take flight.",
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
       textPosition: "right",
     },
   ];
@@ -106,7 +77,6 @@ const HeroSAHS = () => {
   return (
     <div className="relative w-full h-[90vh] overflow-hidden">
       {/* Top Strip */}
-<<<<<<< HEAD
       <div className="absolute top-0 left-0 w-full lg:w-[calc(100%-380px)] xl:w-[calc(100%-6.8%-300px)] bg-[#E1CD67] text-gray-600 text-[11px] sm:text-sm px-3 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center z-20 gap-y-2">
         <span className="text-sm sm:ml-20">Admissions open for 2025-26</span>
         <div className="flex items-center gap-x-5 gap-y-1">
@@ -118,14 +88,6 @@ const HeroSAHS = () => {
           >
             <span className="font-semibold">APPLY NOW</span>
           </a>
-=======
-      <div className="absolute top-0 left-0 w-full lg:w-[calc(100%-380px)] xl:w-[calc(100%-6.8%-300px)] bg-[#E1CD67] text-gray-600 text-[11px] sm:text-sm px-3 py-2 flex flex-col sm:flex-row sm:justify-between sm:items-center z-20 gap-y-2">
-        <span className="text-sm sm:ml-20">Admissions open for 2025-26</span>
-        <div className="flex items-center gap-x-5 gap-y-1">
-          <div className="bg-[#F04E30] text-white px-4 py-1 sm:px-5 sm:py-2 w-fit">
-            <span className="font-semibold text-xl">APPLY NOW</span>
-          </div>
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
           <span className="text-base sm:text-sm text-gray-800">
             for Admission 2025-26
           </span>
@@ -140,7 +102,6 @@ const HeroSAHS = () => {
           </button>
         </a>
       </div>
-<<<<<<< HEAD
 
       {/* Swiper */}
       <Swiper
@@ -150,21 +111,11 @@ const HeroSAHS = () => {
       >
         {slides.map((slide, idx) => (
           <SwiperSlide key={idx} className="relative w-full h-full">
-=======
-      <Swiper
-        modules={[Autoplay, Pagination]}
-        autoplay={{ delay: 5000 }}
-        className="w-full h-full"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
             <img
               src={slide.img}
               alt="Campus"
               className="absolute inset-0 w-full h-full object-cover"
             />
-<<<<<<< HEAD
 
             <div className="absolute top-auto md:top-0 bottom-0 w-full h-1/2 md:h-full z-10 bg-gradient-to-t md:bg-gradient-to-r from-black/20 to-transparent" />
             <div className="lg:hidden absolute inset-0 bg-opacity-60 bg-gradient-to-b from-black/20 to-transparent z-10" />
@@ -187,67 +138,11 @@ const HeroSAHS = () => {
               <p className="text-base sm:text-xl mt-3 font-[300] whitespace-pre-line">
                 {slide.highlight}
               </p>
-=======
-            <div
-              className="relative w-full h-[90vh] bg-cover bg-center flex items-center"
-            >
-              {/* Overlay for text readability */}
-              <div className="absolute inset-0 bg-black/40 sm:bg-black/30 z-10" />
-
-              {/* Text content */}
-              <div
-                className={`absolute z-20 px-4 sm:px-6 top-1/2 transform -translate-y-1/2
-              text-white w-full sm:w-1/2 max-w-2xl ${slide.textPosition === "right"
-                    ? "right-0 sm:text-left text-center sm:mr-1"
-                    : "left-0 sm:text-left text-center sm:ml-10"
-                  }`}
-              >
-
-                <h1 className="text-2xl sm:text-4xl md:text-5xl font-oswald-medium font-medium leading-snug whitespace-pre-line">
-                  {parseTitle(slide.title)}
-                </h1>
-                <p className="text-base sm:text-xl mt-3 font-light whitespace-pre-line">
-                  {slide.highlight}
-                </p>
-              </div>
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-<<<<<<< HEAD
       <FloatingButtons />
-=======
-
-
-      {/* Side Buttons */}
-      <div className="flex flex-col gap-32 fixed top-[23%] max-sm:top-[30%] right-[22px] font-[500] pointer-events-none z-50">
-        <div className="transform -rotate-90 origin-right pointer-events-auto">
-          <a
-            href="https://dmiher.edu.in/admissionform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#122E5E] text-white text-sm px-6 py-3 inline-block"
-          >
-            Announcements
-          </a>
-        </div>
-        <div className="transform -rotate-90 origin-right pointer-events-auto">
-          <button
-            type="button"
-            onClick={() =>
-              window.open(
-                "https://www.dmiher.edu.in/lp/national-admission",
-                "_blank"
-              )
-            }
-            className="bg-[#122E5E] text-white text-sm px-6 py-3"
-          >
-            Admission Enquiry
-          </button>
-        </div>
-      </div>
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
     </div>
   );
 };

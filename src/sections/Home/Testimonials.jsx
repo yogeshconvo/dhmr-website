@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-// import PriyaShrivastav from "../../assets/TestimonialHome/PriyaShrivastav.png";
-// import Parents from "../../assets/TestimonialHome/Parents.png";
-// import Alumini from "../../assets/TestimonialHome/Alumini.png";
+import PriyaShrivastav from "../../assets/TestimonialHome/PriyaShrivastav.png";
+import Parents from "../../assets/TestimonialHome/Parents.png";
+import Alumini from "../../assets/TestimonialHome/Alumini.png";
 
 const testimonialsData = {
   Students: [
     {
       name: "Priyal Shrivastava",
       year: " Medical | 2017",
-      // img: PriyaShrivastav,
+      img: PriyaShrivastav,
       text: "It always feels special being a part of DMIHER University. It’s amazing to see how the university has excelled in deepening its academic offerings and research focus over a period and how it strives to sharpen the skills of the budding doctors towards competency building. I am very proud that it is one of the renowned NAAC accredited multi-disciplinary deemed to be University in India. I believe our faculties are truly a prized asset of our institution. My institution goes an extra mile to provide its students with varied opportunities in academics, research and co-curriculars making the journey at DMIHER a holistic treat!",
     },
   ],
@@ -16,7 +16,7 @@ const testimonialsData = {
     {
       name: "Mr. Benhar Joseph & Mrs. Kanchan Joseph ",
       year: "Nursing | 2017",
-      // img: Parents,
+      img: Parents,
       text: "It has always been our dream to get the best possible education for our child from a well renowned institution, and we were able to fulfill this dream through Smt. Radhikabai Meghe Memorial College of Nursing, Datta Meghe Institute of Higher Education & Research (Deemed to be University). It has always been proved as the best Institute for education and also for intellectual, physical and moral development of students. We express our deep sense of gratitude to all the teaching staffs, the non-teaching staffs and also the management for helping and guiding our child in best possible way throughout the sessions. The best thing we found about this Institute was that our child was able to stay connected even after graduation which helped her to grow even more was through the alumni meets. The alumni has been found the best way of staying in touch to explore more and to stay connected with her teachers and batchmates. This institute has given much more than education to our daughter and it’s a great privilege for us to be a part of this institute.",
     },
   ],
@@ -25,7 +25,7 @@ const testimonialsData = {
       mbbsBatch: "MBBS Batch: 2005 (JNMC)",
       currentAffiliation:
         "Staff Physician, Neurological Institute, Cleveland Clinic Abu Dhabi. Former Movement Disorders Specialist, Columbia Asia Hospital and Vikram Hospital, Bangalore.",
-      // img: Alumini,
+      img: Alumini,
       text: "The pursuit of excellence in neurology began at JNMC. The rigorous training and patient-centered approach instilled in me during my MBBS years shaped my passion for Movement Disorders. Today, I strive to offer the best possible care for patients worldwide, but my roots remain deeply connected to where it all started—JNMC.",
       name: "",
     },
@@ -133,7 +133,7 @@ const Testimonial = () => {
         ))}
       </div>
 
-      {/* <p className="mt-8 text-sm text-blue-600 text-center">
+      <p className="mt-8 text-sm text-blue-600 text-center">
         Check all {activeTab.toLowerCase()} testimonials{" "}
         <a
           href="#"
@@ -141,7 +141,7 @@ const Testimonial = () => {
         >
           here
         </a>
-      </p> */}
+      </p>
     </div>
   );
 };

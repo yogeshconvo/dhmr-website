@@ -1,160 +1,60 @@
 import React from "react";
-<<<<<<< HEAD
-import program1 from "../../assets/FEAT/program1.png";
-import program2 from "../../assets/FEAT/program2.png";
-import program3 from "../../assets/FEAT/program3.png";
-import program4 from "../../assets/FEAT/program4.png";
-=======
-import program1 from "../../assets/ProgramSPDC/1.png";
-import program2 from "../../assets/ProgramSPDC/2.png";
-import program3 from "../../assets/ProgramSPDC/3.png";
-import program4 from "../../assets/ProgramSPDC/4.png";
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
 
 const programs = [
-  {
-    src: program1,
-    alt: "Undergraduate",
-  },
-  {
-<<<<<<< HEAD
-    src: program3,
-    alt: "Postgraduate",
-  },
-  {
-    src: program2,
-=======
-    src: program2,
-    alt: "Postgraduate",
-  },
-  {
-    src: program3,
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
-    alt: "Certificate program/ EDP",
-  },
-  {
-    src: program4,
-    alt: "PhD",
-  },
+  "Undergraduate",
+  "Postgraduate",
 ];
 
-<<<<<<< HEAD
-const ProgramsSection = () => {
+function ProgramsSaS() {
   return (
-    <div className="bg-white max-w-7xl mx-auto py-16 text-[#666]">
-      {/* Heading */}
-      <h2 className="text-3xl px-10 md:px-0 md:text-4xl font-oswald-medium mb-12 relative">
-        <span className="block border-t-4 border-[#F04E30] w-16 mb-4"></span>
-=======
-const ProgramsSectionCDOE = () => {
-  return (
-    <div className="bg-white max-w-7xl mx-auto px-6 md:px-20 py-16 text-[#666]">
-      {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-oswald-medium mb-10 relative">
-        <span className="block border-t-4 border-[#F25022] w-10 mb-2"></span>
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
-        OUR PROGRAMS
-      </h2>
+    <>
+      <div className="w-full flex justify-center py-20">
+        <div className="w-full max-w-7xl">
+          <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
+          <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
+            OUR PROGRAMS
+          </h2>
 
-      {/* Images & Button Side by Side */}
-<<<<<<< HEAD
-      <div className="flex flex-col px-10 md:flex-row items-start gap-8 mb-12">
-        {/* Images Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-25 gap-y-28 max-w-3xl w-full">
-          {programs.map((program, index) => (
-            <div key={index} className="text-center">
-              <img
-                src={program.src}
-                alt={program.alt}
-                className="h-[90px] object-contain cursor-pointer hover:opacity-90 transition"
+          <ul className="flex flex-wrap justify-center gap-20">
+            {programs.map((program) => (
+              <li
+                key={program}
+                className="clip-path-message group"
                 onClick={() =>
                   window.open("https://www.dmiher.edu.in/courses", "_blank")
                 }
-=======
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
-        {/* Images Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-12 max-w-3xl w-full">
-          {programs.map((program, index) => (
-            <div
-              key={index}
-              className="w-[180px] h-[180px] mx-auto text-center"
-            >
-              <img
-                src={program.src}
-                alt={program.alt}
-                className="w-full h-full object-contain"
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
-              />
+              >
+                <span>
+                  <span className="clip-path-message-inner">
+                    <span className="curser group-hover:cursor-pointer cursor-default">
+                      {program}
+                    </span>
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="text-3xl font-[500] text-[#707070] pt-20 mb-8 tracking-wider font-oswald-medium">
+            <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
+            MANDATORY DISCLOSURES
+          </h2>
+
+          <div className="sm:flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="flex justify-center">
+              <a
+                href="#"
+                className="text-xl tracking-wide font-oswald-medium  text-gray-600  rounded-md font-[300] hover:bg-blue-100 transition"
+              >
+                Check all Mandatory Disclosures{" "}
+                <span className="font-[400] underline">Click Here</span>
+              </a>
             </div>
-          ))}
-        </div>
-
-        {/* Explore Button */}
-<<<<<<< HEAD
-        <div className="md:ml-0 mt-4 md:mt-30">
-=======
-        <div className="mt-40">
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
-          <button
-            onClick={() =>
-              window.open("https://www.dmiher.edu.in/courses", "_blank")
-            }
-<<<<<<< HEAD
-            className="bg-[#F25022] text-white text-sm font-oswaldMedium px-8 py-2"
-=======
-            className="bg-[#F25022] text-white text-sm font-oswaldMedium px-10 py-2"
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
-          >
-            EXPLORE PROGRAMS
-          </button>
-        </div>
-<<<<<<< HEAD
-        <div className=" md:hidden flex-col justify-end sm:flex-row sm:items-center">
-          <a
-            href="#"
-            className="text-xs py-1 px-2 rounded-sm bg-[#E3F2FD] text-[#F04E30] underline"
-          >
-            Check all Mandatory Disclosures{" "}
-            <span className="font-bold">Here</span>
-          </a>
+          </div>
         </div>
       </div>
-      <h2 className="text-3xl px-10 md:px-0 md:text-4xl font-oswald-medium mb-12 relative">
-        <span className="block border-t-4 border-[#F04E30] w-16 mb-4"></span>
-        MANDATORY DISCLOSURES
-      </h2>
-      {/* Bottom Link */}
-      <div className="hidden sm:flex flex-col sm:flex-row sm:items-center gap-4">
-        {/* <a
-          href="#"
-          className="text-xl tracking-wide font-oswald-medium bg-[#E3F2FD] text-[#F04E30]  px-4 py-2 rounded-md font-[300] hover:bg-blue-100 transition"
-        >
-          Check all Mandatory Disclosures{" "}
-          <span className="font-[400] underline">Here</span>
-        </a> */}
-        <a
-          href="#"
-          className="text-xl tracking-wide font-oswald-medium  text-gray-600  rounded-md font-[300] hover:bg-blue-100 transition"
-        >
-          Check all Mandatory Disclosures{" "}
-          <span className="font-[400] underline">Click Here</span>
-=======
-      </div>
-
-      {/* Bottom Link */}
-      <div className="flex flex-col justify-end sm:flex-row sm:items-center gap-4">
-        <a href="#" className="text-xs text-blue-600 underline">
-          Check all Mandatory Disclosures{" "}
-          <span className="font-bold">Here</span>
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
-        </a>
-      </div>
-    </div>
+    </>
   );
-};
+}
 
-<<<<<<< HEAD
-export default ProgramsSection;
-=======
-export default ProgramsSectionCDOE;
->>>>>>> c0b206998fde489064a735526d2847598df56a7b
+export default ProgramsSaS;
