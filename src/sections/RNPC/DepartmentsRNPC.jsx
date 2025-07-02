@@ -1,11 +1,11 @@
 import React from "react";
-import Img1 from "../../assets/RNPC/departments/1.jpeg";
-import Img2 from "../../assets/RNPC/departments/2.jpeg";
-import Img3 from "../../assets/RNPC/departments/3.jpeg";
-import Img4 from "../../assets/RNPC/departments/4.jpeg";
-import Img5 from "../../assets/RNPC/departments/5.jpeg";
-import Img6 from "../../assets/RNPC/departments/6.jpeg";
-import Img7 from "../../assets/RNPC/departments/7.jpeg";
+import Img1 from "../../assets/RNPC/departments/Musculoskeletal.jpg";
+import Img2 from "../../assets/RNPC/departments/Neuro Physiotherapy.jpg";
+import Img3 from "../../assets/RNPC/departments/Cardiovascular.jpg";
+import Img4 from "../../assets/RNPC/departments/Community.jpg";
+import Img5 from "../../assets/RNPC/departments/Sports.jpg";
+import Img6 from "../../assets/RNPC/departments/Pediatric.jpeg";
+import Img7 from "../../assets/RNPC/departments/Oncology.jpg";
 
 const DepartmentCard = ({ image, title, link }) => (
   <a
@@ -17,7 +17,7 @@ const DepartmentCard = ({ image, title, link }) => (
       backgroundPosition: "center",
     }}
   >
-    <div className="absolute inset-0 bg-black/60 flex items-center justify-center text-center px-2 group-hover:bg-[#F04E30]/80 transition">
+    <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center px-2 group-hover:bg-[#F04E30]/80 transition">
       <h3 className="text-white text-sm sm:text-base md:text-2xl font-light font-oswald-medium">
         {title}
       </h3>

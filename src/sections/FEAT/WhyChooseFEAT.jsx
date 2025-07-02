@@ -103,7 +103,7 @@ const WhyChooseFEAT = () => {
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-normal text-[#707070] font-[600] mb-10">
           <div className="border-t-4 border-[#EE4B2B] w-20 mb-2"></div>
-          WHY CHOOSE FEAT
+          WHY CHOOSE FEAT ?
         </h2>
 
         {/* Swiper */}
@@ -113,11 +113,11 @@ const WhyChooseFEAT = () => {
           spaceBetween={10}
           loop={true}
           slidesPerView={1}
-          centeredSlides={true} // Only useful for mobile
+          centeredSlides={true}
           breakpoints={{
             640: {
               slidesPerView: 2,
-              centeredSlides: false, // Desktop/tablet doesn't center
+              centeredSlides: false,
             },
             1024: {
               slidesPerView: 4,

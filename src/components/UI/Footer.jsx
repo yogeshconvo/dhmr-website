@@ -166,7 +166,7 @@ const Footer = () => {
                 },
                 {
                   name: "Sharad Pawar Dental College And Hospital",
-                  url: "https://www.dmiher.edu.in/about-spdc",
+                  url: "/spdc",
                 },
                 {
                   name: "Mahatma Gandhi Ayurvedic College Hospital And Research Centre",
@@ -175,7 +175,7 @@ const Footer = () => {
 
                 {
                   name: "Ravi Nair Physiotherapy College",
-                  url: "https://www.dmiher.edu.in/about-rnpc",
+                  url: "/rnpc",
                 },
                 {
                   name: "Datta Meghe College Of Pharmacy",
@@ -203,7 +203,8 @@ const Footer = () => {
                 },
                 {
                   name: "Centre For Distance And Online Education",
-                  url: "https://www.dmiheronline.edu.in/",
+                  // url: "https://www.dmiheronline.edu.in/",
+                  url: "/cdoe",
                 },
               ].map((college) =>
                 college.url.startsWith("/") ? (
@@ -481,7 +482,7 @@ const Footer = () => {
                 },
                 {
                   name: "Sharad Pawar Dental College And Hospital",
-                  url: "https://www.dmiher.edu.in/about-spdc",
+                  url: "/spdc",
                 },
                 {
                   name: "Mahatma Gandhi Ayurvedic College Hospital And Research Centre",
@@ -490,7 +491,7 @@ const Footer = () => {
 
                 {
                   name: "Ravi Nair Physiotherapy College",
-                  url: "https://www.dmiher.edu.in/about-rnpc",
+                  url: "/rnpc",
                 },
                 {
                   name: "Datta Meghe College Of Pharmacy",
@@ -518,7 +519,8 @@ const Footer = () => {
                 },
                 {
                   name: "Centre For Distance And Online Education",
-                  url: "https://www.dmiheronline.edu.in/",
+                  // url: "https://www.dmiheronline.edu.in/",
+                  url: "/cdoe",
                 },
               ].map((college) =>
                 college.url.startsWith("/") ? (
@@ -591,7 +593,7 @@ const Footer = () => {
           </div>
 
           {/* Column 4 */}
-          <div>
+          {/* <div>
             <h3 className="text-yellow-400 font-oswald-medium text-2xl sm:text-lg mb-0 pb-2 border-t border-gray-500 pt-4">
               Important Links
             </h3>
@@ -621,25 +623,127 @@ const Footer = () => {
                 {link}
               </li>
             ))}
+          </div> */}
+          <div>
+            <h3 className="text-yellow-400 font-oswald-medium text-2xl sm:text-lg mb-0 pb-2 border-t border-gray-500 pt-4">
+              Important Links
+            </h3>
+            <ul>
+              {[
+                { name: "NAAC", url: "https://naac.dmiher.edu.in/" },
+                {
+                  name: "Staff Mental Health and Wellness Centre (SMHWC)",
+                  url: "https://www.dmiher.edu.in/staff-mental-health-and-wellness-centre",
+                },
+                {
+                  name: "Stakeholder Curriculum Feedback Form",
+                  url: "https://www.dmiher.edu.in/curriculum-feedback-analysis-atr",
+                },
+                {
+                  name: "Grievance Redressal",
+                  url: "https://www.dmiher.edu.in/students-grievance-redressal-cell",
+                },
+                {
+                  name: "Sexual Harassment Complaint Portal",
+                  url: "https://www.dmiher.edu.in/sexual-harassment-complaint-portal",
+                },
+                {
+                  name: "Caste Discrimination Complaint Portal",
+                  url: "https://www.dmiher.edu.in/complaint-portal-caste-discrimination",
+                },
+                {
+                  name: "Measures undertaken for anti-ragging",
+                  url: "https://www.dmiher.edu.in/anti-ragging-cell",
+                },
+                {
+                  name: "Expression of Interest",
+                  url: "https://www.dmiher.edu.in/expression-of-interest",
+                },
+                {
+                  name: "Code of Conduct",
+                  url: "https://www.dmiher.edu.in/code-of-conduct",
+                },
+                {
+                  name: "SOP for Local Purchase",
+                  url: "https://www.dmiher.edu.in/frontEnd/pages/page/images/pdf/SOP-for-Local-purchase.PDF",
+                },
+                {
+                  name: "Bylaw governing Defining the conditions of service of the employees of the University",
+                  url: "https://www.dmiher.edu.in/uploads/topics/Bylaw%20governing%20Defining%20the%20conditions%20of%20service%20of%20the%20employees%20of%20the%20University.pdf",
+                },
+                {
+                  name: "SGU",
+                  url: "https://www.dmiher.edu.in/student-guidance-unitsgu",
+                },
+                {
+                  name: "Freeship/Scholarship",
+                  url: "https://www.dmiher.edu.in/freeships-scholarships",
+                },
+                {
+                  name: "Declaration under RTI Act, 2005",
+                  url: "https://www.dmiher.edu.in/declaration-under-rti-act-2005",
+                },
+                { name: "Academic Bank of Credits", url: "#" },
+                { name: "Digilocker NAD Portal", url: "#" },
+                { name: "National Scholarship Portal", url: "#" },
+                { name: "e-samadhaan", url: "#" },
+                { name: "MoE", url: "#" },
+                { name: "UGC", url: "#" },
+              ].map(({ name, url }) => (
+                <li key={name} className="mt-0 text-lg">
+                  <a
+                    href={url}
+                    className="hover:underline text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
         {/* Column 5 */}
-        <h3 className="text-yellow-400 font-oswald-medium text-2xl sm:text-lg mb-0 mt-6 pb-2 border-t border-gray-500 pt-4">
-          Terms & Conditions
-        </h3>
-        {[
-          "Disclaimer",
-          "Privacy Policy for Students",
-          "Apply for Tender",
-          "Apply for Transcript",
-          "e-Tender",
-          "Terms and Conditions for Online Payments",
-        ].map((item) => (
-          <p key={item} className="text-lg">
-            {item}
-          </p>
-        ))}
+        {/* Column 4 - Important Links */}
+
+        {/* Column 5 - Terms & Conditions */}
+        <div>
+          <h3 className="text-yellow-400 font-oswald-medium text-2xl sm:text-lg mb-0 mt-6 pb-2 border-t border-gray-500 pt-4">
+            Terms & Conditions
+          </h3>
+          <ul>
+            {[
+              { name: "Disclaimer", url: "#" },
+              {
+                name: "Privacy Policy for Students",
+                url: "https://www.dmiher.edu.in/privacy-policy-for-students",
+              },
+              {
+                name: "Apply for Tender",
+                url: "http://137.97.64.12:8997/tender/frmOnGoingContract.aspx?url=http://dmimsu.edu.in/frmTender.aspx",
+              },
+              { name: "Apply for Transcript", url: "#" },
+              { name: "e-Tender", url: "https://www.dmiher.edu.in/e-tender" },
+              {
+                name: "Terms and Conditions for Online Payments",
+                url: "https://www.dmiher.edu.in/Terms-and-Conditions-for-online-payments",
+              },
+            ].map(({ name, url }) => (
+              <li key={name} className="text-lg">
+                <a
+                  href={url}
+                  className="hover:underline text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {/* Column 6 */}
         <div className="border-t border-gray-500  mt-6">

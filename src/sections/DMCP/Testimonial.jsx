@@ -20,38 +20,38 @@ import Img16 from "../../assets/DMCP/Testimonials/16.png";
 
 const testimonialsData = {
   Students: [
-    {
-      type: "text",
-      image: Img1,
-      name: "Ms. Pratiksha Soni",
-      course: "B.Pharm 2024-2028",
-      content:
-        " I am overwhelmed with gratitude for the profound impact it has on my personal and professional growth. From the moment i stepped onto campus, I was enveloped in an environment that not only nurtured academic excellence but also celebrated diversity, creativity, and innovation. The faculty at DMCP are more than just educators; they are mentors, guides, champions of intellectual curiosity. Their unwavering dedication to student success, coupled with their expertise in their respective fields, has inspired me to push the boundaries of my own potential and pursue excellence in all my endeavors. Beyond the classroom college offers a plethora of opportunities for experiential learning, community engagement, and leadership development. I am immensely proud to be a part of such a distinguished institution, and I am grateful for the countless opportunities it has afforded me to grow, learn, and thrive.",
-    },
-    {
-      type: "text",
-      image: Img2,
-      name: "Mr. Mujibullah Sheikh",
-      course: "B.Pharm 2022-2026",
-      content:
-        "I am Mr. Mujibullah sheikh student of B. Pharm 3rd Year. The faculty's dedication to excellence, the comprehensive curriculum, and the hands-on learning opportunities have truly prepared me for a successful career in pharmacy. I am grateful for the support, guidance, and knowledge I am gaining at DMCP. I highly recommend this institution to anyone looking to pursue a career in pharmacy.",
-    },
-    {
-      type: "text",
-      image: Img3,
-      name: "Mr. Satvik Bhutada",
-      course: "B.Pharm 2024-2028",
-      content:
-        "As a student at Datta Meghe College of Pharmacy, I can confidently say it is an enriching experience. The faculty is highly knowledgeable and supportive, providing a conducive learning environment. The practical exposure and research opportunities are invaluable in shaping my skills. The campus facilities are top-notch, enhancing the overall academic journey. I am grateful for the holistic education and personal growth I am gaining at DMCP.",
-    },
-    {
-      type: "text",
-      image: Img4,
-      name: "Ms. Sneha Pandey",
-      course: "Pharm D 2024-2030",
-      content:
-        "As a first-year Pharm D student at Datta Meghe College of Pharmacy, I am grateful for the exceptional academic environment and hands-on learning opportunities. The college provides in-depth pharmaceutical education, guided by experienced faculty, while the 1500+ bed AVBRH hospital offers invaluable practical exposure. This integration of academics with real-world clinical training enhances our understanding of patient care and pharmacy practice. Beyond studies, DMCP fosters leadership, teamwork, and personal growth. I feel privileged to be part of such a prestigious institution that nurtures future healthcare professionals with excellence, ethics, and innovation.",
-    },
+    // {
+    //   type: "text",
+    //   image: Img1,
+    //   name: "Ms. Pratiksha Soni",
+    //   course: "B.Pharm 2024-2028",
+    //   content:
+    //     " I am overwhelmed with gratitude for the profound impact it has on my personal and professional growth. From the moment i stepped onto campus, I was enveloped in an environment that not only nurtured academic excellence but also celebrated diversity, creativity, and innovation. The faculty at DMCP are more than just educators; they are mentors, guides, champions of intellectual curiosity. Their unwavering dedication to student success, coupled with their expertise in their respective fields, has inspired me to push the boundaries of my own potential and pursue excellence in all my endeavors. Beyond the classroom college offers a plethora of opportunities for experiential learning, community engagement, and leadership development. I am immensely proud to be a part of such a distinguished institution, and I am grateful for the countless opportunities it has afforded me to grow, learn, and thrive.",
+    // },
+    // {
+    //   type: "text",
+    //   image: Img2,
+    //   name: "Mr. Mujibullah Sheikh",
+    //   course: "B.Pharm 2022-2026",
+    //   content:
+    //     "I am Mr. Mujibullah sheikh student of B. Pharm 3rd Year. The faculty's dedication to excellence, the comprehensive curriculum, and the hands-on learning opportunities have truly prepared me for a successful career in pharmacy. I am grateful for the support, guidance, and knowledge I am gaining at DMCP. I highly recommend this institution to anyone looking to pursue a career in pharmacy.",
+    // },
+    // {
+    //   type: "text",
+    //   image: Img3,
+    //   name: "Mr. Satvik Bhutada",
+    //   course: "B.Pharm 2024-2028",
+    //   content:
+    //     "As a student at Datta Meghe College of Pharmacy, I can confidently say it is an enriching experience. The faculty is highly knowledgeable and supportive, providing a conducive learning environment. The practical exposure and research opportunities are invaluable in shaping my skills. The campus facilities are top-notch, enhancing the overall academic journey. I am grateful for the holistic education and personal growth I am gaining at DMCP.",
+    // },
+    // {
+    //   type: "text",
+    //   image: Img4,
+    //   name: "Ms. Sneha Pandey",
+    //   course: "Pharm D 2024-2030",
+    //   content:
+    //     "As a first-year Pharm D student at Datta Meghe College of Pharmacy, I am grateful for the exceptional academic environment and hands-on learning opportunities. The college provides in-depth pharmaceutical education, guided by experienced faculty, while the 1500+ bed AVBRH hospital offers invaluable practical exposure. This integration of academics with real-world clinical training enhances our understanding of patient care and pharmacy practice. Beyond studies, DMCP fosters leadership, teamwork, and personal growth. I feel privileged to be part of such a prestigious institution that nurtures future healthcare professionals with excellence, ethics, and innovation.",
+    // },
     {
       type: "text",
       image: Img5,
@@ -62,55 +62,47 @@ const testimonialsData = {
     },
     {
       type: "text",
-      image: Img6,
-      name: "Ms. Isha Mangate",
-      course: "M.Pharm Regulatory Affairs 2024-2026",
-      content:
-        "As a first-year M. Pharm (Regulatory Affairs) student at Datta Meghe College of Pharmacy, I am privileged to be part of an institution that emphasizes academic excellence and industry readiness. The college offers a strong research culture, Coursera courses for global exposure, and guidance from highly qualified faculty in Regulatory Affairs. The six-month industrial training provides hands-on experience, while practicals based on RA case studies enhance our analytical skills. DMCP bridges the gap between theory and real-world applications, preparing us for regulatory challenges in the pharmaceutical industry. I am grateful for this enriching and career-focused learning environment",
-    },
-    {
-      type: "text",
       image: Img7,
       name: "Ms. Hellen Yayra Dzoagbe",
       course: "B.Pharm 2021-2025",
       content:
         "As a final-year B. Pharm student from Ghana, my journey at Datta Meghe College of Pharmacy has been truly transformative. The college provides a perfect blend of academic excellence, hands-on training, and a supportive learning environment. The highly qualified faculty, advanced laboratories, and research-driven approach have enriched my knowledge and skills. DMCP’s diverse and inclusive campus made me feel at home, fostering personal and professional growth. The international exposure and practical learning experiences have prepared me for a successful career in pharmacy. I am grateful for the opportunities, guidance, and memories that will stay with me forever.",
     },
-    {
-      type: "text",
-      image: Img8,
-      name: "Mr. Atif Akbani",
-      course: "D.Pharm 2023-25",
-      content:
-        "As a D. Pharm student at Datta Meghe College of Pharmacy, I am grateful for the exceptional learning opportunities that have shaped my academic and professional journey. The 1500+ bed AVBRH hospital provides extensive practical exposure, enhancing my clinical and dispensing skills. The college’s structured curriculum and expert faculty have thoroughly prepared me for the Pharmacy Exit Examination. Additionally, the ‘Earn and Learn’ scheme has been a great support for financially needy students, ensuring education without financial barriers. DMCP’s commitment to excellence, hands-on training, and student welfare makes it the ideal place to build a strong pharmacy career.",
-    },
+    // {
+    //   type: "text",
+    //   image: Img8,
+    //   name: "Mr. Atif Akbani",
+    //   course: "D.Pharm 2023-25",
+    //   content:
+    //     "As a D. Pharm student at Datta Meghe College of Pharmacy, I am grateful for the exceptional learning opportunities that have shaped my academic and professional journey. The 1500+ bed AVBRH hospital provides extensive practical exposure, enhancing my clinical and dispensing skills. The college’s structured curriculum and expert faculty have thoroughly prepared me for the Pharmacy Exit Examination. Additionally, the ‘Earn and Learn’ scheme has been a great support for financially needy students, ensuring education without financial barriers. DMCP’s commitment to excellence, hands-on training, and student welfare makes it the ideal place to build a strong pharmacy career.",
+    // },
   ],
-  Parents: [
-    {
-      type: "text",
-      image: Img13,
-      name: "Mr. Jagtarsingh Bagga",
-      course: "Parent of Ms. Harpritkaur Bagga (B.Pharm 2022-2026)",
-      content:
-        "I am Jagtarsingh Bagga father of Ms. Harpritkaur Bagga, watching her excel and become the class topper has been a source of immense pride and joy for our family. The college's nurturing environment, supportive faculty, and challenging curriculum have undoubtedly played a significant role in our child's success. We are grateful for the opportunities and guidance provided by the college, which have not only shaped our child's academic achievements but have also instilled in them a lifelong love for learning. We wholeheartedly recommend this college to any parent seeking an institution that fosters excellence, growth, and success.",
-    },
-    {
-      type: "text",
-      image: Img14,
-      name: "Mr. Amit Bhutada",
-      course: "Parent of Mr. Satvik Bhutada (B.Pharm 2023-2027)",
-      content:
-        "I am Mr. Amit Bhutada father of Mr. Satvik Bhutada enrolling our child in Datta Meghe College of Pharmacy has been a transformative experience for our family. The college's unwavering commitment to academic excellence, combined with a supportive and nurturing environment, has truly set our child up for success. From personalized attention from dedicated faculty to a wide range of extracurricular opportunities, our child has thrived both academically and personally. We are immensely grateful for the positive impact this college has had on our child's growth and development, and we wholeheartedly recommend it to any parent seeking a top-notch education for their child. The extracurricular activities in this college leads to higher academic achievement, improved character development, enhanced social skills, and a greater sense of community involvement of our child.",
-    },
-    {
-      type: "text",
-      image: Img15,
-      name: "Mr. Arvind Shamraoji Kopare",
-      course: "Parent of Mr. Tanmay Kopare (B.Pharm 2020-2024)",
-      content:
-        "As parents, watching our son embark on his journey through pharmacy college has been a journey of pride, hope, and immense joy. From his earliest days expressing a desire to make a meaningful difference in the healthcare field, to the moment he donned his white coat for the first time, we've seen a transformation not just in his knowledge and skills, but in his character and dedication to serving others. The growth in his professional knowledge has been paralleled by his personal development. DMCP has not only equipped him with the skills necessary to succeed in a highly demanding field but has also instilled in him values of empathy, teamwork, and ethical practice. In reflection, our son's journey through Pharmacy College has been an inspiring reminder of the power of dedication, the importance of compassion, and the impact one individual can make in the lives of many. We are grateful to Datta Meghe College of Pharmacy for providing him with the foundation to embark on this noble profession, and we eagerly await the next chapter of his career, knowing he has the tools, the knowledge, and the heart to make a difference.",
-    },
-  ],
+  // Parents: [
+  //   {
+  //     type: "text",
+  //     image: Img13,
+  //     name: "Mr. Jagtarsingh Bagga",
+  //     course: "Parent of Ms. Harpritkaur Bagga (B.Pharm 2022-2026)",
+  //     content:
+  //       "I am Jagtarsingh Bagga father of Ms. Harpritkaur Bagga, watching her excel and become the class topper has been a source of immense pride and joy for our family. The college's nurturing environment, supportive faculty, and challenging curriculum have undoubtedly played a significant role in our child's success. We are grateful for the opportunities and guidance provided by the college, which have not only shaped our child's academic achievements but have also instilled in them a lifelong love for learning. We wholeheartedly recommend this college to any parent seeking an institution that fosters excellence, growth, and success.",
+  //   },
+  //   {
+  //     type: "text",
+  //     image: Img14,
+  //     name: "Mr. Amit Bhutada",
+  //     course: "Parent of Mr. Satvik Bhutada (B.Pharm 2023-2027)",
+  //     content:
+  //       "I am Mr. Amit Bhutada father of Mr. Satvik Bhutada enrolling our child in Datta Meghe College of Pharmacy has been a transformative experience for our family. The college's unwavering commitment to academic excellence, combined with a supportive and nurturing environment, has truly set our child up for success. From personalized attention from dedicated faculty to a wide range of extracurricular opportunities, our child has thrived both academically and personally. We are immensely grateful for the positive impact this college has had on our child's growth and development, and we wholeheartedly recommend it to any parent seeking a top-notch education for their child. The extracurricular activities in this college leads to higher academic achievement, improved character development, enhanced social skills, and a greater sense of community involvement of our child.",
+  //   },
+  //   {
+  //     type: "text",
+  //     image: Img15,
+  //     name: "Mr. Arvind Shamraoji Kopare",
+  //     course: "Parent of Mr. Tanmay Kopare (B.Pharm 2020-2024)",
+  //     content:
+  //       "As parents, watching our son embark on his journey through pharmacy college has been a journey of pride, hope, and immense joy. From his earliest days expressing a desire to make a meaningful difference in the healthcare field, to the moment he donned his white coat for the first time, we've seen a transformation not just in his knowledge and skills, but in his character and dedication to serving others. The growth in his professional knowledge has been paralleled by his personal development. DMCP has not only equipped him with the skills necessary to succeed in a highly demanding field but has also instilled in him values of empathy, teamwork, and ethical practice. In reflection, our son's journey through Pharmacy College has been an inspiring reminder of the power of dedication, the importance of compassion, and the impact one individual can make in the lives of many. We are grateful to Datta Meghe College of Pharmacy for providing him with the foundation to embark on this noble profession, and we eagerly await the next chapter of his career, knowing he has the tools, the knowledge, and the heart to make a difference.",
+  //   },
+  // ],
   Alumni: [
     {
       type: "text",
@@ -161,7 +153,7 @@ const TestimonialsDMCP = () => {
     if (isPlaying) return;
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % activeTestimonials.length);
-    }, 6000);
+    }, 7000);
     return () => clearInterval(interval);
   }, [activeTab, activeTestimonials.length, isPlaying]);
 

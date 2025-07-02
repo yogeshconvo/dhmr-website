@@ -2,16 +2,16 @@ import React from "react";
 
 export default function FunctionalUnits() {
   return (
-    <section className="bg-white py-16 px-4 sm:px-8 font-[Arial]">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-gray-100 text-[#58595B] py-16 px-4 sm:px-8 font-[Arial]">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-10">
           <div className="w-14 h-1 bg-red-600 mb-3" />
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 uppercase">
+          <h2 className="text-3xl font-oswald-medium sm:text-4xl font-[500] tracking-wide text-[#58595B] uppercase">
             Our Functional Units: <br />
-            <span className="text-gray-800">Action and Impact</span>
+            <span className="text-[#58595B]">Action and Impact</span>
           </h2>
-          <p className="mt-4 text-gray-600 max-w-4xl text-sm sm:text-base">
+          <p className="mt-4 text-[#58595B] max-w-3xl text-sm sm:text-base">
             Aligned with the functions outlined by the National Assessment &
             Accreditation Council (NAAC) in December 2017, the Internal Quality
             Assurance Cell (IQAC) at DMIHER (DU) is structured into four
@@ -21,19 +21,19 @@ export default function FunctionalUnits() {
         </div>
 
         {/* Grid of 4 Columns */}
-        <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 text-sm text-gray-800">
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 text-sm text-[#58595B]">
           {/* 1 */}
           <div className="border-r md:pr-4">
             <div className=" items-center mb-2">
-              <div className="bg-blue-600 text-white rounded-full h-12 w-12 flex items-center justify-center text-xl font-semibold mr-2">
+              <div className="bg-blue-600 text-white rounded-full h-12 w-12 flex items-center justify-center text-3xl font-[500] mr-2">
                 1
               </div>
 
-              <h3 className="text-blue-600 font-semibold">
-                Rankings and Accreditations
+              <h3 className="text-blue-600 font-oswald-medium font-[500] text-xl">
+                Rankings and <br /> Accreditations
               </h3>
             </div>
-            <ul className="list-disc pl-5 space-y-1 mb-2">
+            <ul className="list-disc pl-5 text-[#58595B] space-y-1 mb-2">
               <li>
                 Strategize Institutional growth in National and International
                 level through planning and participating in various
@@ -44,7 +44,9 @@ export default function FunctionalUnits() {
                 Report (AQAR)
               </li>
             </ul>
-            <p className="font-semibold mt-3">Related DMIHER initiatives :</p>
+            <p className="font-semibold text-[#58595B] mt-3">
+              Related DMIHER initiatives :
+            </p>
             <ul className="list-disc pl-5">
               <li>NAAC</li>
               <li>NIRF</li>
@@ -57,11 +59,11 @@ export default function FunctionalUnits() {
           {/* 2 */}
           <div className="border-r md:pr-4">
             <div className=" items-center mb-2">
-              <div className="bg-orange-500 text-white rounded-full h-12 w-12 flex items-center justify-center text-xl font-semibold mr-2">
+              <div className="bg-orange-500 text-white rounded-full h-12 w-12 flex items-center justify-center  text-3xl font-[500]  mr-2">
                 2
               </div>
-              <h3 className="text-orange-500 font-semibold">
-                Quality benchmarks & Best Practices
+              <h3 className="text-orange-500 font-oswald-medium font-[500] text-xl">
+                Quality benchmarks <br /> & Best Practices
               </h3>
             </div>
             <ul className="list-disc pl-5 space-y-1">
@@ -93,11 +95,11 @@ export default function FunctionalUnits() {
           {/* 3 */}
           <div className="border-r md:pr-4">
             <div className=" items-center mb-2">
-              <div className="bg-blue-800 text-white rounded-full h-12 w-12 flex items-center justify-center text-xl font-semibold mr-2">
+              <div className="bg-blue-800 text-white rounded-full h-12 w-12 flex items-center justify-center  text-3xl font-[500] mr-2">
                 3
               </div>
-              <h3 className="text-blue-800 font-semibold">
-                Audits , Feedbacks & Evaluation
+              <h3 className="text-blue-800 font-oswald-medium font-[500] text-xl">
+                Audits , Feedbacks <br /> & Evaluation
               </h3>
             </div>
             <ul className="list-disc pl-5 space-y-1 mb-2">
@@ -128,11 +130,11 @@ export default function FunctionalUnits() {
           {/* 4 */}
           <div className="pr-4">
             <div className=" items-center mb-2">
-              <div className="bg-red-600 text-white rounded-full h-12 w-12 flex items-center justify-center text-xl font-semibold mr-2">
+              <div className="bg-red-600 text-white rounded-full h-12 w-12 flex items-center justify-center  text-3xl font-[500] mr-2">
                 4
               </div>
-              <h3 className="text-red-600 font-semibold">
-                Quality dissemination and Quality circles
+              <h3 className="text-red-600 font-oswald-medium font-[500] text-xl">
+                Quality dissemination <br /> and Quality circles
               </h3>
             </div>
             <ul className="list-disc pl-5 space-y-1 mb-2">

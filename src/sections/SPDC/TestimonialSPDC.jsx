@@ -68,58 +68,61 @@ const TestimonialSPDC = () => {
   const [activeTab, setActiveTab] = useState("Students");
 
   return (
-    <div className="px-4 md:px-8 py-10 bg-[#F4F4F4]">
-      <h2 className="text-3xl sm:text-4xl ml-4 font-medium text-gray-500 font-oswald-medium mb-4">
-        <hr className="border-red-500 border-2 w-12 mb-2" />
-        TESTIMONIALS
-      </h2>
-
-      <div className="text-center flex justify-center pb-8 gap-4 flex-wrap">
-        {tabOptions.map((tabName, index) => (
-          <button
-            key={tabName}
-            onClick={() => setActiveTab(tabName)}
-            className={`px-3 py-1 text-sm sm:text-base transition-all ${activeTab === tabName
-                ? "underline text-black"
-                : "text-gray-500 hover:text-gray-700"
-              } ${index < tabOptions.length - 1
-                ? "border-r border-gray-300 pr-4"
-                : ""
+    <div className="px-4 py-10 bg-[#F4F4F4]">
+      <div className="md:w-full max-w-7xl mx-auto ">
+        <h2 className="text-3xl md:text-4xl uppercase font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
+          <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
+          TESTIMONIALS
+        </h2>
+        <div className="text-center flex justify-center pb-8 gap-4 flex-wrap">
+          {tabOptions.map((tabName, index) => (
+            <button
+              key={tabName}
+              onClick={() => setActiveTab(tabName)}
+              className={`px-3 py-1 text-sm sm:text-base transition-all ${
+                activeTab === tabName
+                  ? "underline text-black"
+                  : "text-gray-500 hover:text-gray-700"
+              } ${
+                index < tabOptions.length - 1
+                  ? "border-r border-gray-300 pr-4"
+                  : ""
               }`}
-          >
-            {tabName}
-          </button>
-        ))}
-      </div>
-
-      <div className="my-10">
-        <Swiper
-          style={{ paddingBottom: 80 }}
-          slidesPerView={"auto"}
-          centeredSlides={true}
-          spaceBetween={30}
-          pagination={{ clickable: true }}
-          modules={[Pagination]}
-        >
-          {testimonialsData[activeTab]?.map((testimonial, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="flex-center gap-12 max-sm:flex-col text-center sm:text-left">
-                <img
-                  src={testimonial.img}
-                  alt={testimonial.name}
-                  className="w-36 h-36 object-cover rounded-full mx-auto sm:mx-0"
-                />
-                <div className="max-w-xl font-[Arial] text-base">
-                  <p className="mb-4">{testimonial.text}</p>
-                  <p className="font-semibold text-base mt-1">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-[#707070] mt-1">{testimonial.year}</p>
-                </div>
-              </div>
-            </SwiperSlide>
+            >
+              {tabName}
+            </button>
           ))}
-        </Swiper>
+        </div>
+
+        <div className="mt-5">
+          <Swiper
+            style={{ paddingBottom: 80 }}
+            slidesPerView={"auto"}
+            centeredSlides={true}
+            spaceBetween={30}
+            pagination={{ clickable: true }}
+            modules={[Pagination]}
+          >
+            {testimonialsData[activeTab]?.map((testimonial, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="flex-center gap-12 max-sm:flex-col text-center sm:text-left">
+                  <img
+                    src={testimonial.img}
+                    alt={testimonial.name}
+                    className="w-36 h-36 object-cover rounded-full mx-auto sm:mx-0"
+                  />
+                  <div className="max-w-xl font-[Arial] text-base">
+                    <p className="mb-4">{testimonial.text}</p>
+                    <p className="font-semibold text-base mt-1">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-[#707070] mt-1">{testimonial.year}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );

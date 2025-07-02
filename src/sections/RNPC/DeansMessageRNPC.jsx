@@ -18,7 +18,7 @@ function DeansMessageRNPC() {
               alt="Dean"
               className="rounded-lg w-[300px] md:w-[300px] h-auto object-cover mb-4 mx-auto lg:mx-0"
             />
-            <div className="text-[13px] leading-6 text-[#E1CD67] mt-2">
+            <div className="text-[#E1CD67] leading-relaxed max-sm:mt-4">
               <p className="text-[#E1CD67] font-bold">
                 Dr. Moh'd Irshad Qureshi
               </p>

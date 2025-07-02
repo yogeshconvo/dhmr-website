@@ -77,14 +77,24 @@ export default function IQACSection() {
 
         {/* Annual Reports Tabs */}
         <div className="mt-16 text-left">
-          <h3 className="text-[#0f2c5c] font-bold text-base mb-3">
+          <h3 className="text-[#0f2c5c] text-xl font-oswald-medium ml-10 font-bold mb-2 ">
             Annual Reports
           </h3>
-          <div className="flex gap-8 text-sm font-semibold text-[#0f2c5c] border-b border-gray-300 pb-1">
-            <div className="border-b-4 border-[#0f2c5c]">IQAC</div>
-            <div className="text-blue-600 hover:underline cursor-pointer">
+          <hr />
+
+          <div className="flex flex-col mt-2 gap-2">
+            <a
+              href="#"
+              className="text-blue-600 underline text-sm sm:text-base"
+            >
+              IQAC
+            </a>
+            <a
+              href="#"
+              className="text-blue-600 underline text-sm sm:text-base"
+            >
               SDG
-            </div>
+            </a>
           </div>
         </div>
       </div>

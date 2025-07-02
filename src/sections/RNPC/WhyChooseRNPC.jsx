@@ -2,7 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import { Autoplay } from "swiper/modules";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const cards = [
   {
@@ -36,7 +37,7 @@ const cards = [
     bg: "bg-[#122E5E] font-oswald-medium text-white",
     content: (
       <>
-        <p className="font-bold text-xl  mt-8">
+        <p className="font-bold text-xl mt-8">
           Early research exposure with APC funding, workshops, and UG support
         </p>
         <p className="text-base font-oswald-medium mt-2">
@@ -52,10 +53,7 @@ const cards = [
     bg: "bg-[#FFFFFF] text-[#F04E30]",
     content: (
       <>
-        <p
-          className="font-oswald-medium font-[600]
-         text-2xl "
-        >
+        <p className="font-oswald-medium font-[600] text-2xl">
           Academic tie-ups: Plymouth Institute (UK), Sports Authority of India
         </p>
         <p className="text-base font-oswald-medium text-[#707070] mt-2">
@@ -84,69 +82,105 @@ const cards = [
       </>
     ),
   },
-  // {
-  //   bg: "bg-[#269BFF] text-white",
-  //   content: (
-  //     <>
-  //       <p className="font-oswald-medium font-[500] text-2xl mt-8">
-  //         Coursera courses
-  //       </p>
-  //       <p className="text-base font-oswald-medium mt-2">
-  //         Students have completed 2,800+ courses from Harvard University,
-  //         Stanford University, Johns Hopkins University, University of London
-  //         and many more
-  //       </p>
-  //     </>
-  //   ),
-  // },
 ];
 
 function WhyChooseRNPC() {
   return (
+    // <div className="py-16 px-4 bg-[#FAFAF6] flex justify-center">
+    //   <div className="w-full max-w-6xl">
+    //     {/* Heading */}
+    //     <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-normal text-[#707070] font-[500] mb-10">
+    //       <div className="border-t-4 border-[#F04E30] w-20 mb-2"></div>
+    //       WHY CHOOSE RNPC?
+    //     </h2>
+
+    //     {/* Swiper with custom dots */}
+    //     <div className="relative mx-auto">
+    //       <Swiper
+    //         modules={[Autoplay, Pagination]}
+    //         autoplay={{ delay: 3500, disableOnInteraction: false }}
+    //         pagination={{ el: ".custom-pagination", clickable: true }}
+    //         spaceBetween={10}
+    //         loop={true}
+    //         slidesPerView={1}
+    //         centeredSlides={true}
+    //         breakpoints={{
+    //           640: {
+    //             slidesPerView: 2,
+    //             centeredSlides: false,
+    //           },
+    //           1024: {
+    //             slidesPerView: 4,
+    //             centeredSlides: false,
+    //           },
+    //         }}
+    //       >
+    //         {cards.map((card, index) => (
+    //           <SwiperSlide
+    //             key={index}
+    //             className="flex justify-center items-center"
+    //           >
+    //             <div
+    //               className={`w-[250px] h-[320px] p-4 rounded-xl shadow-md ${card.bg} font-oswaldLight flex flex-col justify-center gap-1`}
+    //             >
+    //               {card.content}
+    //             </div>
+    //           </SwiperSlide>
+    //         ))}
+    //       </Swiper>
+
+    //       {/* Custom dot container */}
+    //       <div className="custom-pagination mt-6 flex justify-center" />
+    //     </div>
+    //   </div>
+    // </div>
     <div className="py-16 px-4 bg-[#FAFAF6] flex justify-center">
       <div className="w-full max-w-6xl">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-normal text-[#707070] font-[600] mb-10">
+        <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-normal text-[#707070] font-[500] mb-10">
           <div className="border-t-4 border-[#F04E30] w-20 mb-2"></div>
           WHY CHOOSE RNPC?
         </h2>
 
-        {/* Swiper */}
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{ delay: 3500, disableOnInteraction: false }}
-          spaceBetween={10}
-          loop={true}
-          slidesPerView={1}
-          centeredSlides={true}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              centeredSlides: false,
-            },
-            1024: {
-              slidesPerView: 4,
-              centeredSlides: false,
-            },
-          }}
-        >
-          {cards.map((card, index) => (
-            <SwiperSlide
-              key={index}
-              className="flex justify-center m-auto w-fit items-center"
-              style={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <div
-                className={`w-[250px] h-[320px] p-4 rounded-xl shadow-md ${card.bg} font-oswaldLight flex flex-col justify-center gap-1`}
+        {/* Swiper with custom dots */}
+        <div className="relative mx-auto">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
+            pagination={{ el: ".custom-pagination", clickable: true }}
+            spaceBetween={10}
+            loop={true}
+            slidesPerView={1}
+            centeredSlides={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                centeredSlides: false,
+              },
+              1024: {
+                slidesPerView: 4,
+                centeredSlides: false,
+              },
+            }}
+            className="!px-0 sm:!px-0" 
+          >
+            {cards.map((card, index) => (
+              <SwiperSlide
+                key={index}
+                className="!flex !justify-center items-center"
               >
-                {card.content}
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+                <div
+                  className={`w-[250px] h-[320px] p-4 rounded-xl shadow-md ${card.bg} font-oswaldLight flex flex-col justify-center gap-1`}
+                >
+                  {card.content}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Custom dot container */}
+          <div className="custom-pagination mt-6 flex justify-center" />
+        </div>
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ export default function ProgramsGrid() {
     <>
       <div className="m-20">
         {" "}
-        <div className="max-w-7xlmx-auto justify-center  items-center bg-white px-4 py-10 sm:px-8 md:px-12">
+        <div className="max-w-8xl mx-auto justify-center items-center bg-white px-4 py-10 sm:px-8 md:px-12">
           <div className=" mb-10 ">
             <hr className="w-16 sm:w-20 border-[#F04E30]  mb-2 border-t-4" />
             <h2 className="text-4xl font-[500] font-oswald-medium tracking-wider text-[#707070]">

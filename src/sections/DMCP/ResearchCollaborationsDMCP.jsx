@@ -13,9 +13,45 @@ const ResearchCollaborationsDMCP = () => {
     dots: true,
     infinite: true,
     speed: 500,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  const researchData = [
+    {
+      icon: researchicon1,
+      label: "Patents",
+      value: "11",
+    },
+    {
+      icon: researchicon2,
+      label: "Copyrights",
+      value: "75",
+    },
+    {
+      icon: researchicon3,
+      label: "Publications",
+      value: "224 by Faculty | 258 by Students",
+    },
+    {
+      icon: researchicon4,
+      label: "Conference Presentations",
+      value: "18 by Faculties | 54 by Students",
+    },
+    {
+      icon: researchicon1,
+      label: "Books Published",
+      value: "9 Books | 38 Book Chapters",
+    },
+    {
+      icon: researchicon2,
+      label: "Grants Received",
+      value: "₹522L Funded | ₹25L Consultancy",
+    },
+  ];
 
   return (
     <div className="px-10 py-20 bg-[rgba(18,46,94,0.05)]">
@@ -41,7 +77,7 @@ const ResearchCollaborationsDMCP = () => {
 
           {/* Thrust Areas */}
           <div className="mt-6">
-            <h3 className="text-xl font-bold text-[#e8502e] font-oswald-medium mb-2">
+            <h3 className="text-xl font-[600] text-[#e8502e] font-oswald-medium mb-2">
               Thrust Areas:
             </h3>
             <p className="text-sm text-[#58595B] leading-relaxed font-[Arial]">
@@ -49,57 +85,28 @@ const ResearchCollaborationsDMCP = () => {
               development, Nanocrystalline Cellulose in drug delivery,
               Microencapsulation, 3D bioprinting-based delivery system for
               management of skin diseases & cancer, Toxicity studies of various
-              formulations, Neuropharmacology: Antidepressant, Anxiolytics,
-              Memory enhancers…{" "}
-              <a
-                href="https://www.dmiher.edu.in/about-research-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#0055FF] hover:underline"
+              formulations {""}
+            </p>
+              <button
+                className="mt-2 mb-4 px-4 py-1 bg-[#F04E30] text-white rounded font-semibold transition hover:bg-[#d13d22]"
+                onClick={() =>
+                  window.open(
+                    "https://www.dmiher.edu.in/about-research-1",
+                    "_blank"
+                  )
+                }
               >
                 Know More
-              </a>
-            </p>
+              </button>
           </div>
         </div>
 
-        {/* Right Side (Desktop) */}
-        <div className="hidden sm:grid grid-cols-3 py-8 gap-4">
-          {[
-            {
-              icon: researchicon1,
-              label: "Patents",
-              value: "11",
-            },
-            {
-              icon: researchicon2,
-              label: "Copyrights",
-              value: "75",
-            },
-            {
-              icon: researchicon3,
-              label: "Publications",
-              value: "224 by Faculty | 258 by Students",
-            },
-            {
-              icon: researchicon4,
-              label: "Conference Presentations",
-              value: "18 by Faculties | 54 by Students",
-            },
-            {
-              icon: researchicon1,
-              label: "Books Published",
-              value: "9 Books | 38 Book Chapters",
-            },
-            {
-              icon: researchicon2,
-              label: "Grants Received",
-              value: "₹522L Funded | ₹25L Consultancy",
-            },
-          ].map((item, index) => (
+        {/* Right Side - Desktop View */}
+        <div className="hidden sm:grid grid-cols-3 py-8 gap-x-4 gap-y-14">
+          {researchData.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col  items-center text-center px-4 ${
+              className={`flex flex-col items-center text-center px-4 ${
                 index % 3 !== 2 ? "border-r border-gray-300" : ""
               }`}
             >
@@ -108,10 +115,10 @@ const ResearchCollaborationsDMCP = () => {
                 alt={item.label}
                 className="w-24 h-24 mb-2"
               />
-              <p className="text-[22px] font-oswald-medium text-orange-600">
+              <p className="  text-xl font-semibold  text-orange-600">
                 {item.value}
               </p>
-              <p className="text-[#58595B] text-lg font-oswald-light">
+              <p className="text-[#58595B] text-lg font-semibold  ">
                 {item.label}
               </p>
             </div>
@@ -119,55 +126,24 @@ const ResearchCollaborationsDMCP = () => {
         </div>
       </div>
 
-      <div className="block sm:hidden mt-10">
+      {/* Mobile Slider */}
+      <div className="block sm:hidden mt-10 w-full px-2 pb-6">
         <Slider {...mobileSliderSettings}>
-          {[
-            {
-              icon: researchicon1,
-              label: "Patents",
-              value: "11",
-            },
-            {
-              icon: researchicon2,
-              label: "Copyrights",
-              value: "75",
-            },
-            {
-              icon: researchicon3,
-              label: "Publications",
-              value: "224 by Faculty | 258 by Students",
-            },
-            {
-              icon: researchicon4,
-              label: "Conference Presentations",
-              value: "18 by Faculties | 54 by Students",
-            },
-            {
-              icon: researchicon1,
-              label: "Books Published",
-              value: "9 Books | 38 Book Chapters",
-            },
-            {
-              icon: researchicon2,
-              label: "Grants Received",
-              value: "₹522L Funded | ₹25L Consultancy",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center text-center px-4"
-            >
-              <img
-                src={item.icon}
-                alt={item.label}
-                className="w-20 h-20 mb-2"
-              />
-              <p className="text-xl font-oswald-medium text-orange-600">
-                {item.value}
-              </p>
-              <p className="text-[#58595B] text-base font-oswald-light">
-                {item.label}
-              </p>
+          {researchData.map((item, index) => (
+            <div key={index} className="flex justify-center">
+              <div className="flex flex-col items-center text-center px-4 min-h-[200px]">
+                <img
+                  src={item.icon}
+                  alt={item.label}
+                  className="w-25 h-25 mb-2"
+                />
+                <p className=" text-orange-600  text-xl font-semibold">
+                  {item.value}
+                </p>
+                <p className="text-[#58595B] text-lg font-semibold ">
+                  {item.label}
+                </p>
+              </div>
             </div>
           ))}
         </Slider>

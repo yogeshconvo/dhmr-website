@@ -14,7 +14,10 @@ import SHER from "../pages/SHER";
 import SAHS from "../pages/SAHS";
 import RNPC from "../pages/RNPC";
 import DMCP from "../pages/DMCP";
-import SPDC from "../pages/SPDC"
+import SPDC from "../pages/SPDC";
+import DAL from "../pages/DAL";
+import JNMC from "../pages/JNMC";
+
 export default function AppRoutes() {
   return (
     <Routes>
@@ -28,17 +31,19 @@ export default function AppRoutes() {
         {/* <Route path="/global-connects" element={} /> */}
         <Route path="/feat" element={<FEAT />} />
         <Route path="/cdoe" element={<CDOE />} />
-        {/* <Route path="/global-connects" element={<SHER />} /> */}
+        <Route path="/DAL" element={<DAL />} />
         <Route path="/SMCON-W" element={<Nursing />} />
         <Route path="/SMCON-N" element={<Nursing />} />
         <Route path="/SRMMCON" element={<Nursing />} />
         <Route path="/sahs" element={<SAHS />} />
-
+        <Route path="/IQAC" element={<IQAC />} />
+        <Route path="/jnmc" element={<JNMC/>}/>
         <Route path="/sas" element={<SaS />} />
         <Route path="/sahs" element={<SAHS />} />
         <Route path="/cdoe" element={<CDOE />} />
         <Route path="/rnpc" element={<RNPC />} />
         <Route path="/dmcp" element={<DMCP />} />
+        <Route path="/SHER" element={<SHER />} />
       </Route>
     </Routes>
   );

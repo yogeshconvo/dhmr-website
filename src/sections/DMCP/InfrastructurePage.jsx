@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import HLImg from "../../assets/DMCP/holistic/1.jpg";
-import Img2 from "../../assets/DMCP/holistic/2.jpg";
-import Img3 from "../../assets/DMCP/holistic/3.jpg";
-import Img4 from "../../assets/DMCP/holistic/1.jpg";
-import Img5 from "../../assets/DMCP/holistic/4.jpg";
-import Img6 from "../../assets/sas/holistics/6.jpeg";
-import Img7 from "../../assets/sas/holistics/3.jpg";
+import HLImg from "../../assets/DMCP/holistic/Teaching-Learning.jpg";
+import Img2 from "../../assets/DMCP/holistic/Laboratory.jpg";
+import Img3 from "../../assets/DMCP/holistic/Advanced Skill Labs.jpg";
+import Img4 from "../../assets/DMCP/holistic/Museum.jpg";
+import Img5 from "../../assets/DMCP/holistic/6.jpeg";
 
 const sections = [
   {
@@ -35,7 +33,7 @@ const sections = [
     label: "Museum & Interactive Learning Spaces",
     content: `• Jigyasa Museum showcases drug formulation evolution, compounding techniques, pharmacology, herbal medicine, and toxicology.
 • Visual and experiential learning aids in bridging theory with practice, reinforcing pharmaceutical science concepts.`,
-    image: Img5,
+    image: Img4,
   },
   {
     id: 4,
@@ -44,17 +42,17 @@ const sections = [
 • E-library access to databases: DELNET, EBSCOHOST, UPTODATE, INFLIBNET, SHODHGANGA, SHODH SINDHU, SCOPUS, and more.
 • Turnitin for plagiarism checks.
 • Book bank facility for meritorious students.`,
-    image: Img6,
+    image: Img5,
   },
-  {
-    id: 5,
-    label: "Other Facilities",
-    content: `• 100% assistance for internship & placement across D.Pharm, B.Pharm, M.Pharm, and Pharm D.
-• Industrial/hospital internships: 6 months (M.Pharm), 2 months (B.Pharm), 1 year (Pharm D).
-• Earn while you learn support system for financially needy students.
-• Strong industry network with Wockhardt, Glaxo, Pfizer, Sun Pharma, Lupin, Glenmark, Dr. Reddy’s, Merck, Zydus, Torrent, Apollo, IQVIA, TCS, and more for training, internships, and placements.`,
-    image: Img7,
-  },
+//   {
+//     id: 5,
+//     label: "Other Facilities",
+//     content: `• 100% assistance for internship & placement across D.Pharm, B.Pharm, M.Pharm, and Pharm D.
+// • Industrial/hospital internships: 6 months (M.Pharm), 2 months (B.Pharm), 1 year (Pharm D).
+// • Earn while you learn support system for financially needy students.
+// • Strong industry network with Wockhardt, Glaxo, Pfizer, Sun Pharma, Lupin, Glenmark, Dr. Reddy’s, Merck, Zydus, Torrent, Apollo, IQVIA, TCS, and more for training, internships, and placements.`,
+//     image: Img5,
+//   },
 ];
 
 function HolisticsDMCP() {
@@ -80,13 +78,16 @@ function HolisticsDMCP() {
       <div className="container flex flex-wrap items-start justify-center gap-18">
         {/* Text Section */}
         <div ref={textRef} className="flex-2 min-w-[315px]">
-          <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
+          <h2 className="text-3xl md:text-4xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
             <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
             HOLISTIC LEARNING AND <br /> INFRASTRUCTURE
           </h2>
           <div className="max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
             {sections.map((section) => (
-              <div key={section.id} className="mb-3">
+              <div
+                key={section.id}
+                className="mb-1 border-b pb-2 border-[#707070] last:border-0"
+              >
                 <p>
                   <span
                     onClick={() => setActiveId(section.id)}
@@ -99,7 +100,6 @@ function HolisticsDMCP() {
                     {section.content}
                   </span>
                 </p>
-                <hr className="my-2" />
               </div>
             ))}
           </div>

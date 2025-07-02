@@ -6,8 +6,8 @@ import sydney from "../../assets/SHER/IC/4.png";
 
 const InternationalCollaborations = () => {
   return (
-    <div className="bg-white py-10 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-white py-10 px-6 md:px-32 max-w-8xl mx-auto">
+      <div>
         {/* Heading */}
         <div className="inline-block mb-8">
           <h2 className=" text-[#707070] text-4xl font-oswald-medium font-[500] uppercase tracking-wide">
@@ -17,7 +17,7 @@ const InternationalCollaborations = () => {
         </div>
 
         {/* Logos */}
-        <div className="flex justify-center items-center gap-8 flex-wrap md:flex-nowrap">
+        <div className="flex justify-center items-center gap-10 flex-wrap md:flex-nowrap">
           {/* Logo + Divider */}
           <div className="flex items-center gap-10">
             <img src={wfme} alt="WFME" className="h-30 object-contain" />

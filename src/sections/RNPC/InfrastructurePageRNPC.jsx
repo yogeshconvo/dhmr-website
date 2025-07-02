@@ -243,11 +243,11 @@
 // }
 
 import React, { useState, useRef } from "react";
-import Img1 from "../../assets/RNPC/holistic/1.png";
-import Img2 from "../../assets/RNPC/holistic/2.png";
-import Img3 from "../../assets/RNPC/holistic/3.png";
-import Img4 from "../../assets/RNPC/holistic/4.png";
-import Img5 from "../../assets/RNPC/holistic/5.png";
+import Img1 from "../../assets/RNPC/holistic/Teaching Learning.jpeg";
+import Img2 from "../../assets/RNPC/holistic/ADCC.jpeg";
+import Img3 from "../../assets/RNPC/holistic/Hospital Facilities.jpeg";
+import Img4 from "../../assets/RNPC/holistic/Advanced Teaching.jpeg";
+import Img5 from "../../assets/RNPC/holistic/Library Facilities.jpeg";
 import Img6 from "../../assets/RNPC/holistic/6.png";
 
 const sections = [
@@ -352,26 +352,26 @@ function HolisticRNPC() {
 
   return (
     <div className="py-20 bg-[#f2f2f2]">
-      <div className="container px-4 mx-auto">
+      <div className="max-w-7xl px-4 mx-auto">
         {/* Toggle Campus */}
-   
+
         <div className="flex flex-wrap items-start justify-center gap-12">
           {/* Text Section */}
-          <div ref={textRef} className="flex-2 min-w-[315px] max-w-[400px]">
-            <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
+          <div ref={textRef} className="flex-2 min-w-[315px] max-w-[500px]">
+            <h2 className="text-4xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
               <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
               HOLISTIC LEARNING
             </h2>
             <div className="max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
               {sections.map((section, index) => (
-                <div key={index} className="mb-3">
+                <div key={index} className="mb-1 border-b pb-2 last:border-b-0">
                   <p>
                     <span
                       onClick={() => setActiveIndex(index)}
-                      className={`cursor-pointer block mb-1 font-semibold ${
+                      className={`cursor-pointer text-lg block mb-1 ${
                         index === activeIndex
                           ? "text-[#2f55a0] font-bold"
-                          : "text-[#58595B]"
+                          : "text-[#58595B] font-[500]"
                       }`}
                     >
                       {section.label}
@@ -380,7 +380,6 @@ function HolisticRNPC() {
                       {section.content}
                     </span>
                   </p>
-                  <hr className="my-2" />
                 </div>
               ))}
             </div>

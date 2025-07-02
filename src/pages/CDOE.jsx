@@ -4,10 +4,11 @@ import CDOEInfoSection from "../sections/CDOE/infoCDOE";
 import WhyChooseCDOE from "../sections/CDOE/WhyChooseCDOE";
 import ProgramSectionCDOE from "../sections/CDOE/ProgramSection";
 import FacultyCDOE from "../sections/CDOE/HolisticsCDOE";
-// import LearningOpportunitieCDOE from "../sections/CDOE/learningOpportunitieSection";
+// import LearningOpportunitieCDOE from "../sections/ CDOE/learningOpportunitieSection";
 import PlacementCDOE from "../sections/CDOE/PlacementSupportCDOE";
 import DirectorsMessageCDOE from "../sections/CDOE/DirectorsMessage";
 import TestimonialsSectionCDOE from "../sections/CDOE/TestimonialsCDOE";
+import Certifications from "../sections/CDOE/Certifications";
 
 const CDOE = () => {
   return (
@@ -17,10 +18,11 @@ const CDOE = () => {
       <WhyChooseCDOE />
       <DirectorsMessageCDOE />
       <ProgramSectionCDOE />
+      <Certifications />
       <FacultyCDOE />
       {/* <LearningOpportunitieCDOE /> */}
       <PlacementCDOE />
-      {/* <TestimonialsSectionCDOE /> */}
+      <TestimonialsSectionCDOE />
     </div>
   );
 };

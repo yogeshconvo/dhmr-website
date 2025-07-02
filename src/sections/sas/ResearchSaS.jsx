@@ -39,8 +39,12 @@ const researchData = [
 ];
 
 function ResearchSaS() {
+  const firstRow = researchData.slice(0, 3);
+  const secondRow = researchData.slice(3);
+
   return (
-    <div className="container py-10 flex gap-12 flex-wrap">
+    <div className="container py-10 flex flex-wrap gap-12 justify-between">
+      {/* Text Section */}
       <div className="text-[#58595B] max-w-[365px] flex-1">
         <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
           <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
@@ -55,27 +59,62 @@ function ResearchSaS() {
         </p>
       </div>
 
-      <ul className="flex gap-12 flex-wrap max-w-[740px] min-w-[315px] md:min-w-[450px] flex-1">
-        {researchData.map((card, idx) => (
-          <li
-            key={idx}
-            className="w-[29%] max-sm:w-[100%] flex-center gap-4 flex-col research-item"
-          >
-            <div
-              className={`w-[120px] h-[120px] max-sm:w-[140px] max-sm:h-[140px] flex-center rounded-full`}
-              style={{ background: card.iconBG }}
+      {/* Cards Section */}
+      <div className="flex flex-col items-center gap-10 flex-1 w-full max-w-[900px]">
+        {/* First Row: 3 cards */}
+        <ul className="flex flex-wrap justify-center gap-12 w-full">
+          {firstRow.map((card, idx) => (
+            <li
+              key={idx}
+              className={`w-[29%] min-w-[180px] flex flex-col items-center gap-4 
+                ${idx < 2 ? "sm:border-r sm:pr-6 sm:border-[#D9D9D9]" : ""}
+              `}
             >
-              <img src={card.icon} alt={card.title} width={70} />
-            </div>
-            <div className="flex-center text-center flex-col">
-              <span className="text-orange font-bold text-2xl max-sm:text-3xl">
-                {card.number}
-              </span>
-              <span className="text-[#58595B] text-xl">{card.title}</span>
-            </div>
-          </li>
-        ))}
-      </ul>
+              <div
+                className="w-[120px] h-[120px] max-sm:w-[140px] max-sm:h-[140px] flex items-center justify-center rounded-full"
+                style={{ background: card.iconBG }}
+              >
+                <img src={card.icon} alt={card.title} width={70} />
+              </div>
+              <div className="text-center">
+                <span className="text-orange font-bold text-2xl max-sm:text-3xl">
+                  {card.number}
+                </span>
+                <span className="text-[#58595B] text-xl block">
+                  {card.title}
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
+
+        {/* Second Row: 2 cards centered */}
+        <ul className="flex flex-wrap justify-center gap-12 w-full">
+          {secondRow.map((card, idx) => (
+            <li
+              key={idx}
+              className={`w-[29%] min-w-[180px] flex flex-col items-center gap-4 
+        ${idx === 0 ? "sm:border-r sm:pr-6 sm:border-[#D9D9D9]" : ""}
+      `}
+            >
+              <div
+                className="w-[120px] h-[120px] max-sm:w-[140px] max-sm:h-[140px] flex items-center justify-center rounded-full"
+                style={{ background: card.iconBG }}
+              >
+                <img src={card.icon} alt={card.title} width={70} />
+              </div>
+              <div className="text-center">
+                <span className="text-orange font-bold text-2xl max-sm:text-3xl">
+                  {card.number}
+                </span>
+                <span className="text-[#58595B] text-xl block">
+                  {card.title}
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

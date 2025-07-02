@@ -5,7 +5,14 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" }); // you can remove behavior for instant scroll
+    const isManualTabSwitch = sessionStorage.getItem("manualTabNavigation");
+
+    if (isManualTabSwitch === "true") {
+      sessionStorage.removeItem("manualTabNavigation");
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
 
   return null;

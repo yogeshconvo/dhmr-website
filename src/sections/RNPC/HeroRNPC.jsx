@@ -3,78 +3,31 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import Banner1 from "../../assets/RNPC/hero/Banner01.png";
-import Banner2 from "../../assets/RNPC/hero/Banner02.png";
-import Banner3 from "../../assets/RNPC/hero/Banner03.png";
-import Banner4 from "../../assets/RNPC/hero/Banner04.png";
-import Banner5 from "../../assets/RNPC/hero/Banner05.png";
-import Banner6 from "../../assets/RNPC/hero/Banner06.png";
-import Banner7 from "../../assets/RNPC/hero/Banner07.png";
-import Banner8 from "../../assets/RNPC/hero/Banner08.png";
-import Banner9 from "../../assets/RNPC/hero/Banner09.png";
-import Banner10 from "../../assets/RNPC/hero/Banner10.png";
+import Banner1 from "../../assets/RNPC/hero/1.png";
+import Banner2 from "../../assets/RNPC/hero/2.jpg";
+import Banner3 from "../../assets/RNPC/hero/3.jpg";
+import Banner4 from "../../assets/RNPC/hero/4.jpg";
+import YellowStrap from "../../components/UI/YellowStrap";
+import FloatingButtons from "../../components/FloatingButtons";
 
 const slides = [
   {
-    img: Banner1,
-    part1: "Gait and motion analysis via X-sens,",
-    part2: "Center for Advanced Physiotherapy Education and Research",
-    textPosition: "right",
-  },
-  {
     img: Banner2,
-    part1: "Cutting-Edge",
-    part2: "Neurorehabilitation",
-    textPosition: "left",
-  },
-  {
-    img: Banner3,
-    part1: "Cutting- Edge",
-    part2: "Neurorehabilitation",
-    textPosition: "right",
-  },
-  {
-    img: Banner4,
-    part1: "Elite Sports Physiotherapy:",
-    part2: "Where science meets performance!",
-    textPosition: "left",
-  },
-  {
-    img: Banner5,
     part1: "Awarded Excellence:",
     part2: "Recognized as Best Institute 2024",
     textPosition: "right",
   },
   {
-    img: Banner6,
-    part1: "Shaping minds, refining techniques —",
-    part2: "where every classroom becomes a launchpad for clinical excellence.",
+    img: Banner3,
+    part1: "Elite Sports Physiotherapy:",
+    part2: "Where science meets performance!",
     textPosition: "left",
   },
   {
-    img: Banner7,
-    part1:
-      "From expert hands to empathetic care — our clinic is where learning meets life-changing treatment.",
-    part2: "(Physiotherapy clinical teaching in a 1500+ bedded hospital)",
+    img: Banner4,
+    part1: "From expert hands to empathetic care",
+    part2: "Physiotherapy clinical teaching in a 1500+ bedded hospital",
     textPosition: "right",
-  },
-  {
-    img: Banner8,
-    part1: "Where Movement Meets Measurement:",
-    part2: "Sports Physiotherapy",
-    textPosition: "right",
-  },
-  {
-    img: Banner9,
-    part1: "Where Healing Meets Harmony-",
-    part2: "A Campus that Celebrates Culture, Compassion & Community",
-    textPosition: "right",
-  },
-  {
-    img: Banner10,
-    part1: "Our library is more than books —",
-    part2: "it’s a gateway to research, reflection, and revolutionary ideas.",
-    textPosition: "left",
   },
 ];
 
@@ -83,8 +36,10 @@ function HeroRNPC() {
 
   return (
     <div className="relative w-full h-[90vh] overflow-hidden">
+      <YellowStrap />
+      <FloatingButtons />
       <Swiper
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay]}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         onSlideChange={(swiper) => setCurrentSlide(swiper.activeIndex)}
         className="w-full h-full"
@@ -93,7 +48,7 @@ function HeroRNPC() {
       >
         {slides.map((slide, idx) => {
           const mobilePosition =
-            idx % 2 === 0 ? "top-10 bottom-auto" : "top-auto bottom-10";
+            idx % 2 === 0 ? " bottom-10" : "top-auto bottom-10";
 
           const desktopPosition =
             slide.textPosition === "right"
@@ -123,7 +78,7 @@ function HeroRNPC() {
                   right: slide.textPosition === "right" ? 0 : "auto",
                 }}
               >
-                <h1 className="text-5xl font-oswald-medium font-[500] leading-[1.1] max-w-full uppercase text-left drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
+                <h1 className=" text-4xl md:text-5xl font-oswald-medium font-[500] leading-[1.1] max-w-full uppercase text-left drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
                   <span className="text-white">
                     {slide.part1.toUpperCase()}
                   </span>

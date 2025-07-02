@@ -72,7 +72,7 @@ import DeanImage from "../../assets/FEAT/DeanFEAT.png";
 const DeansMessageFEAT = () => {
   return (
     <div className="bg-[#0C2C5B] text-white px-6 md:px-40 py-20">
-      <h2 className="text-3xl md:text-4xl font-oswald-medium font-[500] mb-10">
+      <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-wide font-[500] mb-10">
         <div className="border-t-4 border-[#EE4B2B] w-20 mb-2"></div>
         DEAN’S MESSAGE
       </h2>
@@ -85,8 +85,8 @@ const DeansMessageFEAT = () => {
             alt="Dean"
             className="rounded-lg w-[300px] md:w-[370px] h-auto object-cover mb-4 mx-auto lg:mx-0"
           />
-          <div className="text-[13px] leading-6 text-[#E1CD67] mt-2">
-            <p className="text-[#E1CD67] font-bold">Prof. (Dr.) K.T.V. Reddy</p>
+          <div className="text-[#E1CD67] leading-relaxed max-sm:mt-4">
+            <p className=" font-bold">Prof. (Dr.) K.T.V. Reddy</p>
             <p>
               Dean, B. Tech, M. Tech & Ph.D. (IIT Bombay) FIETE,
               <br />

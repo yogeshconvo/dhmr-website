@@ -8,7 +8,7 @@ const DirectorsMessageCDOE = () => {
   return (
     <div className="bg-[#0C2C5B] text-white px-6 md:px-40 py-20">
       <h2 className="text-3xl md:text-4xl font-oswald-medium mb-10 relative">
-        <span className="block border-t-4 border-[#EE4B2B] w-10 mb-2"></span>
+        <hr className="w-16 border-[#F04E30] border-t-4 mb-3" />
         DIRECTOR’S MESSAGE
       </h2>
 
@@ -64,16 +64,12 @@ const DirectorsMessageCDOE = () => {
             lifelong learning.
           </p>
           {!showMore && (
-            <a
-              href="#"
-              className="text-[#9AD1FF] text-sm underline cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
-                setShowMore(true);
-              }}
+            <button
+              className="mt-2 mb-4 px-6 py-2 bg-[#F04E30] text-white rounded font-semibold transition hover:bg-[#d13d22]"
+              onClick={() => setShowMore(true)}
             >
-              view more
-            </a>
+              View More
+            </button>
           )}
           {showMore && (
             <>

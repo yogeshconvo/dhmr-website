@@ -30,7 +30,7 @@ const sections = [
     id: 3,
     label: "Library Facilities",
     image: Img4,
-    content: `Extensive collection of academic texts, research papers, and clinical guides | Digital access to journals and databases such as PubMed, Springer, ProQuest, NDLI, EBSCOHOST, DELNET, Shodhganga, and British Council Digital Library | Study zones, group workspaces, and computer stations.`,
+    content: `Extensive collection of academic texts, research papers, and clinical guides I Digital access to journals, e-books, and research databases such as PubMed and others I Access to DELNET’s vast repository of e-resources, research papers, and academic materials from multiple institutions I Digital Lab: Access to extensive e-resources including Springer, ProQuest, EBSCOHOST, NDLI, Shodhganga, E-Shodhsindhu, and the British Council Digital Library.`,
   },
   {
     id: 4,

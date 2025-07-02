@@ -73,11 +73,22 @@ const sectionKeyMap = {
   culturalevents: "university",
 };
 
+const tabOrder = ["events", "sportsevents", "culturalevents"];
+
 export default function CampusLife() {
   const [activeSection, setActiveSection] = useState("events");
 
   const handleSectionClick = (section) => {
     setActiveSection(section);
+  };
+
+  const handleArrowClick = (direction) => {
+    const currentIndex = tabOrder.indexOf(activeSection);
+    const newIndex =
+      direction === "left"
+        ? (currentIndex - 1 + tabOrder.length) % tabOrder.length
+        : (currentIndex + 1) % tabOrder.length;
+    setActiveSection(tabOrder[newIndex]);
   };
 
   return (
@@ -92,11 +103,17 @@ export default function CampusLife() {
                 CAMPUS LIFE
               </h2>
             </div>
-            <div className="flex items-center space-x-4">
-              <button className="p-2 rounded-full border border-gray-300 hover:bg-gray-100">
+            <div className="hidden md:block flex items-center space-x-4">
+              <button
+                className=" p-2 rounded-full border border-gray-300 hover:bg-gray-100"
+                onClick={() => handleArrowClick("left")}
+              >
                 <ArrowLeft size={18} />
               </button>
-              <button className="p-2 rounded-full border border-gray-300 hover:bg-gray-100">
+              <button
+                className="p-2 rounded-full border border-gray-300 hover:bg-gray-100"
+                onClick={() => handleArrowClick("right")}
+              >
                 <ArrowRight size={18} />
               </button>
               <a
@@ -111,7 +128,7 @@ export default function CampusLife() {
           </div>
 
           <div className="flex justify-center items-center space-x-6 text-sm mb-6">
-            {["events", "sportsevents", "culturalevents"].map((section) => (
+            {tabOrder.map((section) => (
               <React.Fragment key={section}>
                 <button
                   className={`${

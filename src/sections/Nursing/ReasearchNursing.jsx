@@ -21,7 +21,7 @@ const reasearchData = [
   {
     icon: copyrights,
     iconBG: "#122E5E",
-    number: "83",
+    number: "70+",
     title: "Copyrights",
   },
   {

@@ -24,9 +24,9 @@ const DMCP = () => {
       <AffiliatedHospital />
       <HolisticLearningSection />
       <DepartmentsDMCP />
+      <ResearchCollaborationsDMCP />
       <GlobalOpportunitiesSectionDMCP />
       <HigherEduPlacementDMCP />
-      <ResearchCollaborationsDMCP />
       <StudentLifeDMCP />
       <TestimonialsDMCP />
     </div>

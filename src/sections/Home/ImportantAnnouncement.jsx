@@ -29,6 +29,23 @@ import examinationAnnouncementsDoc22 from "../../assets/ImportantAnnouncementDoc
 
 // Update on 25/06
 import examinationAnnouncementsDoc23 from "../../assets/ImportantAnnouncementDoc/Examination Notification _Second MBBS(CBME+OLD)_S-25.pdf";
+// Update on 27/06
+import examinationAnnouncementsDoc24 from "../../assets/ImportantAnnouncementDoc/TH & PR_TT_Second MBBS_Summer -25.pdf";
+
+// Update on 01/07
+import examinationAnnouncementsDoc25 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-3 sem mca-s2025-27.06.2025-online.pdf";
+import examinationAnnouncementsDoc26 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-4 sem ma-s2025-27.06.2025.pdf";
+import examinationAnnouncementsDoc27 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-3 sem ma-s2025-27.06.2025.pdf";
+import examinationAnnouncementsDoc28 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-3 sem mca-s2025-27.06.2025.pdf";
+import examinationAnnouncementsDoc29 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-2 sem m lib-s2025-27.06.2025.pdf";
+import examinationAnnouncementsDoc30 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-1 sem mca-s2025-27.06.2025.pdf";
+import examinationAnnouncementsDoc31 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/TIME TABLE - SAS-Summer 25 BBA 1.pdf";
+import examinationAnnouncementsDoc32 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/TIME TABLE - SAS-Summer 25 MBA 1 .pdf";
+
+import examinationAnnouncementsDoc33 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/FINAL_EXAM NOTIFICATION OF (DIP in VT-1 SEM)_SUMMER 2025.pdf";
+import examinationAnnouncementsDoc34 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/FINAL_EXAM NOTIFICATION OF (B-OPTOMETRY-1 SEM)_SUMMER 2025.pdf";
+import examinationAnnouncementsDoc35 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/FINAL_EXAM NOTIFICATION OF (B.Sc. in AHS_1 SEM) (ALL BRANCH).pdf";
+import examinationAnnouncementsDoc36 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/FINAL_EXAM NOTIFICATION OF (AHS-BVOC-1 SEM)_SUMMER 2025.pdf";
 
 const ImportantAnnouncements = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,6 +68,38 @@ const ImportantAnnouncements = () => {
   ];
 
   const ResultAnnouncements = [
+    // update on 01/07
+
+    {
+      text: "3 SEM MCA-SUMMER,2025-ONLINE",
+      college: "Centre for Distance and Online Education",
+      url: examinationAnnouncementsDoc25,
+    },
+    {
+      text: "4 SEM MA-SUMMER,2025",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc26,
+    },
+    {
+      text: "3 SEM MA-SUMMER,2025",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc27,
+    },
+    {
+      text: "3 SEM MCA-SUMMER,2025",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc28,
+    },
+    {
+      text: "2 SEM M LIB-SUMMER,2025",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc29,
+    },
+    {
+      text: "1 SEM MCA-SUMMER,2025",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc30,
+    },
     //update on 25/06
     {
       text: "3 Semester B. Pharm-Summer,2025",
@@ -109,6 +158,51 @@ const ImportantAnnouncements = () => {
     },
   ];
   const examinationAnnouncements = [
+    // update on 01/07
+    {
+      text: " 1 Semester DIPLOMA IN VT",
+      url: examinationAnnouncementsDoc33,
+      college: "School of Allied Health Sciences, Sawangi (Meghe), Wardha",
+    },
+
+    {
+      text: "1 Semester AHS - B-VOC ",
+      url: examinationAnnouncementsDoc36,
+      college: "School of Allied Health Sciences, Sawangi (Meghe), Wardha",
+    },
+
+    {
+      text: "1 Semester B-OPTOMETRY",
+      url: examinationAnnouncementsDoc34,
+      college: "School of Allied Health Sciences, Sawangi (Meghe), Wardha",
+    },
+
+    {
+      text: "1 Semester AHS-BSC (All Branch) ",
+      url: examinationAnnouncementsDoc35,
+      college: "School of Allied Health Sciences, Sawangi (Meghe), Wardha",
+    },
+
+    // update on 01/07
+    {
+      text: "TIME TABLE - Summer 25 BBA 1",
+      url: examinationAnnouncementsDoc31,
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+    },
+
+    {
+      text: "TIME TABLE - Summer 25 MBA 1 ",
+      url: examinationAnnouncementsDoc32,
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+    },
+
+    // update on 27/06
+    {
+      text: "Examination Time Table Second MBBS(CBME+OLD) Summer 2025",
+      url: examinationAnnouncementsDoc24,
+      college: "Datta Meghe College of Pharmacy, Sawangi (Meghe), Wardha",
+    },
+
     //update on 25/06
     {
       text: "Examination of Summer 2025, SECOND MBBS (CBME) AND SECOND MBBS (OLD)",
@@ -277,9 +371,9 @@ Meghe Medical College, Wanadongri (Hingna), Nagpur`,
             >
               <ArrowLeft
                 size={16}
-                className={`${
-                  currentIndex === 0 ? "text-gray-300" : "text-gray-400"
-                }`}
+                // className={`${
+                //   currentIndex === 0 ? "text-gray-400" : "text-gray-500"
+                // }`}
               />
             </button>
             <button

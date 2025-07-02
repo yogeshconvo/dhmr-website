@@ -1,44 +1,4 @@
-// // import React from "react";
-
-// // function CollegeTabs({ collegeTabNumber, setCollegeTabNumber }) {
-// //   return (
-// //     <ul className="container flex items-center font-oswald-medium justify-center gap-[8%] border-b my-8 w-fit m-auto max-sm:flex-col">
-// //       <li
-// //         onClick={() => setCollegeTabNumber(1)}
-// //         className={`cursor-pointer text-center text-xl py-4 max-w-[410px]  ${
-// //           collegeTabNumber == 1
-// //             ? "font-[500] text-[#122E5E] border-b-4  border-[#F04E30]"
-// //             : "text-[#58595B]"
-// //         }`}
-// //       >
-// //         Smt. Radhikabai Meghe Memorial College of Nursing, Wardha
-// //       </li>
-// //       <li
-// //         onClick={() => setCollegeTabNumber(2)}
-// //         className={`cursor-pointer text-center text-xl py-4 max-w-[300px]  ${
-// //           collegeTabNumber == 2
-// //             ? "font-[500] text-[#122E5E] border-b-4   border-[#F04E30]"
-// //             : "text-[#58595B]"
-// //         }`}
-// //       >
-// //         Shalinitai Meghe College of Nursing, Salod (Hirapur), Wardha
-// //       </li>
-// //       <li
-// //         onClick={() => setCollegeTabNumber(3)}
-// //         className={`cursor-pointer text-xl text-center py-4 max-w-[300px]  ${
-// //           collegeTabNumber == 3
-// //             ? "font-[500] text-[#122E5E] border-b-4  border-[#F04E30]"
-// //             : "text-[#58595B]"
-// //         }`}
-// //       >
-// //         Shalinitai Meghe College of Nursing, Nagpur
-// //       </li>
-// //     </ul>
-// //   );
-// // }
-
-// // export default CollegeTabs;
-// import React, { useEffect } from "react";
+// import React, { useEffect, useRef } from "react";
 // import { useLocation, useNavigate } from "react-router-dom";
 
 // const tabRoutes = [
@@ -59,7 +19,11 @@
 //   },
 // ];
 
-// function CollegeTabs({ collegeTabNumber, setCollegeTabNumber }) {
+// function CollegeTabs({
+//   collegeTabNumber,
+//   setCollegeTabNumber,
+//   setManualNavigation,
+// }) {
 //   const location = useLocation();
 //   const navigate = useNavigate();
 
@@ -67,13 +31,13 @@
 //     const found = tabRoutes.find((tab) =>
 //       location.pathname.startsWith(tab.path)
 //     );
-//     if (found && collegeTabNumber !== found.number) {
+//     if (found) {
 //       setCollegeTabNumber(found.number);
 //     }
-//   }, [location.pathname, setCollegeTabNumber, collegeTabNumber]);
+//   }, [location.pathname, setCollegeTabNumber]);
 
-//   // Handle tab click: set tab and update URL
 //   const handleTabClick = (tab) => {
+//     setManualNavigation(true); // mark this as a manual (tab) navigation
 //     setCollegeTabNumber(tab.number);
 //     navigate(tab.path);
 //   };
@@ -99,8 +63,7 @@
 
 // export default CollegeTabs;
 
-
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const tabRoutes = [
@@ -121,11 +84,7 @@ const tabRoutes = [
   },
 ];
 
-function CollegeTabs({
-  collegeTabNumber,
-  setCollegeTabNumber,
-  setManualNavigation,
-}) {
+function CollegeTabs({ collegeTabNumber, setCollegeTabNumber }) {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -133,15 +92,17 @@ function CollegeTabs({
     const found = tabRoutes.find((tab) =>
       location.pathname.startsWith(tab.path)
     );
-    if (found) {
+    if (found && found.number !== collegeTabNumber) {
       setCollegeTabNumber(found.number);
     }
   }, [location.pathname, setCollegeTabNumber]);
 
   const handleTabClick = (tab) => {
-    setManualNavigation(true); // mark this as a manual (tab) navigation
-    setCollegeTabNumber(tab.number);
-    navigate(tab.path);
+    if (collegeTabNumber !== tab.number) {
+      sessionStorage.setItem("manualTabNavigation", "true");
+      setCollegeTabNumber(tab.number);
+      navigate(tab.path);
+    }
   };
 
   return (

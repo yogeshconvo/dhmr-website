@@ -6,7 +6,7 @@ import message3 from "../../../assets/Nursing/Nursing/Principal/Dr. Nilima Rakhs
 const collegeData = [
   {
     college: 1,
-    para: "Welcome to Smt. Radhikabai Meghe Memorial College of Nursing (SRMMCON), where we are committed to excellence in nursing education, research, and clinical practice. Our state-of-the-art facilities, experienced faculty, and student-centered approach ensure holistic development, preparing future nursing professionals to meet global healthcare challenges.",
+    para: "Welcome to Smt. Radhikabai Meghe Memorial College of Nursing (SRMMCON), where we are committed to excellence in nursing education, research, and clinical practice. Our state-of-the-art facilities, experienced faculty, and student-centered approach ensure holistic development, preparing future nursing professionals to meet global healthcare challenges. At SRMMCON, we emphasize hands-on learning, innovation, and compassionate patient care, fostering leaders in the nursing field. Join us in our mission to shape skilled, ethical, and dedicated nursing professionals who make a difference in society.",
     linkText: "Know more",
     linkHref: "#",
     drName: "Dr. Vaishali Taksande (Chahande) Professor Cum",
@@ -18,7 +18,7 @@ const collegeData = [
   },
   {
     college: 2,
-    para: "It is my privilege to welcome you to Shalinitai Meghe College of Nursing, Salod, (Hirapur) at Datta Meghe Institute of Higher Education and Research (Deemed to be University) Wardha. SMCON Nursing college excellence in healthcare education, and dedicated to nurturing skilled, compassionate, and knowledgeable professionals who will contribute meaningfully to the healthcare sector.",
+    para: "It is my privilege to welcome you to Shalinitai Meghe College of Nursing, Salod, (Hirapur) at Datta Meghe Institute of Higher Education and Research (Deemed to be University) Wardha. SMCON Nursing college excellence in healthcare education, and dedicated to nurturing skilled, compassionate, and knowledgeable professionals who will contribute meaningfully to the healthcare sector. Our programs are designed to provide a strong foundation in evidence based nursing, integrating academic rigor with practical experience. We take pride in fostering a culture of learning, leadership, and service, empowering our students to make a difference in the lives of individuals and communities. I invite you to be a part of this journey and contribute to the noble profession of healthcare to SMCON",
     linkText: "Know more",
     linkHref: "#",
     drName: "Dr. Ranjana Sharma",
@@ -30,7 +30,7 @@ const collegeData = [
   },
   {
     college: 3,
-    para: "Welcome to Shalinitai Meghe College of Nursing, a premier institution shaping future nursing leaders. Established in 2023 under DMIHER (DU), we are committed to academic excellence, hands-on clinical training, and holistic student development. Nursing is more than a profession—it’s a calling. We equip our students with cutting-edge knowledge, ethical values, and compassionate care, blending theory with practical exposure in top healthcare institutions. Our state-of-the-art facilities, research-driven curriculum, and global standards ensure graduates exceed industry expectations.",
+    para: "Welcome to Shalinitai Meghe College of Nursing, a premier institution shaping future nursing leaders. Established in 2023 under DMIHER (DU), we are committed to academic excellence, hands-on clinical training, and holistic student development.Nursing is more than a profession—it’s a calling. We equip our students with cutting-edge knowledge, ethical values, and compassionate care, blending theory with practical exposure in top healthcare institutions. Our state-of-the-art facilities, research-driven curriculum, and global standards ensure graduates exceed industry expectations.As part of DMIHER (DU), we offer strong academic and professional networks, fostering continuous learning and career growth. Join us and embark on a rewarding journey in nursing.I invite you to join us at Shalinitai Meghe College of Nursing and take the first step towards a fulfilling and impactful career in nursing",
     linkText: "Know more",
     linkHref: "#",
     drName: "Dr. Nilima Rakshale",

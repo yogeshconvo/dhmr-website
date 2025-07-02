@@ -44,14 +44,14 @@ function GlobalOpportunitiesRNPC() {
   };
 
   return (
-    <section className="bg-white container py-24">
+    <section className="bg-white  py-24">
       <div className="max-w-7xl font-[Arial] mx-auto">
-        <div className="mb-8">
+        <div className="mb-8 px-5">
           <h2 className="text-3xl font-oswald-medium sm:text-4xl font-[500] text-[#707070] mb-4 uppercase relative">
             <span className="block border-t-4 border-[#F04E30] w-16 mb-4"></span>
             Global Opportunities
           </h2>
-          <p className="text-gray-600 text-xm max-w-5xl tracking-normal leading-relaxed">
+          <p className="text-gray-600 text-xm max-w-5xl  tracking-normal leading-relaxed">
             With alumni thriving across 10+ countries—including the USA, UK,
             Australia, Canada, Germany, and Singapore—RNPC’s influence extends
             far beyond India. From healthcare innovation and research to
@@ -63,7 +63,7 @@ function GlobalOpportunitiesRNPC() {
         </div>
 
         {/* Mobile: Slick Slider */}
-        <div className="sm:hidden">
+        {/* <div className="sm:hidden">
           <Slider {...settings}>
             {logos.map((logo, idx) => (
               <div key={idx} className="flex justify-center items-center h-24">
@@ -75,7 +75,7 @@ function GlobalOpportunitiesRNPC() {
               </div>
             ))}
           </Slider>
-        </div>
+        </div> */}
 
         {/* <div className="hidden sm:grid grid-cols-4 gap-y-8 items-center justify-items-stretch">
           {logos.map((logo, idx) => (

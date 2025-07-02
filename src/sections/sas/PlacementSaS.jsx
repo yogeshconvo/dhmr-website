@@ -149,12 +149,12 @@ export default function HigherEduPlacement() {
           institute ensures hands-on industry exposure and career-ready
           training.
           <br />
-          <span className="inline-block mt-2 text-[#269BFF] font-bold">
+          {/* <span className="inline-block mt-2 text-[#269BFF] font-bold">
             Highest package offered: ₹12 LPA
-          </span>
+          </span> */}
         </p>
 
-        {/* Swiper Slider */}
+    
         {/* <Swiper
           modules={[Autoplay, Pagination]}
           slidesPerView={6}

@@ -58,7 +58,6 @@ const NoPaperFormWidget = () => {
       data-w="e07589d3e4cb30c4c23ee47924975ec8"
       style={{ minHeight: "360px" }}
     ></div>
- 
   );
 };
 
@@ -100,7 +99,7 @@ export default function EducationEnquiryPage() {
       > */}
       <div
         className="relative w-full h-[90vh] overflow-hidden bg-cover
-    [@media(min-width:1350px)]:max-h-[74vh]
+    [@media(min-width:1350px)]:max-h-[75vh]
     [@media(min-width:1550px)]:max-h-[75vh]
     [@media(min-width:1600px)]:max-h-[80vh]
     [@media(min-width:1700px)]:max-h-[90vh]"
@@ -133,15 +132,15 @@ export default function EducationEnquiryPage() {
           </a>
         </div>
         {/* Centered Heading */}
-        <div className="absolute md:hidden insert-0 mb-20 md:mb-0 md:mt-6 md:ml-20 lg:left-[30vh] xl:left-[90vh] 2xl:left-[95vh] lg:-translate-x-1/2 inset-0 flex items-end md:items-center md:justify-center p-7 pb-20 md:p-0 md:px-4 text-white z-30">
+        <div className="absolute md:hidden insert-0 md:mb-0 md:mt-6 md:ml-20 lg:left-[30vh] xl:left-[90vh] 2xl:left-[95vh] lg:-translate-x-1/2 inset-0 flex items-end md:items-center md:justify-center p-7 pb-14 md:p-0 md:px-4 text-white z-30">
           <div>
-            <h1 className="text-3xl md:text-5xl font-oswald-medium font-[500] tracking-wider mb-2">
+            <h1 className="text-[35px] md:text-5xl font-oswald-medium font-[500] tracking-wider mb-2">
               WELCOME TO THE
             </h1>
-            <h2 className="text-3xl md:text-5xl font-oswald-medium font-[500] tracking-wider mb-2 text-[#E1CD67]">
+            <h2 className="text-[35px] md:text-5xl font-oswald-medium font-[500] tracking-wider mb-2 text-[#E1CD67]">
               DYNAMIC WORLD OF
             </h2>
-            <h2 className="text-3xl md:text-5xl font-oswald-medium font-[500] tracking-wider text-[#E1CD67]">
+            <h2 className="text-[35px] md:text-5xl font-oswald-medium font-[500] tracking-wider text-[#E1CD67]">
               HIGHER EDUCATION
             </h2>
           </div>
@@ -159,7 +158,7 @@ export default function EducationEnquiryPage() {
     z-40
   `}
       >
-        <div className="w-full  bg-white rounded-t-[20px]  mt-22 shadow-2xl overflow-hidden flex flex-col">
+        <div className="w-full  bg-white rounded-t-[20px]  mt-22 shadow-sm overflow-hidden flex flex-col">
           {/* Header */}
           <div className="bg-[#F04E30] text-white text-center py-3 text-lg sm:text-xl font-sans rounded-t-lg">
             ENQUIRE NOW

@@ -1,157 +1,129 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 import { useNavigate } from "react-router-dom";
 import SPDCBanner1 from "../../assets/SPDC/b1.jpg";
 import SPDCBanner2 from "../../assets/SPDC/b2.jpg";
 import SPDCBanner3 from "../../assets/SPDC/b3.jpg";
-
-// Simple parser using [[color]]text[[/color]]
-const parseTitle = (title) => {
-  const regex = /\[\[([^\]]+)\]\](.*?)\[\[\/\1\]\]/g;
-  const parts = [];
-  let lastIndex = 0;
-  let match;
-
-  while ((match = regex.exec(title)) !== null) {
-    if (match.index > lastIndex) {
-      parts.push(title.substring(lastIndex, match.index));
-    }
-
-    const color = match[1];
-    const text = match[2];
-
-    parts.push(
-      <span key={match.index} className="font-semibold" style={{ color }}>
-        {text}
-      </span>
-    );
-
-    lastIndex = regex.lastIndex;
-  }
-
-  if (lastIndex < title.length) {
-    parts.push(title.substring(lastIndex));
-  }
-
-  return parts;
-};
+import Floatingbuttons from "../../components/FloatingButtons";
+import YellowStrip from "../../components/UI/YellowStrap";
+import { title } from "framer-motion/client";
 
 const HeroSPDC = () => {
+  const navigate = useNavigate();
 
   const slides = [
     {
       img: SPDCBanner1,
-      title:
-        "[[#E1CD67]]325+ DENTAL CHAIRS[[/#E1CD67]] \n(Affiliated To – write this in small case) with 1,500+ Bedded Multi-Specialty Hospital",
-      highlight:
+      title: "325+ DENTAL CHAIRS",
+      highlight: `(Affiliated To – write this in small case) with 1,500+ Bedded Multi-Specialty Hospital`,
+      paragraph:
         "Sharad Pawar Dental College & Hospital —\nA Landmark of Dental Excellence",
       textPosition: "left",
     },
     {
       img: SPDCBanner2,
-      title:
-        "[[#E1CD67]]75% DOCTORAL[[/#E1CD67]] FACULTY,\n[[#E1CD67]]850+[[/#E1CD67]] YEARS OF TEACHING EXPERIENCE",
-      highlight:
+      title: "75% DOCTORAL FACULTY ",
+      highlight: "850+ YEARS OF TEACHING EXPERIENCE",
+      paragraph:
         "Learning by Doing — Hands-On Skill Training\nin a Simulated Environment",
-      textPosition: "right",
+      textPosition: "left",
     },
     {
       img: SPDCBanner3,
-      title:
-        "[[#E1CD67]]8 PG[[/#E1CD67]] PROGRAMS,\n[[#E1CD67]]2880+[[/#E1CD67]] GRADUATES",
-      highlight:
-        "Postgraduate Precision — Advanced\nClinical Exposure from Day One",
+      title: "8 PG PROGRAMS,",
+      highlight: "2880+ GRADUATES",
+      paragraph:
+        "Postgraduate Precision — Advanced Clinical Exposure from Day One",
       textPosition: "left",
     },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
-  const current = slides[currentSlide];
-
   return (
     <div className="relative w-full h-[90vh] overflow-hidden">
       {/* Top Strip */}
-      <div className="absolute top-0 left-0 w-full lg:w-[calc(100%-380px)] xl:w-[calc(100%-6.8%-300px)] bg-[#E1CD67] text-gray-600 text-[11px] sm:text-sm px-3 py-2 flex flex-col sm:flex-row sm:justify-between sm:items-center z-20 gap-y-2">
-        <span className="text-sm sm:ml-20">Admissions open for 2025-26</span>
-        <div className="flex items-center gap-x-5 gap-y-1">
-          <div className="bg-[#F04E30] text-white px-4 py-1 sm:px-5 sm:py-2 w-fit">
-            <span className="font-semibold text-xl">APPLY NOW</span>
-          </div>
-          <span className="text-base sm:text-sm text-gray-800">
-            for Admission 2025-26
-          </span>
-        </div>
-      </div>
+      <YellowStrip />
 
-      {/* Helpline */}
-      <div className="absolute right-20 xl:right-[6%] z-20 hidden lg:block">
-        <a href="tel:+918888040999" className="block">
-          <button className="bg-[#F04E30] text-white h-[60px] px-4 py-3 uppercase font-semibold text-xl font-sans whitespace-nowrap">
-            Helpline: <span>+91 8888040999</span>
-          </button>
-        </a>
-      </div>
-
-      {/* Background image */}
-      <img
-        src={current.img}
-        alt="Campus"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      {/* <div className="absolute inset-0 bg-opacity-40" /> */}
-      {/* Overlay for text readability */}
-      <div className="absolute inset-0 bg-black/40 sm:bg-black/30 z-10" />
-
-      {/* Text Content */}
-      <div
-        className={`absolute z-20 px-4 sm:px-6 ${
-          current.textPosition === "right"
-            ? "right-0 text-left mr-10"
-            : "left-0 text-left ml-10"
-        } top-1/2 transform -translate-y-1/2 text-white w-full sm:w-1/2 max-w-xl`}
+      {/* Swiper */}
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        className="w-full h-full"
       >
-        <h1 className="text-3xl md:text-4xl font-oswald-medium font-medium leading-snug whitespace-pre-line">
-          {parseTitle(current.title)}
-        </h1>
-        <p className="text-xl md:text-2xl mt-3 font-light whitespace-pre-line">
-          {current.highlight}
-        </p>
-      </div>
+        {slides.map((slide, idx) => {
+          const customMarginTop = idx === 0 ? "" : idx === 1 ? "" : "";
 
-      {/* Side Actions */}
-      <div className="flex flex-col gap-32 fixed top-[23%] max-sm:top-[30%] right-[22px] font-[500] z-20">
-        <div className="transform -rotate-90 origin-right">
-          <a
-            href="https://dmiher.edu.in/admissionform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#122E5E] text-white text-sm px-6 py-3 inline-block"
-          >
-            Announcements
-          </a>
-        </div>
-        <div className="transform -rotate-90 origin-right">
-          <button
-            type="button"
-            onClick={() =>
-              window.open(
-                "https://www.dmiher.edu.in/lp/national-admission",
-                "_blank"
-              )
+          return (
+            <SwiperSlide key={idx}>
+              {/* Background Image */}
+              <img
+                src={slide.img}
+                alt={`Slide ${idx}`}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div
+                className={`absolute top-auto md:top-0 bottom-0 w-full h-1/2 md:h-full z-10 
+    ${
+      idx === 0
+        ? "bg-gradient-to-tr from-black/10 to-transparent"
+        : idx === 1
+        ? "bg-gradient-to-tr from-black/30 to-transparent"
+        : "bg-gradient-to-tr from-black/10 to-transparent"
+    }
+    ${
+      slide.textPosition === "right"
+        ? "right-0 md:bg-gradient-to-l"
+        : "hidden lg:block left-0 md:bg-gradient-to-r"
+    }`}
+              />
+              {/* Mobile Dim Overlay */}
+              {slide.textPosition !== "right" && (
+                <div className="lg:hidden absolute inset-0 bg-opacity-60" />
+              )}
+              {/* Text Content */}
+              <div
+                className={`absolute
+            top-auto bottom-12 p-5 md:p-15 sm:top-1/2 sm:bottom-auto sm:transform sm:-translate-y-1/2
+            text-white w-full sm:w-full lg:w-[45%] max-w-none z-20
+            ${
+              slide.textPosition === "right"
+                ? `text-left sm:right-0 ${idx === 1 ? "sm:mr-20" : ""}`
+                : "text-left sm:left-0"
             }
-            className="bg-[#122E5E] text-white text-sm px-6 py-3"
-          >
-            Admission Enquiry
-          </button>
-        </div>
-      </div>
+            ${customMarginTop}
+          `}
+              >
+               
+                <h1
+                  className={`${
+                    idx === 0
+                      ? "text-3xl md:text-4xl md:mt-[-200px]"
+                      : "text-5xl md:text-5xl"
+                  } font-oswald-medium font-medium uppercase leading-snug whitespace-pre-line drop-shadow-[1px_1px_3px_rgba(0,0,0,0.4)] text-left`}
+                >
+                  {slide.title}
+                  <span className="text-[#E1CD67] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.2)] block mt-2">
+                    {slide.highlight}
+                  </span>
+                </h1>
+
+                <p
+                  className={`${
+                    idx !== 2 ? "mt-2" : ""
+                  } text-base sm:text-xl font-[400] whitespace-pre-line drop-shadow-lg max-w-[545px] ${
+                    idx === 3 ? "text-left ml-35 text-amber-50" : "text-left"
+                  }`}
+                  dangerouslySetInnerHTML={{ __html: slide.paragraph }}
+                />
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+
+      <Floatingbuttons />
     </div>
   );
 };

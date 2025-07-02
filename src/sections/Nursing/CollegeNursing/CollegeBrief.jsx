@@ -39,18 +39,17 @@ function CollegeBrief({ collegeTabNumber }) {
   if (currentCollegeData)
     return (
       <div
-        className={`container p-12 flex items-center justify-center gap-18 flex-wrap animate-fade transition ${
-          currentCollegeData.customClass
-            ? currentCollegeData.customClass
-            : undefined
+        className={`container px-4 py-10 flex flex-col md:flex-row items-center justify-center gap-8 animate-fade transition ${
+          currentCollegeData.customClass ? currentCollegeData.customClass : ""
         }`}
       >
-        <div className="flex-1 min-w-[300px]">
+        {/* Text Content */}
+        <div className="w-full md:w-1/2">
           <h3
-            className="text-[#122E5E] font-oswald-medium text-xl font-[500] mb-4"
+            className="text-[#122E5E] font-oswald-medium text-2xl font-bold mb-4"
             dangerouslySetInnerHTML={{ __html: currentCollegeData.title }}
-          ></h3>
-          <p className="text-[#58595B] leading-5 mb-6">
+          />
+          <p className="text-[#58595B] text-base mb-6">
             {currentCollegeData.para}
           </p>
           <a
@@ -61,11 +60,12 @@ function CollegeBrief({ collegeTabNumber }) {
           </a>
         </div>
 
-        <div className="flex-2 min-w-[300px] h-full rounded-md overflow-hidden shadow-lg flex-shrink-0">
+        {/* Image Content */}
+        <div className="w-full md:w-1/2 rounded-md overflow-hidden shadow-lg">
           <img
             src={currentCollegeData.sliderImages}
-            alt={currentCollegeData.title.replace(/<br\s*\/?>/gi, " ")}
-            className="object-fill object-cover w-full h-full"
+            alt="College"
+            className="w-full h-auto object-cover"
           />
         </div>
       </div>

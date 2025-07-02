@@ -41,7 +41,7 @@ const SectionHeader = ({ title }) => (
   <div className="mb-6">
     <div className="h-1 w-20 bg-red-500 mt-1" />
     <h2
-      className="text-2xl sm:text-3xl mt-3 text-[#707070] uppercase"
+      className="text-3xl sm:text-4xl mt-3 text-[#707070] uppercase"
       style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
     >
       {title}
@@ -54,8 +54,8 @@ function StudentLifeSAS() {
   const sliderRef = useRef(null);
 
   const chunkedSlides = [];
-  for (let i = 0; i < allClubs.length; i += 6) {
-    chunkedSlides.push(allClubs.slice(i, i + 6));
+  for (let i = 0; i < allClubs.length; i += 9) {
+    chunkedSlides.push(allClubs.slice(i, i + 9));
   }
 
   const settings = {
@@ -74,7 +74,7 @@ function StudentLifeSAS() {
         <div className=" justify-between items-center mb-4">
           <SectionHeader title="STUDENT LIFE" />
           <div className="flex justify-between">
-            <div className="mt-2 text-[#707070] max-w-4xl text-xm">
+            <div className="mt-2 text-[#707070] max-w-4xl text-lg">
               <p>
                 <b>A vibrant blend of culture, creativity, and community</b>{" "}
                 <br />
@@ -87,7 +87,7 @@ function StudentLifeSAS() {
                 together.
               </p>
             </div>
-            <div className="flex gap-2 mt-25">
+            <div className="flex gap-2 mt-28">
               <button
                 onClick={() => sliderRef.current?.slickPrev()}
                 className="border p-2 rounded-full hover:bg-gray-100 transition"
@@ -108,7 +108,7 @@ function StudentLifeSAS() {
         <Slider ref={sliderRef} {...settings}>
           {chunkedSlides.map((slideGroup, index) => (
             <div key={index}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 {slideGroup.map((item, idx) => (
                   <div key={idx} className="relative">
                     <img

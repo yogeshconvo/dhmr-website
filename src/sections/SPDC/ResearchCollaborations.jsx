@@ -3,18 +3,18 @@ import researchicon1 from "../../assets/SPDC/logo1.png";
 import researchicon2 from "../../assets/SPDC/logo2.png";
 import researchicon3 from "../../assets/SPDC/logo3.png";
 import researchicon4 from "../../assets/SPDC/logo4.png";
-
+import ViewMoreButton from "../../components/UI/ViewMore";
 const ResearchCollaborations = () => {
   return (
     <div className="bg-[#f2f2f2] px-6 py-12 md:px-16 md:py-20 text-gray-500">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
         {/* Left Side */}
         <div>
-          <div className="h-1 w-10 bg-[#e8502e] mb-4"></div>
-          <h2 className="text-3xl md:text-4xl uppercase font-oswald-medium">
+          <h2 className="text-3xl md:text-4xl uppercase font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
+            <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
             Research & <br /> Collaborations
           </h2>
-          <p className="mt-4 text-base md:text-lg  text-[#444]">
+          <p className="mt-4 pb-4 text-base md:text-lg  text-[#444]">
             <span className="font-[500] text-gray-600">
               Advancing Knowledge, Impacting Lives
             </span>
@@ -28,12 +28,7 @@ const ResearchCollaborations = () => {
             <br />A respected center for dental research, we are actively
             advancing innovation across multiple clinical and academic domains.
           </p>
-          <a
-            href="#"
-            className="text-[#007bff] underline mt-20 inline-block text-xs"
-          >
-            Know more about Research & Collaborations
-          </a>
+          <ViewMoreButton label="Know more about Research & Collaborations" />
         </div>
 
         {/* Right Side */}

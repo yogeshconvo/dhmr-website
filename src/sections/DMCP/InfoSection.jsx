@@ -17,9 +17,8 @@ const DMCPInfoSection = () => {
           FUTURE-FOCUSED. TECHNOLOGY-LED.
         </h1> */}
 
-        {/* Body Text */}
-        <div className="text-[#58595B] font-[Arial] tracking-wide  max-w-4xl mx-auto">
-          <p className="mb-5">
+        <div className="text-[#58595B] font-[Arial] tracking-wide max-w-4xl mx-auto">
+          <p className="mb-4">
             Established in 2019, DMCP is a PCI-recognized institution under
             DMIHER (Deemed to be University), offering D.Pharm, B.Pharm,
             M.Pharm, Pharm D, and Ph.D. programs. Known for its strong research

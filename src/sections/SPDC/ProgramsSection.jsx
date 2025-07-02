@@ -1,57 +1,65 @@
 import React from "react";
-import program1 from "../../assets/FEAT/program1.png";
-import program2 from "../../assets/FEAT/program2.png";
-import program3 from "../../assets/FEAT/program3.png";
-import program4 from "../../assets/FEAT/program4.png";
 
 const programs = [
-  {
-    src: program1,
-    alt: "Undergraduate",
-  },
-  {
-    src: program3,
-    alt: "Postgraduate",
-  },
-  {
-    src: program2,
-    alt: "Certificate program/ EDP",
-  },
-  {
-    src: program4,
-    alt: "PhD",
-  },
+  "Undergraduate",
+  "Postgraduate",
+  "Certificate program/ EDP",
+  "PhD",
 ];
 
 const ProgramsSection = () => {
   return (
     <div className="bg-white max-w-7xl mx-auto py-16 text-[#666]">
       {/* Heading */}
-      <h2 className="text-3xl px-10 md:px-0 md:text-4xl font-oswald-medium mb-12 relative">
-        <span className="block border-t-4 border-[#F04E30] w-16 mb-4"></span>
+      <h2 className="text-3xl md:text-4xl uppercase font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
+        <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
         OUR PROGRAMS
       </h2>
 
       {/* Images & Button Side by Side */}
       <div className="flex flex-col px-10 md:flex-row items-start gap-8 mb-12">
         {/* Images Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-28 max-w-3xl w-full">
-          {programs.map((program, index) => (
-            <div key={index} className="text-center">
-              <img
-                src={program.src}
-                alt={program.alt}
-                className="h-[90px] object-contain cursor-pointer hover:opacity-90 transition"
-                onClick={() =>
-                  window.open("https://www.dmiher.edu.in/courses", "_blank")
-                }
-              />
-            </div>
+        {/* <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 sm:gap-x-40 gap-y-8 justify-items-center w-full md:w-auto">
+          {programs.map((program) => (
+            <li
+              key={program}
+              className="cursor-pointer w-full"
+              onClick={() =>
+                window.open("https://www.dmiher.edu.in/courses", "_blank")
+              }
+            >
+              <span className="clip-path-message  block w-full">
+                <span className="clip-path-message-inner block w-full">
+                  <span className="curser group-hover:cursor-pointer cursor-default w-full h-full flex items-center justify-center text-center text-base sm:text-lg md:text-2xl text-gray-600 transition-all duration-300 ease-in-out">
+                    {program}
+                  </span>
+                </span>
+              </span>
+            </li>
           ))}
-        </div>
+        </ul> */}
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 sm:gap-x-40 gap-y-8 justify-items-center w-full md:w-auto">
+          {programs.map((program) => (
+            <li
+              key={program}
+              className="cursor-pointer w-fit md:w-full"
+              onClick={() =>
+                window.open("https://www.dmiher.edu.in/courses", "_blank")
+              }
+            >
+              <span className="clip-path-message block w-fit md:w-full">
+                <span className="clip-path-message-inner block w-fit md:w-full">
+                  <span className="curser group-hover:cursor-pointer cursor-default w-full h-full flex items-center justify-center text-center text-base sm:text-lg md:text-2xl text-gray-600 transition-all duration-300 ease-in-out px-4">
+                    {program}
+                  </span>
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
 
         {/* Explore Button */}
-        <div className="md:ml-0 mt-4 md:mt-30">
+        <div className="md:ml-50 mt-4 md:mt-30">
           <button
             onClick={() =>
               window.open("https://www.dmiher.edu.in/courses", "_blank")
@@ -61,35 +69,31 @@ const ProgramsSection = () => {
             EXPLORE PROGRAMS
           </button>
         </div>
-        <div className=" md:hidden flex-col justify-end sm:flex-row sm:items-center">
-          <a
-            href="#"
-            className="text-xs py-1 px-2 rounded-sm bg-[#E3F2FD] text-[#F04E30] underline"
-          >
-            Check all Mandatory Disclosures{" "}
-            <span className="font-bold">Here</span>
-          </a>
-        </div>
       </div>
-      <h2 className="text-3xl px-10 md:px-0 md:text-4xl font-oswald-medium mb-12 relative">
-        <span className="block border-t-4 border-[#F04E30] w-16 mb-4"></span>
+      <h2 className="text-3xl md:text-4xl uppercase font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
+      <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
         MANDATORY DISCLOSURES
       </h2>
       {/* Bottom Link */}
+      {/* Desktop link only */}
       <div className="hidden sm:flex flex-col sm:flex-row sm:items-center gap-4">
-        {/* <a
-          href="#"
-          className="text-xl tracking-wide font-oswald-medium bg-[#E3F2FD] text-[#F04E30]  px-4 py-2 rounded-md font-[300] hover:bg-blue-100 transition"
-        >
-          Check all Mandatory Disclosures{" "}
-          <span className="font-[400] underline">Here</span>
-        </a> */}
         <a
           href="#"
-          className="text-xl tracking-wide font-oswald-medium  text-gray-600  rounded-md font-[300] hover:bg-blue-100 transition"
+          className="text-xl tracking-wide font-oswald-medium text-gray-600 rounded-md font-[300] hover:bg-blue-100 transition"
         >
           Check all Mandatory Disclosures{" "}
           <span className="font-[400] underline">Click Here</span>
+        </a>
+      </div>
+
+      {/* Mobile link only */}
+      <div className="flex sm:hidden justify-center mt-4">
+        <a
+          href="#"
+          className="text-xs py-1 px-2 rounded-sm bg-[#E3F2FD] text-[#F04E30] underline"
+        >
+          Check all Mandatory Disclosures{" "}
+          <span className="font-bold">Here</span>
         </a>
       </div>
     </div>

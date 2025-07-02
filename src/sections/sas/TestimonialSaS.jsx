@@ -54,18 +54,20 @@ function TestimonialsSAS() {
   };
 
   return (
-    <div className="px-4 md:px-8 py-10 bg-[#F4F4F4]">
-      <h2 className="text-3xl sm:text-4xl ml-4 sm:ml-15 font-medium text-gray-500 font-oswald-medium mb-4">
-        <hr className="border-red-500 border-2 w-12 mb-2" />
+    <div className="px-4 md:px-8 py-12 bg-[#F4F4F4]">
+      {/* Heading */}
+      <h2 className="text-2xl sm:text-3xl md:text-4xl ml-4 md:ml-10 font-oswald-medium text-gray-700 mb-8">
+        <hr className="border-red-500 border-2 w-12 mb-4" />
         TESTIMONIALS
       </h2>
 
-      <div className="text-center flex justify-center pb-8 gap-4 flex-wrap">
+      {/* Tabs */}
+      <div className="flex justify-center flex-wrap gap-4 pb-10 text-center">
         {tabs.map((tabName, index) => (
           <button
             key={tabName}
             onClick={() => handleTabClick(tabName)}
-            className={`px-3 py-1 text-sm sm:text-base transition-all ${
+            className={`px-4 py-2 text-sm sm:text-base font-medium transition-all duration-200 ${
               tab === tabName
                 ? "underline text-black"
                 : "text-gray-500 hover:text-gray-700"
@@ -78,37 +80,32 @@ function TestimonialsSAS() {
         ))}
       </div>
 
-      <div className="my-10 ">
+      {/* Swiper Slider */}
+      <div className="my-6">
         <Swiper
-          style={{
-            paddingBottom: 80,
-          }}
+          style={{ paddingBottom: 80 }}
           slidesPerView={"auto"}
           centeredSlides={true}
           spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
+          pagination={{ clickable: true }}
           modules={[Pagination]}
           className="mySwiper"
         >
           {data[tab]?.map((testimonial, idx) => (
             <SwiperSlide key={idx}>
-              <div className="flex-center gap-12 max-sm:flex-col">
+              <div className="flex justify-center items-center gap-10 flex-wrap px-4">
                 <img
                   src={testimonial.img}
-                  alt=""
-                  className="w-45 h-45 object-cover rounded-full"
+                  alt={testimonial.name}
+                  className="w-40 h-40 object-cover rounded-full"
                 />
 
-                <div className="max-w-2xl font-[Arial] text-base">
-                  {" "}
-                  <p className="mb-4">{testimonial.para}</p>
-                  <p className="font-[600] text-xm mt-1">{testimonial.name}</p>
-                  <pre className="font-[Arial]  text-[#707070] leading-5 mt-2">
+                <div className="max-w-xl font-[Arial] text-base text-gray-700">
+                  <p className="mb-4 leading-relaxed">{testimonial.para}</p>
+                  <p className="font-semibold text-sm">{testimonial.name}</p>
+                  <p className="text-sm text-[#707070] whitespace-pre-line mt-2">
                     {testimonial.info}
-                  </pre>
-                  <p className="font-[Arial]  text-[#707070] leading-5 mt-2">{testimonial.batch}</p>
+                  </p>
                 </div>
               </div>
             </SwiperSlide>

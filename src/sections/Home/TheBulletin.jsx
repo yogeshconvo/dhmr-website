@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 // import Guidlinepdf from "../../assets/TestimonialHome/ABSTRACT SUBMISSION GUIDELINES.pdf";
-// import Conclavepdf from "../../assets/TestimonialHome/Conclave.pdf";
+import Conclavepdf from "../../assets/career/Advertisement _01 July 2025.pdf";
 
 const TheBulletin = () => {
   const [activeTab, setActiveTab] = useState("News");
@@ -59,10 +59,15 @@ const TheBulletin = () => {
       },
     ],
     Career: [
+      // {
+      //   title:
+      //     "Vacancies of Project Staff at Research and Innovation Department",
+      //   url: "https://www.dmiher.edu.in/uploads/topics/17491237845433.pdf",
+      // },
       {
         title:
-          "Vacancies of Project Staff at Research and Innovation Department",
-        url: "https://www.dmiher.edu.in/uploads/topics/17491237845433.pdf",
+          "Applications invited for posts under funded research projects. For more details, click here",
+        url: Conclavepdf,
       },
     ],
   };
@@ -158,7 +163,7 @@ const TheBulletin = () => {
       <div
         className={`mt-8 pt-6 sm:pt-8 max-w-full ${
           activeTab === "Career"
-            ? "flex gap-6 overflow-x-auto"
+            ? " gap-6 overflow-x-auto"
             : "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"
         }`}
       >

@@ -33,10 +33,10 @@ const partners = [
 
 function CollabarationSaS() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-10 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-normal text-[#707070] font-[500] mb-12 ">
-          <div className="border-t-4 border-[#EE4B2B] w-20 mb-2 "></div>
+        <h2 className="text-3xl font-[500] text-[#707070] pt-20 mb-8 tracking-wider font-oswald-medium">
+          <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
           {"Industry Partners and Collaborations".toUpperCase()}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -46,9 +46,10 @@ function CollabarationSaS() {
               className="rounded-xl shadow-md p-6 w-[90%] flex flex-col items-center text-center h-full"
               style={{ background: partner.bg }}
             >
-              <div className="w-full flex items-center justify-center mb-3"
+              <div
+                className="w-full flex items-center justify-center mb-3"
                 style={{
-                  height: (idx === 2 || idx === 3) ? "110px" : "88px" // Increase height for 3rd and 4th logo
+                  height: idx === 2 || idx === 3 ? "110px" : "88px", // Increase height for 3rd and 4th logo
                 }}
               >
                 <img

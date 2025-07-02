@@ -19,7 +19,7 @@ export default function PlacementCDOE() {
   return (
     <div className="bg-[#FAF8F0] py-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-[ text-[#707070] font-oswald-medium mb-3">
+        <h2 className="text-4xl font-[500] text-[ text-[#707070] font-oswald-medium mb-3">
           <hr className="w-16 border-[#F04E30] border-t-4 mb-3" />
            PLACEMENT SUPPORT <br />
           

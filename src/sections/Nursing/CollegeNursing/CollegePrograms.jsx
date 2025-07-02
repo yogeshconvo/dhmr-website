@@ -40,18 +40,16 @@ function CollegePrograms({ collegeTabNumber }) {
         </h2>
 
         <ul className="flex flex-wrap justify-center gap-20">
-          {currentCollegeData.messages.map((message) => (
-            <li>
+          {currentCollegeData.messages.map((message, idx) => (
+            <li key={idx}>
               <span
-                className="clip-path-message group"
+                className="clip-path-message group cursor-pointer"
                 onClick={() =>
                   window.open("https://www.dmiher.edu.in/courses", "_blank")
                 }
               >
                 <span className="clip-path-message-inner">
-                  <span className="curser group-hover:cursor-pointer cursor-default">
-                    {message}
-                  </span>
+                  <span className="cursor-pointer">{message}</span>
                 </span>
               </span>
             </li>

@@ -40,8 +40,11 @@ const AboutGrid = () => {
     <section className="py-10 px-4 sm:px-6 md:px-20 mx-auto mt-10 mb-10 max-w-5xl">
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3">
         {aboutItems.map((item, idx) => (
-          <div
+          <a
             key={idx}
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative h-28 md:h-35 w-full rounded-xl overflow-hidden shadow-md transition-transform hover:scale-105"
             style={{
               backgroundImage: `url(${item.image})`,
@@ -49,19 +52,17 @@ const AboutGrid = () => {
               backgroundPosition: "center",
             }}
           >
-            <div className="absolute inset-0  flex items-center justify-center px-2 text-center">
-              <a
-                href={item.url}
-                target="_blank"
+            <div className="absolute inset-0 flex items-center justify-center px-2 text-center">
+              <span
                 className="text-white whitespace-pre-line text-sm sm:text-base md:text-lg font-medium leading-tight"
                 style={{
                   fontFamily: "Helvetica LT Std Condensed, Arial, sans-serif",
                 }}
               >
                 {item.title}
-              </a>
+              </span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

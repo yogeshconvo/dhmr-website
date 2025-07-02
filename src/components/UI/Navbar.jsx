@@ -1,3 +1,5 @@
+//
+
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -8,6 +10,12 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showMobileDropdown, setShowMobileDropdown] = useState(false);
+
+  const [showHospitalDropdown, setShowHospitalDropdown] = useState(false);
+
+  const [showMobileHospitalDropdown, setShowMobileHospitalDropdown] =
+    useState(false);
+
   const location = useLocation();
 
   let hideTimeout;
@@ -23,6 +31,19 @@ const Navbar = () => {
     }, 100);
   };
 
+  let hospitalHideTimeout;
+
+  const handleHospitalEnter = () => {
+    clearTimeout(hospitalHideTimeout);
+    setShowHospitalDropdown(true);
+  };
+
+  const handleHospitalLeave = () => {
+    hospitalHideTimeout = setTimeout(() => {
+      setShowHospitalDropdown(false);
+    }, 100);
+  };
+
   const academicsInstitutes = {
     "Main Campus - Wardha": [
       {
@@ -31,7 +52,7 @@ const Navbar = () => {
       },
       {
         label: "Sharad Pawar Dental College and Hospital",
-        to: "https://www.dmiher.edu.in/about-spdc",
+        to: "/spdc",
       },
       {
         label: "Mahatma Gandhi Ayurvedic College Hospital and Research Centre",
@@ -39,7 +60,7 @@ const Navbar = () => {
       },
       {
         label: "Ravi Nair Physiotherapy College",
-        to: "https://www.dmiher.edu.in/about-rnpc",
+        to: "/rnpc",
       },
 
       {
@@ -65,7 +86,7 @@ const Navbar = () => {
       },
       {
         label: "Centre for Distance and Online Education",
-        to: "https://www.dmiheronline.edu.in/",
+        to: "/cdoe",
       },
 
       // { label: "SHER", to: "https://www.dmiher.edu.in/about-shper" },
@@ -91,11 +112,45 @@ const Navbar = () => {
     ],
   };
 
+  const hospitalsList = {
+    "Main Campus (Wardha)": [
+      {
+        label: "Acharya Vinoba Bhave Rural Hospital (AVBRH)",
+        to: "https://www.avbrhsawangimeghe.com/",
+      },
+      {
+        label: "Shalinitai Meghe Super Speciality Hospital",
+        to: "https://www.smschospital.com/",
+      },
+      {
+        label: "SGM Cancer Centre",
+        to: "https://cancersgmhospital.com/",
+      },
+    ],
+    "Off Campus (Wanadongri)": [
+      {
+        label: "Shalinitai Meghe Hospital & Research Centre (SMHRC), Nagpur",
+        to: "https://www.smhospitalnagpur.com/",
+      },
+    ],
+  };
+
+  // const navLinks = [
+  //   { to: "/about", label: "About" },
+  //   { label: "Academics", isDropdown: true },
+  //   { to: "/programs", label: "Programs" },
+  //   { to: "https://www.avbrhsawangimeghe.com", label: "Hospitals" },
+  //   { to: "/research", label: "Research" },
+  //   {
+  //     to: "https://www.dmiher.edu.in/international-cell",
+  //     label: "Global Connects",
+  //   },
+  // ];
   const navLinks = [
     { to: "/about", label: "About" },
     { label: "Academics", isDropdown: true },
     { to: "/programs", label: "Programs" },
-    { to: "https://www.avbrhsawangimeghe.com", label: "Hospitals" },
+    { label: "Hospitals", isHospitalDropdown: true },
     { to: "/research", label: "Research" },
     {
       to: "https://www.dmiher.edu.in/international-cell",
@@ -171,7 +226,7 @@ const Navbar = () => {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <button className="pb-[2px] border-b-[5px] border-transparent hover:border-[#ff4f37]  text-[#1f3c88]">
+                    <button className="pb-[2px] border-b-[5px] border-transparent hover:border-[#ff4f37] text-[#1f3c88]">
                       {link.label}
                     </button>
                     {showDropdown && (
@@ -182,17 +237,17 @@ const Navbar = () => {
                               <h4 className="text-md font-semibold mb-2 border-b">
                                 {campus}
                               </h4>
-                              <ul className="   space-y-1">
+                              <ul className="space-y-1">
                                 {institutes.map((inst) => (
                                   <li
                                     key={inst.to}
                                     className="flex items-start gap-2"
                                   >
-                                    <div className="w-[6px] h-[6px] rounded-full  bg-[#1f3c88] mt-[6px]" />
+                                    <div className="w-[6px] h-[6px] rounded-full bg-[#1f3c88] mt-[6px]" />
                                     {inst.to.startsWith("/") ? (
                                       <Link
                                         to={inst.to}
-                                        className="text-sm hover:text-[#ff4f37]  block"
+                                        className="text-sm hover:text-[#ff4f37] block"
                                         onClick={() => setShowDropdown(false)}
                                       >
                                         {inst.label}
@@ -208,6 +263,53 @@ const Navbar = () => {
                                         {inst.label}
                                       </a>
                                     )}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
+              } else if (link.label === "Hospitals") {
+                return (
+                  <div
+                    key="hospital-dropdown"
+                    className="relative"
+                    onMouseEnter={handleHospitalEnter}
+                    onMouseLeave={handleHospitalLeave}
+                  >
+                    <button className="pb-[2px] border-b-[5px] border-transparent hover:border-[#ff4f37] text-[#1f3c88]">
+                      {link.label}
+                    </button>
+                    {showHospitalDropdown && (
+                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white text-[#1f3c88] border shadow-lg p-4 z-[9999] w-[300px]">
+                        {Object.entries(hospitalsList).map(
+                          ([campus, hospitals]) => (
+                            <div key={campus} className="mb-4">
+                              <h4 className="text-md font-semibold mb-2 border-b">
+                                {campus}
+                              </h4>
+                              <ul className="space-y-1">
+                                {hospitals.map((hospital) => (
+                                  <li
+                                    key={hospital.to}
+                                    className="flex items-start gap-2"
+                                  >
+                                    <div className="w-[6px] h-[6px] rounded-full bg-[#1f3c88] mt-[6px]" />
+                                    <a
+                                      href={hospital.to}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-sm hover:text-[#ff4f37] block"
+                                      onClick={() =>
+                                        setShowHospitalDropdown(false)
+                                      }
+                                    >
+                                      {hospital.label}
+                                    </a>
                                   </li>
                                 ))}
                               </ul>
@@ -326,8 +428,49 @@ const Navbar = () => {
                     )}
                   </div>
                 );
+              } else if (link.label === "Hospitals") {
+                return (
+                  <div key="mobile-hospitals">
+                    <button
+                      onClick={() =>
+                        setShowMobileHospitalDropdown(
+                          !showMobileHospitalDropdown
+                        )
+                      }
+                      className="border-b-[1px] pb-2 text-left w-full"
+                    >
+                      {link.label}
+                    </button>
+                    {showMobileHospitalDropdown && (
+                      <div className="ml-4 mt-2 space-y-3">
+                        {Object.entries(hospitalsList).map(
+                          ([campus, hospitals]) => (
+                            <div key={campus}>
+                              <h4 className="font-bold text-sm">{campus}</h4>
+                              <ul className="pl-3 space-y-1">
+                                {hospitals.map((hospital) => (
+                                  <a
+                                    key={hospital.to}
+                                    href={hospital.to}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className="block text-xs text-white font-[400] tracking-wide hover:text-[#ff4f37]"
+                                  >
+                                    {hospital.label}
+                                  </a>
+                                ))}
+                              </ul>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
               }
 
+              // For non-dropdown regular links
               return (
                 <Link
                   key={link.to}

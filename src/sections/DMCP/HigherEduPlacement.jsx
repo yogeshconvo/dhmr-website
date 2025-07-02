@@ -11,7 +11,6 @@ import Img4 from "../../assets/DMCP/HE/4.png";
 import Img5 from "../../assets/DMCP/HE/5.png";
 import Img6 from "../../assets/DMCP/HE/6.png";
 import Img7 from "../../assets/DMCP/HE/7.png";
-import GO from "../../assets/DMCP/picture1.png";
 import Img8 from "../../assets/DMCP/Placement/1.png";
 import Img9 from "../../assets/DMCP/Placement/2.png";
 import Img10 from "../../assets/DMCP/Placement/3.png";
@@ -35,6 +34,7 @@ const logos = [
   { src: Img5, alt: "" },
   { src: Img6, alt: "" },
   { src: Img7, alt: "" },
+  { src: Img16, alt: "" },
 ];
 
 const logosForTab = [
@@ -54,23 +54,29 @@ const logosForTab = [
   { src: Img21, alt: "" },
 ];
 
+const autoplayConfig = {
+  delay: 2000,
+  disableOnInteraction: false,
+  pauseOnMouseEnter: false,
+};
+
 export default function HigherEduPlacementDMCP() {
   return (
     <div className="bg-[#FAF8F0] py-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-[500] text-[ text-[#707070] font-oswald-medium mb-3">
+        <h2 className="text-4xl font-[500] text-[#707070] font-oswald-medium mb-3">
           <hr className="w-16 border-[#F04E30] border-t-4 mb-3" />
           HIGHER EDUCATION AND PLACEMENT
           <br />
           (NATIONAL & INTERNATIONAL)
         </h2>
-        <p className="text-md text-gray-500 font-[500] ">
+        <p className="text-md text-gray-500 font-[500]">
           From Campus to Career:
         </p>
         <p className="text-gray-600 mb-6">
           National & Global Pathways <br /> DMCP graduates are placed in some of
           the most respected names in the pharmaceutical and healthcare
-          industries—ranging from Alembic, Macleods, and GSK to IQVIA, TCS, and
+          industries— ranging from Alembic, Macleods, and GSK to IQVIA, TCS, and
           Meditab. Our strong placement record and deep industry connect ensure
           our students step into roles across manufacturing, research, clinical
           practice, and healthcare tech. PG students benefit from one-semester
@@ -79,14 +85,15 @@ export default function HigherEduPlacementDMCP() {
           recruiter network, our students are shaping careers not just in India,
           but on global platforms.
         </p>
+
+        <p className="text-2xl uppercase font-oswald-medium tracking-wide mt-15 text-[#707070] font-[500]">
+          Our Prominent Recruiters :
+        </p>
+
         <Swiper
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay]}
           loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          pagination={{ clickable: true }}
+          autoplay={autoplayConfig}
           breakpoints={{
             320: { slidesPerView: 2, slidesPerGroup: 2 },
             640: { slidesPerView: 3, slidesPerGroup: 2 },
@@ -95,8 +102,8 @@ export default function HigherEduPlacementDMCP() {
           }}
           spaceBetween={20}
         >
-          {logos.map((logo, index) => (
-            <SwiperSlide key={index}>
+          {logosForTab.map((logo, index) => (
+            <SwiperSlide key={`tab-${index}`}>
               <div className="flex items-center py-20 justify-center h-[100px]">
                 <img
                   src={logo.src}
@@ -108,25 +115,10 @@ export default function HigherEduPlacementDMCP() {
           ))}
         </Swiper>
 
-        <h2 className="text-4xl font-[500] text-[ text-[#707070] uppercase mt-5 font-oswald-medium mb-3">
-          <hr className="w-16 border-[#F04E30] border-t-4 mb-3" />
-          Placement:
-        </h2>
-        <img
-          src={GO}
-          alt="Global Opportunities"
-          className="hidden md:block pt-5 max-w-6xl mx-auto "
-        />
-        <p className="text-2xl uppercase font-oswald-medium tracking-wide mt-15 text-[#707070]  font-[500] ">
-          Our Prominent Recruiters :
-        </p>
         <Swiper
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay]}
           loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
+          autoplay={autoplayConfig}
           pagination={{ clickable: true }}
           breakpoints={{
             320: { slidesPerView: 2, slidesPerGroup: 2 },
@@ -136,8 +128,8 @@ export default function HigherEduPlacementDMCP() {
           }}
           spaceBetween={20}
         >
-          {logosForTab.map((logo, index) => (
-            <SwiperSlide key={index}>
+          {logos.map((logo, index) => (
+            <SwiperSlide key={`logo-${index}`}>
               <div className="flex items-center py-20 justify-center h-[100px]">
                 <img
                   src={logo.src}

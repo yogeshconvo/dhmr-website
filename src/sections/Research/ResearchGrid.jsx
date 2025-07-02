@@ -5,12 +5,13 @@ import faculty from "../../assets/ResearchGrid/3.png";
 import collaborations from "../../assets/ResearchGrid/4.png";
 import funded from "../../assets/ResearchGrid/5.png";
 import guiding from "../../assets/ResearchGrid/6.png";
-const ResearchCard = ({ image, title }) => {
+
+const ResearchCard = ({ image, title, url }) => {
   const lines = title.split("\n");
 
-  return (
+  const CardContent = (
     <div
-      className="relative  h-24 md:h-40 w-36 sm:w-48 md:w-52 lg:w-56 xl:w-60 rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105"
+      className="relative h-24 md:h-40 w-36 sm:w-48 md:w-52 lg:w-56 xl:w-60 rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105 cursor-pointer"
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
@@ -35,19 +36,48 @@ const ResearchCard = ({ image, title }) => {
       </div>
     </div>
   );
+
+  return url ? (
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      {CardContent}
+    </a>
+  ) : (
+    CardContent
+  );
 };
 
 const ResearchGrid = () => {
   const researchData = [
-    { image: directorate, title: "Directorate of\nResearch" },
-    { image: facilities, title: "Research Facilities" },
-    { image: faculty, title: "Research Faculty\nProfile" },
+    {
+      image: directorate,
+      title: "Directorate of\nResearch",
+      url: "https://www.dmiher.edu.in/about-research-1",
+    },
+    {
+      image: facilities,
+      title: "Research Facilities",
+      url: "https://www.dmiher.edu.in/research-facilities",
+    },
+    {
+      image: faculty,
+      title: "Research Faculty\nProfile",
+      url: "https://www.dmiher.edu.in/research-faculty-profile",
+    },
     {
       image: collaborations,
       title: "National &\nInternational\nCollaborations",
+      url: "https://www.dmiher.edu.in/national-international-collaborations",
     },
-    { image: funded, title: "Funded Projects" },
-    { image: guiding, title: "Guiding Principles" },
+    {
+      image: funded,
+      title: "Funded Projects",
+      url: "https://www.dmiher.edu.in/about-research-1",
+    },
+    {
+      image: guiding,
+      title: "Guiding Principles",
+      url: "https://www.dmiher.edu.in/about-research-1",
+    },
   ];
 
   const firstRow = researchData.slice(0, 4);
@@ -59,7 +89,12 @@ const ResearchGrid = () => {
         {/* First row: 4 items */}
         <div className="flex flex-wrap justify-center md:justify-between gap-4">
           {firstRow.map((item, index) => (
-            <ResearchCard key={index} image={item.image} title={item.title} />
+            <ResearchCard
+              key={index}
+              image={item.image}
+              title={item.title}
+              url={item.url}
+            />
           ))}
         </div>
 
@@ -70,6 +105,7 @@ const ResearchGrid = () => {
               key={index + 4}
               image={item.image}
               title={item.title}
+              url={item.url}
             />
           ))}
         </div>
@@ -79,5 +115,3 @@ const ResearchGrid = () => {
 };
 
 export default ResearchGrid;
-
-

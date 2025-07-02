@@ -110,7 +110,7 @@ const highlights = [
 
 const HighlightCard = ({ item }) => (
   <div
-    className={`rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden flex flex-col justify-between ${item.bg} w-full sm:w-64 md:w-60 min-h-[380px] sm:min-h-[320px]`}
+    className={`rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden flex flex-col justify-center md:justify-between ${item.bg} w-[90%] sm:w-64 md:w-60 min-h-[380px] sm:min-h-[320px] mx-auto`}
   >
     <div
       className={`${
@@ -187,7 +187,7 @@ export default function WhyStudySection() {
     infinite: true,
     speed: 400,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,

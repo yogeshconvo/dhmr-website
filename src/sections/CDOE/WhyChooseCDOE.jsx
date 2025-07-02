@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import WCF from "../../assets/FEAT/WCF+.png";
 import GovImg from "../../assets/FEAT/Gov.png";
 import { div } from "framer-motion/client";
@@ -95,37 +95,46 @@ const cards = [
 
 const WhyChooseCDOE = () => {
   return (
-    <div className="py-16 px-6 bg-[#FAFAF6] flex justify-center">
-      <div className="w-full max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-wide text-[#707070] font-[600]  mb-10">
+    <div className="pt-10 px-6 bg-[#FAFAF6] flex justify-center">
+      <div className="w-full mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-wide text-[#707070] font-[600] mb-10">
           <div className="border-t-4 border-[#EE4B2B] w-20 mb-2"></div>
-          WHY CHOOSE CDOE
+          WHY CHOOSE CDOE ?
         </h2>
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
-          spaceBetween={10}
-          dots={true}
-          slidesPerView={1}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
-          }}
-          loop={true}
-        >
-          {cards.map((card, index) => (
-            <SwiperSlide
-              key={index}
-              className="flex justify-center sm:justify-center"
-            >
-              <div
-                className={`w-[250px] h-[320px] p-4 rounded-xl shadow-md ${card.bg} font-oswaldLight flex flex-col justify-between`}
-              >
-                {card.content}
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+
+        <div className="relative pb-16">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            spaceBetween={10}
+            pagination={{ clickable: true, el: ".custom-swiper-pagination" }}
+            loop={true}
+            centeredSlides={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                centeredSlides: false,
+              },
+              1024: {
+                slidesPerView: 4,
+                centeredSlides: false,
+              },
+            }}
+          >
+            {cards.map((card, index) => (
+              <SwiperSlide key={index} className="flex justify-center">
+                <div
+                  className={`w-[250px] h-[320px] mx-auto p-4 rounded-xl shadow-md ${card.bg} font-oswaldLight flex flex-col justify-between`}
+                >
+                  {card.content}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Custom Pagination container BELOW Swiper */}
+          <div className="custom-swiper-pagination flex justify-center mt-6" />
+        </div>
       </div>
     </div>
   );

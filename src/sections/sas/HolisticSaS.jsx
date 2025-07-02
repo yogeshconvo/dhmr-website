@@ -46,7 +46,7 @@ const sections = [
     content: `We encourage entrepreneurial thinking and practical exposure through student-led events like food fests, marketing fairs, and innovation bazaars. These interactive platforms allow students to showcase their business acumen, engage in live selling, and test real-world business models—right from ideation to customer interaction. It cultivates leadership, teamwork, and a spirit of enterprise among budding business professionals.`,
   },
   {
-    id: 5,
+    id: 6,
     label: "Library Facilities",
     image: Img6,
     content: `Over 6131 books, 302 journal subscriptions, and Digital Library with 20 Computers having 2 GBPS speed.`,
@@ -82,7 +82,10 @@ function HolisticSaS() {
           </h2>
           <div className="max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
             {sections.map((section) => (
-              <div key={section.id} className="mb-3">
+              <div
+                key={section.id}
+                className="mb-2 pb-2 border-b border-[#707070] last:border-0"
+              >
                 <p>
                   <span
                     onClick={() => setActiveId(section.id)}
@@ -95,7 +98,6 @@ function HolisticSaS() {
                     {section.content}
                   </span>
                 </p>
-                <hr className="my-2" />
               </div>
             ))}
           </div>

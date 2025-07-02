@@ -10,6 +10,7 @@ import Img5 from "../../assets/sas/studentlife/5.jpg";
 import Img6 from "../../assets/sas/studentlife/6.jpg";
 import Img7 from "../../assets/sas/studentlife/7.jpeg";
 import Img8 from "../../assets/sas/studentlife/8.jpg";
+import Img9 from "../../assets/sas/studentlife/9.jpg";
 // Data array
 const academicFacilities = [
   { title: "Cleanliness Drive", image: Img1 },
@@ -20,6 +21,7 @@ const academicFacilities = [
   { title: "Institutional Forum for Women", image: Img6 },
   { title: "Outdoor Learning Spaces", image: Img7 },
   { title: "Volleyball", image: Img8 },
+  { title: "Drama Club", image: Img9 },
 ];
 
 // Header
@@ -40,8 +42,8 @@ function StudentLifeSAS() {
   const sliderRef = useRef(null);
 
   const chunkedSlides = [];
-  for (let i = 0; i < academicFacilities.length; i += 6) {
-    chunkedSlides.push(academicFacilities.slice(i, i + 6));
+  for (let i = 0; i < academicFacilities.length; i += 9) {
+    chunkedSlides.push(academicFacilities.slice(i, i + 9));
   }
 
   const settings = {
