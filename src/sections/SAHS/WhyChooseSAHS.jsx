@@ -135,13 +135,11 @@ const cards = [
     bg: "bg-[#F7941D]/90 text-white",
     content: (
       <>
-        <p className="font-bold font-oswald-medium text-[23px] mt-15">
-          <span className="text-[#122E5E]">Skill based training</span> through
-          Internship
+        <p className="font-bold font-oswald-medium text-[22px] mt-10">
+          Maharashtra Paramedical Council approved programs
         </p>
-        <p className="text-base mt-1 font-light font-oswald-medium">
-          Apprenticeship | Collaborations <br /> with top hospitals of the
-          country
+        <p className="text-base mt-2 font-oswald-medium">
+          NEP aligned curriculum with Lateral Entry/Exit Options
         </p>
       </>
     ),
@@ -150,11 +148,12 @@ const cards = [
     bg: "bg-[#122E5E] text-white",
     content: (
       <>
-        <p className="text-[#E1CD67] font-bold text-2xl mt-15 font-oswald-medium">
-          Real-time training at Hospitals
+        <p className="font-bold font-oswald-medium text-[22px] mt-10">
+          Skill based training through Internship & Apprenticeship
         </p>
-        <p className="text-base mt-1 font-oswald-medium font-light">
-          Diagnostic Centres, Skill labs, <br /> simulation tools, mentorship
+        <p className="text-base mt-2 font-oswald-medium">
+          Collaborations with top hospitals of the country <br />
+          Super specialist and Specialist Doctors for teaching and training
         </p>
       </>
     ),
@@ -163,13 +162,13 @@ const cards = [
     bg: "bg-[#E3F2FD]",
     content: (
       <>
-        <p className="text-[#F04E30] font-oswald-medium tracking-wide font-bold text-[20px] leading-normal mt-15">
-          <span className="text-4xl font-oswald-medium">
-            International exposure
-          </span>
+        <p className="font-bold font-oswald-medium text-[22px] text-[#F04E30] mt-10">
+          State of the art Simulation Lab for skill training
         </p>
-        <p className="text-base text-[#122E5E] font-oswald-medium mt-1">
-          Pathway & semester abroad | <br /> 100% placement assistance
+        <p className="text-base text-[#122E5E] font-oswald-medium mt-2">
+          Multispecialty and super specialty hospital for training <br />
+          SAHS Wardha has 1500+ bedded multispecialty and super specialty
+          hospital for training
         </p>
       </>
     ),
@@ -178,24 +177,25 @@ const cards = [
     bg: "bg-[#FFFFFF]",
     content: (
       <>
-        <p className="text-[#F7941D] font-bold text-3xl font-oswald-medium mt-15">
-          Super specialist & Specialist
+        <p className="font-bold font-oswald-medium text-[22px] text-[#269BFF] mt-10">
+          Real-time training at Hospitals, Diagnostic Centres, Skill labs
         </p>
-        <p className="text-[17px] mt-1 font-oswald-medium text-[#707070]">
-          Doctors for teaching & training
+        <p className="text-base text-[#707070] font-oswald-medium mt-2">
+          Advanced lab equipment, simulation tools, and clinical mentorship
         </p>
       </>
     ),
   },
   {
-    bg: "bg-[#269BFF]",
+    bg: "bg-[#269BFF] text-white",
     content: (
       <>
-        <p className="text-[#122E5E] font-bold text-2xl pt-10 font-oswald-medium">
-          Skill-based training
+        <p className="font-bold font-oswald-medium text-[22px] mt-10">
+          International exposure
         </p>
-        <p className="text-base font-oswald-medium mt-1">
-          via Internship & Apprenticeship programs
+        <p className="text-base font-oswald-medium mt-2">
+          Pathway and semester abroad <br />
+          100% placement assistance
         </p>
       </>
     ),
@@ -234,7 +234,7 @@ const WhyChooseSAHS = () => {
           {cards.map((card, index) => (
             <SwiperSlide key={index} className="flex justify-center">
               <div
-                className={`w-[250px] h-[320px] p-4 rounded-xl shadow-md ${card.bg} font-oswaldLight  justify-between`}
+                className={`w-[250px] h-[320px] p-4 rounded-xl shadow-md ${card.bg} font-oswaldLight flex flex-col justify-start gap-4`}
               >
                 {card.content}
               </div>

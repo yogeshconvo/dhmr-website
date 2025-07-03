@@ -78,11 +78,11 @@ function StudentLifeNursing() {
   };
 
   return (
-    <section className="bg-gray-50 px-4 py-10 relative">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-gray-50 px-4 py-16 relative">
+      <div className=" container  mx-auto">
         {/* Header + Arrows */}
         <SectionHeader title="STUDENT LIFE" />
-        <div className="flex justify-between items-center mb-4">
+        <div className="flex justify-between items-center mb-4 flex-wrap">
           <div className="mt-4 text-[#707070] max-w-4xl">
             <p className="text-sm">
               At SAHS, student life goes far beyond the classroom. A vibrant mix
@@ -100,7 +100,7 @@ function StudentLifeNursing() {
               not just healthcare professionals, but compassionate citizens.
             </p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 mx-auto md:mx-0">
             <button
               onClick={() => sliderRef.current?.slickPrev()}
               className="border p-2 rounded-full hover:bg-gray-100 transition"

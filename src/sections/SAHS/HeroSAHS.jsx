@@ -48,28 +48,19 @@ const HeroSAHS = () => {
     {
       img: Banner1,
       title:
-        "Affiliated to 3000+ Multispecialty and super [[#E1CD67]] specialty hospital for training[[/#E1CD67]]",
-
+        "Learning Where Lives Are Being Saved.\n[[#E1CD67]]Real-time training inside ICUs and dialysis units[[/#E1CD67]]",
       textPosition: "right",
     },
     {
       img: Banner2,
       title:
-        "Maharashtra Paramedical [[#E1CD67]] Council Approved Programs [[/#E1CD67]]",
-
+        "Hands-on Diagnostic & Lab Learning\n[[#E1CD67]]Diagnostic acumen through advanced lab equipment, simulation tools, and clinical mentorship[[/#E1CD67]]",
       textPosition: "left",
     },
     {
       img: Banner3,
       title:
-        "24 UG, 15 PG Programs and  [[#E1CD67]]2500+ Allied Health Students enrolled[[/#E1CD67]]",
-
-      textPosition: "right",
-    },
-    {
-      img: Banner4,
-      title:
-        "NEP aligned curriculum with  [[#E1CD67]]Academic Flexibility[[/#E1CD67]]",
+        "Academic Excellence Meets Real-World Readiness\n[[#E1CD67]]Students are immersed in active healthcare environments—bridging theory with life-saving practice.[[/#E1CD67]]",
       textPosition: "right",
     },
   ];
