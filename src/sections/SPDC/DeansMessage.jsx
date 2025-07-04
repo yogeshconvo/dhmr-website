@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DeanImage from "../../assets/SPDC/DEANSPDC.png";
+import ViewMoreButton from "../../components/UI/ViewMore";
 
 const DeansMessage = () => {
   const [showMore, setShowMore] = useState(false);
@@ -26,6 +27,7 @@ const DeansMessage = () => {
             </p>
             <p>deanspdc@dmimsu.edu.in</p>
           </div>
+          <ViewMoreButton />
         </div>
 
         {/* Message */}
@@ -51,10 +53,10 @@ const DeansMessage = () => {
 
           {!showMore && (
             <button
-              className="mt-2 mb-4 px-6 py-2 bg-[#F04E30] text-white rounded font-semibold transition hover:bg-[#d13d22]"
+              className="mt-2 mb-4 px-6 py-2 bg-[#f78875] text-white rounded font-semibold transition hover:bg-[#d13d22]"
               onClick={() => setShowMore(true)}
             >
-              View More
+              Read More
             </button>
           )}
           {showMore && (

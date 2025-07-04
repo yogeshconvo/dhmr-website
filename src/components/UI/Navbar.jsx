@@ -1,5 +1,3 @@
-//
-
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -10,12 +8,11 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showMobileDropdown, setShowMobileDropdown] = useState(false);
-
   const [showHospitalDropdown, setShowHospitalDropdown] = useState(false);
-
   const [showMobileHospitalDropdown, setShowMobileHospitalDropdown] =
     useState(false);
-
+  const [showMobileAdmissionDropdown, setShowMobileAdmissionDropdown] =
+    useState(false);
   const location = useLocation();
 
   let hideTimeout;
@@ -44,6 +41,37 @@ const Navbar = () => {
     }, 100);
   };
 
+  const admissionsList = {
+    Admissions: [
+      {
+        label: "National Admissions",
+        to: "/admissions",
+      },
+      {
+        label: "International Admissions",
+        to: "https://www.dmiher.edu.in/international-admission/",
+      },
+      {
+        label: "Ph.D Admission",
+        to: "https://www.dmiher.edu.in/post-doctoral-programme-1",
+      },
+    ],
+  };
+
+  const [showAdmissionDropdown, setShowAdmissionDropdown] = useState(false);
+  let admissionHideTimeout;
+
+  const handleAdmissionEnter = () => {
+    clearTimeout(admissionHideTimeout);
+    setShowAdmissionDropdown(true);
+  };
+
+  const handleAdmissionLeave = () => {
+    admissionHideTimeout = setTimeout(() => {
+      setShowAdmissionDropdown(false);
+    }, 100);
+  };
+
   const academicsInstitutes = {
     "Main Campus - Wardha": [
       {
@@ -52,7 +80,8 @@ const Navbar = () => {
       },
       {
         label: "Sharad Pawar Dental College and Hospital",
-        to: "/spdc",
+        to: "https://www.dmiher.edu.in/about-spdc",
+        // to: "/spdc",
       },
       {
         label: "Mahatma Gandhi Ayurvedic College Hospital and Research Centre",
@@ -62,7 +91,6 @@ const Navbar = () => {
         label: "Ravi Nair Physiotherapy College",
         to: "/rnpc",
       },
-
       {
         label: "Datta Meghe College of Pharmacy",
         to: "https://www.dmcopwardha.com/",
@@ -88,8 +116,6 @@ const Navbar = () => {
         label: "Centre for Distance and Online Education",
         to: "/cdoe",
       },
-
-      // { label: "SHER", to: "https://www.dmiher.edu.in/about-shper" },
     ],
     "Off Campus - Wanadongri, Nagpur": [
       {
@@ -135,17 +161,6 @@ const Navbar = () => {
     ],
   };
 
-  // const navLinks = [
-  //   { to: "/about", label: "About" },
-  //   { label: "Academics", isDropdown: true },
-  //   { to: "/programs", label: "Programs" },
-  //   { to: "https://www.avbrhsawangimeghe.com", label: "Hospitals" },
-  //   { to: "/research", label: "Research" },
-  //   {
-  //     to: "https://www.dmiher.edu.in/international-cell",
-  //     label: "Global Connects",
-  //   },
-  // ];
   const navLinks = [
     { to: "/about", label: "About" },
     { label: "Academics", isDropdown: true },
@@ -159,7 +174,7 @@ const Navbar = () => {
   ];
 
   const topLinks = [
-    { to: "/admissions", label: "Admissions" },
+    { label: "Admissions", isAdmissionDropdown: true },
     { to: "https://dmiher.edu.in/admissionform", label: "Announcements" },
     { to: "https://www.dmiher.edu.in/contact-us1", label: "Contact Us" },
   ];
@@ -176,12 +191,71 @@ const Navbar = () => {
         <div className="hidden xl:flex flex-col items-end space-y-2 justify-end h-full gap-1">
           <div className="flex items-center gap-2 text-[14px] font-[500] font-helvetica text-[#707070]">
             {topLinks.map((link, index) => {
-              const isExternal = link.to.startsWith("http");
+              const isExternal = link.to?.startsWith("http");
               const commonClasses = `hover:underline pr-3 whitespace-nowrap ${
                 !isExternal && isActive(link.to)
                   ? "border-b-[2px] border-[#ff4f37] text-[#ff4f37]"
                   : ""
               } ${index < 2 ? "border-r-2 border-[#707070]" : ""}`;
+
+              if (link.isAdmissionDropdown) {
+                return (
+                  <div
+                    key="admission-dropdown"
+                    className="relative"
+                    onMouseEnter={handleAdmissionEnter}
+                    onMouseLeave={handleAdmissionLeave}
+                  >
+                    <button className={commonClasses}>{link.label}</button>
+                    {showAdmissionDropdown && (
+                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white text-[#1f3c88] border shadow-lg p-4 z-[9999] w-[300px]">
+                        {Object.entries(admissionsList).map(
+                          ([category, links]) => (
+                            <div key={category} className="mb-4">
+                              {/* <h4 className="text-md font-semibold mb-2 border-b">
+                                {category}
+                              </h4> */}
+                              <ul className="space-y-1">
+                                {links.map((item) => (
+                                  <li
+                                    key={item.to}
+                                    className="flex items-start gap-2"
+                                  >
+                                    <div className="w-[6px] h-[6px] rounded-full bg-[#1f3c88] mt-[6px]" />
+                                    {item.to.startsWith("/") ? (
+                                      <Link
+                                        to={item.to}
+                                        className="text-sm hover:text-[#ff4f37] block"
+                                        onClick={() =>
+                                          setShowAdmissionDropdown(false)
+                                        }
+                                      >
+                                        {item.label}
+                                      </Link>
+                                    ) : (
+                                      <a
+                                        href={item.to}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm hover:text-[#ff4f37] block"
+                                        onClick={() =>
+                                          setShowAdmissionDropdown(false)
+                                        }
+                                      >
+                                        {item.label}
+                                      </a>
+                                    )}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
 
               return isExternal ? (
                 <a
@@ -491,12 +565,54 @@ const Navbar = () => {
           {/* Top Links */}
           <div className="flex flex-col gap-2 text-[13px] font-[500] font-helvetica text-white border-b-[3px] pb-4 border-b-white">
             {topLinks.map((link) => {
-              const isExternal = link.to.startsWith("http");
+              const isExternal = link.to?.startsWith("http");
               const commonClasses = `hover:underline border-none text-white font-normal ${
                 !isExternal && isActive(link.to)
                   ? "border-b-[2px] border-[#ff4f37] text-[#ff4f37]"
                   : ""
               }`;
+
+              if (link.isAdmissionDropdown) {
+                return (
+                  <div key="mobile-admissions">
+                    <button
+                      onClick={() =>
+                        setShowMobileAdmissionDropdown(
+                          !showMobileAdmissionDropdown
+                        )
+                      }
+                      className="border-b-[1px] pb-2 text-left w-full text-white"
+                    >
+                      {link.label}
+                    </button>
+                    {showMobileAdmissionDropdown && (
+                      <div className="ml-4 mt-2 space-y-3">
+                        {Object.entries(admissionsList).map(
+                          ([category, links]) => (
+                            <div key={category}>
+                              <h4 className="font-bold text-sm">{category}</h4>
+                              <ul className="pl-3 space-y-1">
+                                {links.map((item) => (
+                                  <a
+                                    key={item.to}
+                                    href={item.to}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className="block text-xs text-white font-[400] tracking-wide hover:text-[#ff4f37]"
+                                  >
+                                    {item.label}
+                                  </a>
+                                ))}
+                              </ul>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
 
               return isExternal ? (
                 <a

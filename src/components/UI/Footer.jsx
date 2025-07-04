@@ -110,7 +110,44 @@ const Footer = () => {
                 {program}
               </p>
             ))}
-
+            <h3 className="text-yellow-400 font-oswald-medium text-base sm:text-lg mt-4 pb-2 border-b border-gray-500">
+              Mendatory Disclosure
+            </h3>
+            <ul className="list-disc pl-5">
+              {[
+                {
+                  name: "MOA",
+                  url: "https://www.dmiher.edu.in/Registered%20MOA%20DMIHER%20DU%20(1).pdf",
+                },
+                {
+                  name: "Annual Reports",
+                  url: "https://www.dmiher.edu.in/annual-report",
+                },
+                {
+                  name: "Annual Accounts",
+                  url: "https://www.dmiher.edu.in/audit-report-and-balance-sheet",
+                },
+                {
+                  name: "Academic Calendar",
+                  url: "https://www.dmiher.edu.in/Academic%20Calendar%20Formative%20Examinations%202020-21",
+                },
+                {
+                  name: "Fee Refund Policy",
+                  url: "https://www.dmiher.edu.in/frontEnd/pages/page/images/pdf/Terms_and_Conditions_for_Online_Payment.pdf",
+                },
+              ].map((link) => (
+                <li key={link.name} className="mt-1">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:underline"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
             <h3 className="text-yellow-400 font-oswald-medium text-base sm:text-lg mt-4 pb-2 border-b border-gray-500">
               Terms & Conditions
             </h3>
@@ -166,7 +203,8 @@ const Footer = () => {
                 },
                 {
                   name: "Sharad Pawar Dental College And Hospital",
-                  url: "/spdc",
+                  // url: "/spdc",
+                  url: "https://www.dmiher.edu.in/about-spdc",
                 },
                 {
                   name: "Mahatma Gandhi Ayurvedic College Hospital And Research Centre",
@@ -292,6 +330,15 @@ const Footer = () => {
                 { name: "Campus Life", href: "/campus-life" },
                 { name: "Contact Us", href: "/contact-us" },
                 { name: "About", href: "/about" },
+                {
+                  name: "Placements",
+                  url: "https://www.dmiher.edu.in/placement-cell",
+                },
+
+                {
+                  name: "Alumni",
+                  href: "https://www.dmiher.edu.in/alumni-cell",
+                },
               ].map((link) => (
                 <a
                   key={link.name}
@@ -377,8 +424,19 @@ const Footer = () => {
                   name: "Declaration under RTI Act, 2005",
                   url: "https://www.dmiher.edu.in/declaration-under-rti-act-2005",
                 },
+                {
+                  name: "Details of SGRC and Ombudperson",
+                  url: "https://dmiher.edu.in/uploads/topics/Circular-regarding-Grievance-Redressal-Mechanism-Policy-2.pdf",
+                },
+
+            
+                {
+                  name: " Internal complaint Committee",
+                  url: "https://www.dmiher.edu.in/internal-complaint-committee-for-redressal-sexual-harrasment-complaints",
+                },
                 { name: "MoE", url: "https://www.education.gov.in/" },
                 { name: "UGC", url: "https://www.ugc.gov.in/" },
+                { name: "Study in India", url: "https://studyinindia.gov.in/" },
               ].map((link) => (
                 <li key={link.name} className="mt-1">
                   <a
@@ -482,7 +540,8 @@ const Footer = () => {
                 },
                 {
                   name: "Sharad Pawar Dental College And Hospital",
-                  url: "/spdc",
+                  url: "https://www.dmiher.edu.in/about-spdc",
+                  // url: "/spdc",
                 },
                 {
                   name: "Mahatma Gandhi Ayurvedic College Hospital And Research Centre",

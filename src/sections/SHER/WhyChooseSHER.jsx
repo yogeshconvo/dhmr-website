@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import Img1 from "../../assets/SHER/card1.png";
 import Img2 from "../../assets/SHER/card2.png";
 import Img3 from "../../assets/SHER/card3.png";
@@ -120,8 +120,8 @@ const cards = [
 
 const WhyChooseSHER = () => {
   return (
-    <div className="py-16 px-6 flex justify-center bg-blue-50">
-      <div className="w-full max-w-7xl">
+    <div className="pt-16 px-6 flex justify-center bg-blue-50">
+      <div className="w-full max-w-6xl">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-oswald-medium tracking-normal text-[#707070] font-[600] mb-10">
           <div className="border-t-4 border-[#EE4B2B] w-20 mb-2"></div>
@@ -129,7 +129,7 @@ const WhyChooseSHER = () => {
         </h2>
 
         {/* Swiper */}
-        <Swiper
+        {/* <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           spaceBetween={10}
@@ -156,7 +156,40 @@ const WhyChooseSHER = () => {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
+        <div className="relative pb-16">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            spaceBetween={10}
+            pagination={{ clickable: true, el: ".custom-swiper-pagination" }}
+            loop={true}
+            centeredSlides={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                centeredSlides: false,
+              },
+              1024: {
+                slidesPerView: 4,
+                centeredSlides: false,
+              },
+            }}
+          >
+            {cards.map((card, index) => (
+              <SwiperSlide key={index} className="flex justify-center">
+                <div
+                  className={`w-[250px] h-[320px] mx-auto p-4 rounded-xl shadow-md ${card.bg} font-oswaldLight flex flex-col justify-between`}
+                >
+                  {card.content}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Custom Pagination container BELOW Swiper */}
+          <div className="custom-swiper-pagination flex justify-center mt-6" />
+        </div>
       </div>
     </div>
   );

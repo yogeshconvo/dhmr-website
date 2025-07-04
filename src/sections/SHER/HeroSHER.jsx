@@ -47,7 +47,7 @@ const HeroSHER = () => {
     {
       img: Banner1,
       title:
-        "UNIFIED FRAMEWORKS. GLOBAL STANDARDS.[[#E1CD67]] ACADEMIC EXCELLENCE.[[/#E1CD67]]",
+        "UNIFIED FRAMEWORKS. GLOBAL STANDARDS. \n[[#E1CD67]]ACADEMIC EXCELLENCE.[[/#E1CD67]]",
       highlight:
         "Faculty and leadership of the School of Higher Education and Research, driving global standards and academic integrity.",
       textPosition: "left",

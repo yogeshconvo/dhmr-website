@@ -50,13 +50,8 @@ const SAHSCard = ({ image, title }) => {
         }}
       >
         <div className="absolute inset-0 flex items-center justify-center text-center px-2">
-          <h3 className="text-white text-sm sm:text-base md:text-2xl font-light">
-            {lines.map((line, i) => (
-              <React.Fragment key={i}>
-                {line}
-                <br />
-              </React.Fragment>
-            ))}
+          <h3 className="text-white text-sm sm:text-base md:text-2xl font-light font-oswald-medium">
+            {title}
           </h3>
         </div>
       </div>
