@@ -86,7 +86,7 @@ const DeansMessageSAHS = ({ activeTab }) => {
   return (
     <div className="bg-[#0C2C5B] text-white py-18">
       <div className="container">
-        <h2 className="text-3xl font-[500] text-[#FFF] mb-8 tracking-wider font-oswald-medium">
+        <h2 className="text-3xl md:text-4xl font-[500] text-[#FFF] mb-8 tracking-wider font-oswald-medium">
           <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
           DEAN’S MESSAGE
         </h2>

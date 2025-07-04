@@ -151,7 +151,7 @@ export default function GlobalOpportunitiesSection() {
     <section className="bg-white px-6 py-16">
       <div className="max-w-6xl font-[Arial] mx-auto">
         <div className="mb-8">
-          <h2 className="text-3xl font-oswald-medium font-[500] sm:text-4xl  text-[#707070] mb-2 uppercase relative">
+          <h2 className="text-3xl md:text-4xl font-oswald-medium font-[500] sm:text-4xl  text-[#707070] mb-2 uppercase relative">
             <span className="block border-t-4 border-[#F04E30] w-16 mb-4"></span>
             Global Opportunities <br />
           </h2>

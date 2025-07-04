@@ -29,8 +29,8 @@ const ProgramSectionSAHS = ({ activeTab }) => {
   return (
     <div className="bg-white container  mx-auto px-6 md:px-20 pt-16 pb-10 text-[#666]">
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-oswald-medium mb-10 relative">
-        <span className="block border-t-4 border-[#F25022] w-10 mb-2"></span>
+      <h2 className="text-3xl md:text-4xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
+        <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
         OUR PROGRAMS
       </h2>
 

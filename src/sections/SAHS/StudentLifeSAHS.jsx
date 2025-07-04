@@ -51,7 +51,7 @@ const SectionHeader = ({ title }) => (
   <div className="mb-6">
     <div className="h-1 w-20 bg-red-500 mt-1" />
     <h2
-      className="text-2xl sm:text-3xl mt-3 text-[#707070] uppercase"
+      className="text-3xl md:text-4xl mt-3 text-[#707070] uppercase"
       style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 500 }}
     >
       {title}

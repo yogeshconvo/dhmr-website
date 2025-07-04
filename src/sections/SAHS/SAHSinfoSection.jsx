@@ -79,7 +79,7 @@ const SAHSInfoSection = () => {
 
   return (
     <div className="py-12 px-4">
-      <h2 className="flex flex-wrap items-center justify-center sm:justify-between text-[#F04E30] font-oswald-medium text-3xl tracking-wider uppercase mb-6 text-center">
+      <h2 className="flex flex-wrap items-center justify-center sm:justify-between text-[#F04E30] font-oswald-medium text-3xl md:text-4xl tracking-wider uppercase mb-6 text-center">
         <hr className="hidden sm:block flex-grow border-t border-[#F04E30]" />
         <span className="px-4 whitespace-normal text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
           School of Allied Health Sciences (SAHS)

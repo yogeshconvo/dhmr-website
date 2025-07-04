@@ -1,4 +1,8 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 // Import all your logo images here
 import asianLogo from "../../assets/SAHS/collab/asian.png";
@@ -44,46 +48,78 @@ const internationalPartners = [
 const Collaborations = () => {
   return (
     <section className="bg-[#f7fafd] py-20 px-4">
-      <div className="max-w-7xl mx-auto container">
-        {/* Header */}
-        <div className="mb-12 text-center">
-          <div className="h-1 w-10 bg-[#e8502e] mb-3 mx-auto"></div>
-          <h2 className="text-3xl md:text-4xl font-[500] text-[#707070] uppercase font-oswald-medium leading-tight">
-            Collaborations
-          </h2>
-          <p className="mt-3 text-base text-[#707070] font-[Arial] max-w-2xl mx-auto">
-            <span className="font-bold text-[#707070]">
-              Powered by Partnerships. Defined by Opportunity.
-            </span>
-            <br />
-            SAHS partners with top hospitals, global universities, and leading
-            healthcare academies to offer real-world training, global exposure,
-            and skill-based learning. These alliances drive clinical excellence,
-            academic depth, and industry readiness.
-          </p>
-        </div>
+      {/* Heading */}
+      <h2 className="flex flex-wrap items-center justify-center sm:justify-between text-[#F04E30] font-oswald-medium text-3xl tracking-wider uppercase mb-6 text-center">
+        <hr className="hidden sm:block flex-grow border-t border-[#F04E30]" />
+        <span className="px-4 whitespace-normal text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+          International Admissions
+        </span>
+        <hr className="hidden sm:block flex-grow border-t border-[#F04E30]" />
+      </h2>
 
-        {/* National Partners */}
+      {/* Subheading */}
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-[500] font-oswald-medium text-[#58595B] uppercase leading-snug mb-6 text-center">
+        Your Gateway to a Global Healthcare Career
+      </h1>
+
+      <div className="mb-12 text-center">
+        <div className="h-1 w-10 bg-[#e8502e] mb-3 mx-auto"></div>
+        <h2 className="text-3xl md:text-4xl font-[500] text-[#707070] uppercase font-oswald-medium leading-tight">
+          Collaborations
+        </h2>
+        <p className="mt-3 text-base text-[#707070] font-[Arial] max-w-2xl mx-auto">
+          <span className="font-bold text-[#707070]">
+            Powered by Partnerships. Defined by Opportunity.
+          </span>
+          <br />
+          SAHS partners with top hospitals, global universities, and leading
+          healthcare academies to offer real-world training, global exposure,
+          and skill-based learning. These alliances drive clinical excellence,
+          academic depth, and industry readiness.
+        </p>
+      </div>
+
+      <div className="max-w-7xl mx-auto">
+        {/* National Partners - SLIDER */}
         <div className="mb-14">
           <h3 className="text-xl sm:text-2xl font-bold text-[#122E5E] mb-6 text-center">
             National Developmental Partners
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center items-center">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            style={{ paddingBottom: "2.5rem", cursor: "grab" }}
+            slidesPerView={5}
+            spaceBetween={30}
+            loop={true}
+            autoplay={{
+              delay: 1800,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              0: { slidesPerView: 2 },
+              480: { slidesPerView: 2 },
+              640: { slidesPerView: 3 },
+              1024: { slidesPerView: 5 },
+            }}
+          >
             {nationalPartners.map((partner, idx) => (
-              <div key={idx} className="flex flex-col items-center text-center">
-                <div className="bg-white rounded-lg shadow p-3 mb-2 flex items-center justify-center h-[70px] w-[110px]">
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    className="max-h-12 max-w-[90px] object-contain mx-auto"
-                  />
+              <SwiperSlide key={idx}>
+                <div className="flex flex-col items-center text-center">
+                  <div className="rounded-lg shadow p-3 mb-2 flex items-center justify-center h-[70px] w-[110px] bg-[#f7fafd]">
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="max-h-12 max-w-[90px] object-contain mx-auto"
+                    />
+                  </div>
+                  <span className="text-xs text-[#707070] font-semibold">
+                    {partner.name}
+                  </span>
                 </div>
-                <span className="text-xs text-[#707070] font-semibold">
-                  {partner.name}
-                </span>
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
 
         {/* International Partners */}

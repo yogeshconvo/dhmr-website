@@ -2,12 +2,12 @@ import React from "react";
 
 function AdmissionsSAHS() {
   return (
-    <section className="py-20 px-4 bg-white">
-      <div className="max-w-5xl mx-auto">
+    <section className="py-20 px-4 md:px-0 bg-white">
+      <div className=" mx-auto">
         {/* Heading */}
-        <h2 className="flex flex-wrap items-center justify-center sm:justify-between text-[#F04E30] font-oswald-medium text-3xl tracking-wider uppercase mb-6 text-center">
+        <h2 className="flex flex-wrap items-center justify-center sm:justify-between text-[#F04E30] font-oswald-medium text-3xl tracking-wider uppercase mb-6 text-center ">
           <hr className="hidden sm:block flex-grow border-t border-[#F04E30]" />
-          <span className="px-4 whitespace-normal text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+          <span className="px-4 whitespace-normal text-3xl md:text-4xl">
             International Admissions
           </span>
           <hr className="hidden sm:block flex-grow border-t border-[#F04E30]" />

@@ -105,7 +105,7 @@ Students gain competencies in:
         <div className="flex flex-wrap items-start justify-center gap-12 ">
           {/* Text Section */}
           <div ref={textRef} className="flex-2 min-w-[300px] max-w-[500px]">
-            <h2 className="text-3xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
+            <h2 className="text-3xl md:text-4xl font-[500] text-[#707070] mb-8 tracking-wider font-oswald-medium">
               <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
               HOLISTIC LEARNING
             </h2>
