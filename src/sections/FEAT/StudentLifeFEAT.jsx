@@ -154,6 +154,8 @@
 // };
 
 // export default StudentLifeFEATFEAT;
+
+
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import { ArrowLeft, ArrowRight } from "lucide-react";

@@ -18,25 +18,32 @@ const HeroSPDC = () => {
     {
       img: SPDCBanner1,
       title: "325+ DENTAL CHAIRS",
-      highlight: `(Affiliated To – write this in small case) with 1,500+ Bedded Multi-Specialty Hospital`,
+      highlight: `Affiliated To 1,500+ Bedded \nMulti-Specialty Hospital`,
       paragraph:
         "Sharad Pawar Dental College & Hospital —\nA Landmark of Dental Excellence",
       textPosition: "left",
     },
     {
       img: SPDCBanner2,
-      title: "75% DOCTORAL FACULTY ",
-      highlight: "850+ YEARS OF TEACHING EXPERIENCE",
-      paragraph:
-        "Learning by Doing — Hands-On Skill Training\nin a Simulated Environment",
+      title: "Ranked among  India’s Top 25 dental institutions (NIRF)",
+      highlight: " for 5 consecutive years – 24th rank in NIRF 2024",
+      paragraph: "",
       textPosition: "left",
     },
+    // {
+    //   img: SPDCBanner2,
+    //   title: "75% DOCTORAL FACULTY ",
+    //   highlight: "850+ YEARS OF TEACHING EXPERIENCE",
+    //   paragraph:
+    //     "Learning by Doing — Hands-On Skill Training\nin a Simulated Environment",
+    //   textPosition: "left",
+    // },
     {
       img: SPDCBanner3,
-      title: "8 PG PROGRAMS,",
-      highlight: "2880+ GRADUATES",
-      paragraph:
-        "Postgraduate Precision — Advanced Clinical Exposure from Day One",
+      title: "First NABH-accredited",
+      highlight: "Dental hospital In Maharashtra",
+      // paragraph:
+      //   "Postgraduate Precision — Advanced Clinical Exposure from Day One",
       textPosition: "left",
     },
   ];
@@ -70,7 +77,7 @@ const HeroSPDC = () => {
         ? "bg-gradient-to-tr from-black/10 to-transparent"
         : idx === 1
         ? "bg-gradient-to-tr from-black/30 to-transparent"
-        : "bg-gradient-to-tr from-black/10 to-transparent"
+        : "bg-gradient-to-tr from-black/30 to-transparent"
     }
     ${
       slide.textPosition === "right"
@@ -95,11 +102,12 @@ const HeroSPDC = () => {
             ${customMarginTop}
           `}
               >
-               
                 <h1
                   className={`${
                     idx === 0
-                      ? "text-3xl md:text-4xl md:mt-[-200px]"
+                      ? "text-3xl md:text-4xl md:mt-[-220px]"
+                      : idx === 1
+                      ? "text-3xl md:text-4xl"
                       : "text-5xl md:text-5xl"
                   } font-oswald-medium font-medium uppercase leading-snug whitespace-pre-line drop-shadow-[1px_1px_3px_rgba(0,0,0,0.4)] text-left`}
                 >

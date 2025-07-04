@@ -253,11 +253,7 @@ const CoreValues = () => {
     <div className="flex max-w-5xl items-start w-full p-4 h-full">
       <div
         className="flex-shrink-0 mt-30 font-[300] w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#58595B] opacity-40 text-white flex items-center justify-center text-xl md:text-4xl mr-4 font-['Oswald']"
-        style={{
-          font: "normal normal normal 62px/32px",
-          fontFamily:
-            "'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif",
-        }}
+       
       >
         {value.number}
       </div>

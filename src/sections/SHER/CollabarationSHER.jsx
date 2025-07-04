@@ -167,7 +167,7 @@ const CollabarationSHER = () => {
                             <p className="text-xl font-oswald-medium text-orange-600">
                                 {item.value}
                             </p>
-                            <p className="text-[#58595B] text-base font-oswald-light">
+                            <p className="text-[#58595B] text-base font-">
                                 {item.label}
                             </p>
                         </div>

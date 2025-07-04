@@ -54,20 +54,22 @@ export default function GlobalOpportunities() {
             Global Opportunities
           </h2>
           <p className="text-gray-600 text-xm max-w-5xl tracking-normal leading-relaxed">
-            Excellent global opportunities through collaborations with renowned
-            foreign universities like the University of California, Berkeley,
-            the University of Sydney, Yeshiva University, and others. These
-            partnerships facilitate faculty exchange, student exchange programs,
-            joint research projects, academic trainings and international
-            exposure, enhancing students’ learning experience and career
-            prospects. Four B.Tech. Students have been selected for the emersion
-            program at the University of California Berkeley, USA which is fully
-            sponsored by the Management.
+            JNMC empowers students to become globally competent healthcare
+            leaders through partnerships with institutions like Mayo Clinic
+            (USA), Weill Cornell Medicine (USA), Johns Hopkins University (USA),
+            University of Sydney (Australia), Kazan University (Russia),
+            Caribbean School of Medicine, and Ross University. Opportunities
+            include international conferences, student exchange programs,
+            clinical immersions at Cleveland Clinic (Abu Dhabi) and Imperial
+            College (UK), and participation in global signature courses like the
+            Standardized Patient Program (Mayo Clinic) and case-based Master
+            Clinics (Weill Cornell). These experiences equip students with
+            world-class medical knowledge, cross-cultural competence, and
+            lifelong global networks.
           </p>
         </div>
 
         {/* Mobile: Slick Slider */}
-       
 
         {/* <div className="hidden sm:grid grid-cols-4 gap-y-8 items-center justify-items-stretch">
           {logos.map((logo, idx) => (
@@ -83,7 +85,6 @@ export default function GlobalOpportunities() {
             </div>
           ))}
         </div> */}
-      
       </div>
     </section>
   );

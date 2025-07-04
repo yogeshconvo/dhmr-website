@@ -47,6 +47,16 @@ import examinationAnnouncementsDoc34 from "../../assets/ImportantAnnouncementDoc
 import examinationAnnouncementsDoc35 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/FINAL_EXAM NOTIFICATION OF (B.Sc. in AHS_1 SEM) (ALL BRANCH).pdf";
 import examinationAnnouncementsDoc36 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/FINAL_EXAM NOTIFICATION OF (AHS-BVOC-1 SEM)_SUMMER 2025.pdf";
 
+// update on 03/07
+import examinationAnnouncementsDoc37 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-4 sem ba-w2024-27.06.2025- odl.pdf";
+
+import examinationAnnouncementsDoc38 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-6 sem ba-w2024-27.06.2025- odl.pdf";
+import examinationAnnouncementsDoc39 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-1 sem ba-s2025-27.06.2025- odl.pdf";
+import examinationAnnouncementsDoc40 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-4 sem ba-s2025-27.06.2025.pdf";
+import examinationAnnouncementsDoc41 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/result-6 sem bca-s2025-27.06.2025.pdf";
+// update on 03/07
+import examinationAnnouncementsDoc42 from "../../assets/ImportantAnnouncementDoc/JulyAnnouncements/1. THEORY & PRACTICAL _TT_FINAL_BAMS _W-24 - Resit.pdf";
+
 const ImportantAnnouncements = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeTab, setActiveTab] = useState("admissions");
@@ -68,8 +78,35 @@ const ImportantAnnouncements = () => {
   ];
 
   const ResultAnnouncements = [
-    // update on 01/07
+    // update on 03/07
+    {
+      text: "4 SEM B.A. -WINTER,2024-ODL MODE",
+      college: "Centre for Distance and Online Education",
+      url: examinationAnnouncementsDoc37,
+    },
+    {
+      text: "6 SEM B.A. -WINTER,2024-ODL MODE",
+      college: "Centre for Distance and Online Education",
+      url: examinationAnnouncementsDoc38,
+    },
+    {
+      text: "1 SEM B.A. -SUMMER,2025-ODL MODE",
+      college: "Centre for Distance and Online Education",
+      url: examinationAnnouncementsDoc39,
+    },
 
+    {
+      text: "4 SEM B.A. -SUMMER,2025-REGULAR MODE",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc40,
+    },
+    {
+      text: "6 SEM B.C.A.-SUMMER,2025-REGULAR MODE OLD COURSE",
+      college: "School of Allied Sciences, Sawangi (Meghe), Wardha",
+      url: examinationAnnouncementsDoc41,
+    },
+
+    // update on 01/07
     {
       text: "3 SEM MCA-SUMMER,2025-ONLINE",
       college: "Centre for Distance and Online Education",
@@ -158,6 +195,12 @@ const ImportantAnnouncements = () => {
     },
   ];
   const examinationAnnouncements = [
+    // update on 01/07
+    {
+      text: "EXAM Time table FO FINAL BAMS_WINTER RESIT 2024",
+      url: examinationAnnouncementsDoc42,
+      // college: "School of Allied Health Sciences, Sawangi (Meghe), Wardha",
+    },
     // update on 01/07
     {
       text: " 1 Semester DIPLOMA IN VT",

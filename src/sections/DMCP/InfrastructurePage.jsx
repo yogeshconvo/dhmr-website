@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import HLImg from "../../assets/DMCP/holistic/Teaching-Learning.jpg";
-import Img2 from "../../assets/DMCP/holistic/Laboratory.jpg";
+import Img2 from "../../assets/DMCP/holistic/Laboratory.jpeg";
 import Img3 from "../../assets/DMCP/holistic/Advanced Skill Labs.jpg";
 import Img4 from "../../assets/DMCP/holistic/Museum.jpg";
 import Img5 from "../../assets/DMCP/holistic/6.jpeg";

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { PlayCircle } from "lucide-react";
 
-// import AkashVideo from "../../assets/Testimonials/FEAT/Aayushi Chondhe.mp4";
-// import MGNVideo from "../../assets/Testimonials/FEAT/Mayur Ganwande and Nikita Zade_1.mp4";
-// import RuchiVideo from "../../assets/Testimonials/FEAT/Ruchika Vaidya_1.mp4";
+import AkashVideo from "../../assets/Testimonials/FEAT/Aayushi Chondhe.mp4";
+import MGNVideo from "../../assets/Testimonials/FEAT/Mayur Ganwande and Nikita Zade_1.mp4";
+import RuchiVideo from "../../assets/Testimonials/FEAT/Ruchika Vaidya_1.mp4";
 
 import icon1 from "../../assets/Testimonials/FEAT/1.png";
 import icon2 from "../../assets/Testimonials/FEAT/2.png";
@@ -25,19 +25,19 @@ const testimonialsData = {
   Students: [
     {
       type: "video",
-      // videoUrl: AkashVideo,
+      videoUrl: AkashVideo,
       thumbnail: icon1,
       name: "Miss Aayushi Chondhe",
     },
     {
       type: "video",
-      // videoUrl: MGNVideo,
+      videoUrl: MGNVideo,
       thumbnail: icon3,
       name: "Mr. Mayur Ganwande and Miss Nikita Zade",
     },
     {
       type: "video",
-      // videoUrl: RuchiVideo,
+      videoUrl: RuchiVideo,
       thumbnail: icon2,
       name: "Miss Ruchika Vaidya",
     },
@@ -67,14 +67,7 @@ const testimonialsData = {
       content:
         "As a parent, I wanted a college that not only focuses on academics but also fosters innovation and critical thinking. FEAT has exceeded our expectations with its state-of-the-art labs and experienced faculty. This college’s focus on research, industry collaboration, and real-world applications has truly set it apart. The college provides a safe, supportive, and intellectually stimulating environment that nurtures future healthcare engineers. I highly recommend it to other parents!My daughter , Sakshi is thriving here!",
     },
-    {
-      type: "text",
-      image: PDDImg,
-      name: "Mr. Devendra Dhanjode",
-      course: "Parent of Deoyani Dhanjode (B-Tech CSME 2025)",
-      content:
-        "As a father, I am deeply grateful for the transformative impact of the Faculty of Engineering and Technology at DMIHER on my daughter’s B.Tech journey in Computer Science and Medical Engineering. Since joining, her academic performance, confidence, and overall growth have been remarkable. The dedicated faculty, diverse curriculum, and enriching extracurricular activities have equipped her with essential skills for the future. The college’s supportive environment has helped her develop responsibility, determination, and lifelong friendships. I am proud to see her thrive and confident that DMIHER is laying a strong foundation for her success. My heartfelt thanks to the faculty and staff.",
-    },
+ 
   ],
 };
 

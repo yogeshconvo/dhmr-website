@@ -8,7 +8,7 @@ const programs = [
   "Super Speciality",
   "Fellowship",
   "Certificate Program/ EDP",
-  "MNC",
+  "M.SC",
 ];
 
 function ProgramsSaS() {

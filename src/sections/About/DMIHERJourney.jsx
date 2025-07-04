@@ -268,8 +268,8 @@ const DMHRSTimeline = () => {
         >
           {/* Title */}
           <div className="absolute top-8 left-8 text-white z-10">
-            <h2 className="text-3xl font-bold">
-              <hr className="w-16 sm:w-20 text- border-[#F04E30] mb-4 border-t-8" />
+            <h2 className="text-4xl font-[500]  font-oswald-medium uppercase mb-5  tracking-wide">
+              <hr className="w-16 sm:w-20 border-[#F04E30] mb-2 border-t-4" />
               DMIHER'S <br />
               TRANSFORMATIVE JOURNEY
             </h2>

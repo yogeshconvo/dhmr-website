@@ -9,6 +9,7 @@ import AboutGrid from "../sections/About/AboutGrid";
 import OneHealth from "../sections/About/OneHealth";
 import Gallery from "../sections/About/Gallery";
 import SDGSection from "../sections/About/SDGSection";
+import CommitteesSection from "../sections/About/CommitteesSection";
 
 const About = () => {
   return (
@@ -18,6 +19,7 @@ const About = () => {
       <VisionMissionSection />
       <CoreValues />
       <AboutGrid />
+      <CommitteesSection />
       <DMIHERJourney />
       <OneHealth />
       <HolisticLearningPage />

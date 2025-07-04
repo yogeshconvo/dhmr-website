@@ -14,20 +14,44 @@ import YellowStrap from "../../components/UI/YellowStrap";
 const HeroDMCP = () => {
   const navigate = useNavigate();
 
+  // const slides = [
+  //   {
+  //     img: Banner1,
+  //     title: "Accelerating Innovation",
+  //     highlight: "Shaping Global Pharma Leaders.",
+  //     paragraph: `Redefining pharmacy education through innovation, integrity, and impact`,
+  //     textPosition: "left",
+  //   },
+  //   {
+  //     img: Banner2,
+  //     title: "Real-world Readiness with Hands-on",
+  //     highlight: "Immersive Learning",
+  //     paragraph:
+  //       "‘Anukruti’ Simulation Centre, ‘Jigyasa’ Interactive Museum, and world-class labs for immersive learning.",
+  //     textPosition: "left",
+  //   },
+  //   {
+  //     img: Banner3,
+  //     title: "Research-Driven",
+  //     highlight: "Future-Ready",
+  //     paragraph:
+  //       "500+ research outputs, 11 patents, and placements across global pharma giants.",
+  //     textPosition: "left",
+  //   },
+  // ];
   const slides = [
     {
       img: Banner1,
-      title: "Accelerating Innovation",
-      highlight: "Shaping Global Pharma Leaders.",
-      paragraph: `Redefining pharmacy education through innovation, integrity, and impact`,
+      title: "Bridging Medicines and Lives:",
+      highlight: "Hospital-Based Learning for Future Pharmacists ",
+      paragraph: ``,
       textPosition: "left",
     },
     {
       img: Banner2,
-      title: "Real-world Readiness with Hands-on",
-      highlight: "Immersive Learning",
-      paragraph:
-        "‘Anukruti’ Simulation Centre, ‘Jigyasa’ Interactive Museum, and world-class labs for immersive learning.",
+      title: "Industry Connect:",
+      highlight: "  Driving Growth,\nBuilding Futures",
+      paragraph: "",
       textPosition: "left",
     },
     {
@@ -52,7 +76,8 @@ const HeroDMCP = () => {
         className="w-full h-full"
       >
         {slides.map((slide, idx) => {
-          const customMarginTop = idx === 0 ? "mt-[140px]" : idx === 1 ? "" : "";
+          const customMarginTop =
+            idx === 0 ? "mt-[]" : idx === 1 ? "" : "";
 
           return (
             <SwiperSlide key={idx}>
@@ -94,12 +119,23 @@ const HeroDMCP = () => {
             ${customMarginTop}
           `}
               >
-                <h1 className="text-3xl md:text-5xl font-oswald-medium font-medium uppercase leading-snug whitespace-pre-line drop-shadow-[1px_1px_3px_rgba(0,0,0,0.4)] text-left">
+                {/* <h1 className="text-3xl md:text-5xl font-oswald-medium font-medium uppercase leading-snug whitespace-pre-line drop-shadow-[1px_1px_3px_rgba(0,0,0,0.4)] text-left">
                   {slide.title}
                   <span className="text-[#E1CD67] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.2)] block mt-2">
                     {slide.highlight}
                   </span>
-                </h1>
+                </h1> */}
+                <h1
+  className={`${
+    idx === 0 ? "text-[42px]" : "text-3xl md:text-5xl"
+  } font-oswald-medium font-medium uppercase leading-snug whitespace-pre-line drop-shadow-[1px_1px_3px_rgba(0,0,0,0.4)] text-left`}
+>
+  {slide.title}
+  <span className="text-[#E1CD67] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.2)] block mt-2">
+    {slide.highlight}
+  </span>
+</h1>
+
                 <p
                   className={`${
                     idx !== 2 ? "mt-2" : ""

@@ -1,14 +1,9 @@
 import React, { useState } from "react";
+import YouTube from "react-youtube";
 
 import StudentThumb from "../../assets/TestimonialHome/student.png";
-import StudentVideo from "../../assets/Testimonials/student.mp4";
-
 import ParentsThumb from "../../assets/TestimonialHome/Parents.png";
-import ParentsVideo from "../../assets/Testimonials/parents.mp4";
-
 import AlumniThumb from "../../assets/TestimonialHome/Alumini.png";
-import AlumniVideo from "../../assets/Testimonials/Dr. Shivam.mp4";
-
 import { PlayCircle } from "lucide-react";
 
 const testimonialsData = {
@@ -22,11 +17,12 @@ const testimonialsData = {
           FEAT
         </>
       ),
-      video: StudentVideo,
+      videoId: "8VMIhPv9cJI", 
       thumbnail: StudentThumb,
       type: "video",
     },
   ],
+
   Parents: [
     {
       name: "Dr. Rohit Kumar Gupta",
@@ -39,7 +35,7 @@ const testimonialsData = {
           <b>Vikram Sarabhai Space Centre, ISRO, Thiruvananthapuram, Kerala</b>
         </>
       ),
-      video: ParentsVideo,
+      videoId: "4Y1F8TzGTLo",
       thumbnail: ParentsThumb,
       type: "video",
     },
@@ -60,7 +56,7 @@ const testimonialsData = {
           <b>International Parkinson and Movement Disorder Society</b>
         </>
       ),
-      video: AlumniVideo,
+      videoId: "Enu5EdCqMtg",
       thumbnail: AlumniThumb,
       type: "video",
     },
@@ -76,7 +72,15 @@ const TestimonialVideo = () => {
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
-    setIsPlaying(false); // Stop video on tab switch
+    setIsPlaying(false); // Reset video on tab change
+  };
+
+  const opts = {
+    width: "100%",
+    height: "100%",
+    playerVars: {
+      autoplay: 1,
+    },
   };
 
   return (
@@ -108,7 +112,7 @@ const TestimonialVideo = () => {
       {/* Testimonial Display */}
       <div className="flex flex-col items-center">
         <div className="relative w-[380px] h-[220px] md:w-[470px] md:h-[280px] bg-gray-300 rounded-xl overflow-hidden shadow-lg mb-4">
-          {current.type === "video" && !isPlaying && (
+          {!isPlaying ? (
             <>
               <img
                 src={current.thumbnail}
@@ -123,14 +127,11 @@ const TestimonialVideo = () => {
                 />
               </div>
             </>
-          )}
-
-          {current.type === "video" && isPlaying && (
-            <video
-              src={current.video}
-              controls
-              autoPlay
-              className="w-full h-full object-cover"
+          ) : (
+            <YouTube
+              videoId={current.videoId}
+              opts={opts}
+              className="w-full h-full aspect-video"
             />
           )}
         </div>

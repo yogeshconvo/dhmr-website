@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { useNavigate } from "react-router-dom";
 
-import Banner1 from "../../assets/JNMC/b1.png";
-import Banner2 from "../../assets/JNMC/b2.png";
+import Banner1 from "../../assets/JNMC/b1.jpg";
+import Banner2 from "../../assets/JNMC/b2.jpeg";
 import Banner3 from "../../assets/JNMC/b3.png";
 
 import FloatingButtons from "../../components/FloatingButtons";
@@ -60,7 +60,7 @@ const Hero = () => {
         "EMPOWERING STUDENTS \n [[#E1CD67]] TO LEAD BREAKTHROUGHS [[/#E1CD67]]",
       highlight: "Innovative, Learner-Centric Teaching Methodologies",
 
-      textPosition: "right",
+      textPosition: "left",
     },
     {
       img: Banner3,
@@ -93,7 +93,7 @@ const Hero = () => {
             />
 
             {/* Overlay for text readability */}
-            <div className="absolute inset-0 bg-black/40 sm:bg-black/30 z-10" />
+            <div className="absolute inset-0 bg-black/20 z-10" />
 
             {/* Text content */}
             <div
@@ -104,10 +104,14 @@ const Hero = () => {
                         : "left-0 sm:text-left text-center sm:ml-10"
                     }`}
             >
-              <h1 className="text-2xl sm:text-4xl md:text-5xl font-oswald-medium font-medium leading-snug whitespace-pre-line">
+              <h1
+                className={`text-2xl sm:text-4xl md:text-5xl font-oswald-medium font-medium leading-snug whitespace-pre-line ${
+                  idx === 1 ? "mt-[-250px]" : ""
+                }`}
+              >
                 {parseTitle(slide.title)}
               </h1>
-              <p className="text-base sm:text-xl mt-3 font-light whitespace-pre-line">
+              <p className="text-base sm:text-xl mt-3 font-[400] whitespace-pre-line">
                 {slide.highlight}
               </p>
             </div>

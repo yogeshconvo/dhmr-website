@@ -67,7 +67,7 @@ const HeroFEAT = () => {
   ];
 
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[87vh] overflow-hidden">
   
       <YellowStrip />
    
@@ -99,7 +99,7 @@ const HeroFEAT = () => {
         : "sm:left-0 sm:ml-10 mt-5"
     }`}
             >
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-oswald-medium font-medium leading-snug whitespace-pre-line drop-shadow-[1px_1px_3px_rgba(0,0,0,0.4)]">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl font-oswald-medium font-medium leading-snug whitespace-pre-line drop-shadow-[1px_1px_3px_rgba(0,0,0,0.4)]">
                 {parseTitle(slide.title)}
               </h1>
               <p className="text-base sm:text-xl mt-3 font-[300] whitespace-pre-line">

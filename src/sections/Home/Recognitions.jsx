@@ -71,12 +71,37 @@ const Recognitions = () => {
 
   return (
     <div className="md:py-12 px-3 sm:px-6 md:px-45 py-15  mx-auto overflow-hidden">
-      <div>
-        <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
+      <div className="flex items-center justify-between mb-6 sm:mb-8">
         <h2 className="text-2xl sm:text-3xl 2xl:text-4xl mb-6 font-bold text-[#707070] leading-tight">
+          <hr className="w-16 sm:w-20 border-[#F04E30] mb-4 border-t-4" />
           ACCREDITATIONS, RANKINGS <br className="hidden sm:block" />
           <span className="sm:hidden">& </span>AND RECOGNITIONS
         </h2>
+        <a
+          href="https://www.dmiher.edu.in/accreditations-recognitions"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full border border-[#F04E30] text-[#F04E30] font-semibold sm:text-base text-sm hover:bg-[#F04E30] hover:text-white transition-all duration-300 ml-2 whitespace-nowrap"
+          style={{
+            fontFamily: '"Helvetica LT Std", "Condensed", sans-serif',
+          }}
+        >
+          VIEW ALL
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-4 h-4 mt-[1px] transition-transform duration-300 group-hover:translate-x-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
       </div>
 
       <Slider {...settings}>
