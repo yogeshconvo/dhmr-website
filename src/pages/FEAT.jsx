@@ -10,7 +10,7 @@ import ResearchCollaborationsFEAT from "../sections/FEAT/ResearchCollaborationsF
 import StudentLifeFEATFEAT from "../sections/FEAT/StudentLifeFEAT";
 import HigherEduPlacement from "../sections/FEAT/HigherEduPlacement";
 import GlobalOpportunitiesSection from "../sections/FEAT/GlobalOpportunitiesSection";
-import TestimonialVideoFEAT from "../sections/FEAT/Testimonial";
+// import TestimonialVideoFEAT from "../sections/FEAT/Testimonial";
 import FEATDepartments from "../sections/FEAT/FEAT-Departments";
 import ProgramSection from "../sections/FEAT/ProgramsSection";
 
@@ -30,7 +30,7 @@ const FEAT = () => {
       <GlobalOpportunitiesSection />
       <HigherEduPlacement />
       <StudentLifeFEATFEAT />
-      <TestimonialVideoFEAT />
+      {/* <TestimonialVideoFEAT /> */}
     </div>
   );
 };

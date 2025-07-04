@@ -54,68 +54,72 @@ function TestimonialsSAHS() {
   };
 
   return (
-    <div className="px-4 md:px-8 py-10 bg-[#F4F4F4]">
-      <h2 className="text-3xl sm:text-4xl ml-4 sm:ml-15 font-medium text-gray-500 font-oswald-medium mb-4">
-        <hr className="border-red-500 border-2 w-12 mb-2" />
-        TESTIMONIALS
-      </h2>
+    <div className=" ">
+      <div className="container px-4 md:px-8 py-16">
+        <h2 className="text-3xl sm:text-4xl  font-medium text-gray-500 font-oswald-medium mb-4">
+          <hr className="border-red-500 border-2 w-12 mb-2" />
+          TESTIMONIALS
+        </h2>
 
-      <div className="text-center flex justify-center pb-8 gap-4 flex-wrap">
-        {tabs.map((tabName, index) => (
-          <button
-            key={tabName}
-            onClick={() => handleTabClick(tabName)}
-            className={`px-3 py-1 text-sm sm:text-base transition-all ${
-              tab === tabName
-                ? "underline text-black"
-                : "text-gray-500 hover:text-gray-700"
-            } ${
-              index < tabs.length - 1 ? "border-r border-gray-300 pr-4" : ""
-            }`}
-          >
-            {tabName}
-          </button>
-        ))}
-      </div>
-
-      <div className="my-10 ">
-        <Swiper
-          style={{
-            paddingBottom: 80,
-          }}
-          slidesPerView={"auto"}
-          centeredSlides={true}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          {data[tab]?.map((testimonial, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="flex-center gap-12 max-sm:flex-col">
-                <img
-                  src={testimonial.img}
-                  alt=""
-                  className="w-45 h-45 object-cover rounded-full"
-                />
-
-                <div className="max-w-2xl font-[Arial] text-base">
-                  {" "}
-                  <p className="mb-4">{testimonial.para}</p>
-                  <p className="font-[600] text-xm mt-1">{testimonial.name}</p>
-                  <pre className="font-[Arial]  text-[#707070] leading-5 mt-2">
-                    {testimonial.info}
-                  </pre>
-                  <p className="font-[Arial]  text-[#707070] leading-5 mt-2">
-                    {testimonial.batch}
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
+        <div className="text-center flex justify-center pb-8 gap-4 flex-wrap">
+          {tabs.map((tabName, index) => (
+            <button
+              key={tabName}
+              onClick={() => handleTabClick(tabName)}
+              className={`px-3 py-1 text-sm sm:text-base transition-all ${
+                tab === tabName
+                  ? "underline text-black"
+                  : "text-gray-500 hover:text-gray-700"
+              } ${
+                index < tabs.length - 1 ? "border-r border-gray-300 pr-4" : ""
+              }`}
+            >
+              {tabName}
+            </button>
           ))}
-        </Swiper>
+        </div>
+
+        <div className="my-10 ">
+          <Swiper
+            style={{
+              paddingBottom: 80,
+            }}
+            slidesPerView={"auto"}
+            centeredSlides={true}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {data[tab]?.map((testimonial, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-12 px-4 py-6 bg-white rounded-xl cursor-grab max-w-2xl mx-auto">
+                  <img
+                    src={testimonial.img}
+                    alt=""
+                    className="w-32 h-32 sm:w-44 sm:h-44 object-cover rounded-full mb-4 sm:mb-0"
+                  />
+                  <div className="flex-1 font-[Arial] text-base text-center sm:text-left">
+                    <p className="mb-4">{testimonial.para}</p>
+                    <p className="font-[600] text-xm mt-1">
+                      {testimonial.name}
+                    </p>
+                    {testimonial.info && (
+                      <pre className="font-[Arial] text-[#707070] leading-5 mt-2 whitespace-pre-wrap">
+                        {testimonial.info}
+                      </pre>
+                    )}
+                    <p className="font-[Arial] text-[#707070] leading-5 mt-2">
+                      {testimonial.batch}
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );

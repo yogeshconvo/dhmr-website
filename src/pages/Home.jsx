@@ -1,4 +1,3 @@
-
 import React from "react";
 import HeroSection from "../sections/Home/Hero";
 import StatsSection from "../sections/Home/StatesSection";
@@ -12,7 +11,7 @@ import ResearchInnovation from "../sections/Home/ResearchInnovation";
 import CampusFacilities from "../sections/Home/CampusFacilities";
 import FootprintSection from "../sections/Home/Footprints";
 import Recognitions from "../sections/Home/Recognitions";
-import TestimonialVideo from "../sections/Home/TestimonialVideo";
+// import TestimonialVideo from "../sections/Home/TestimonialVideo";
 
 const Home = () => {
   return (
@@ -28,7 +27,7 @@ const Home = () => {
       <TheBulletin />
       <ImportantAnnouncements />
       {/* <Testimonials /> */}
-      <TestimonialVideo />
+      {/* <TestimonialVideo /> */}
     </div>
   );
 };
