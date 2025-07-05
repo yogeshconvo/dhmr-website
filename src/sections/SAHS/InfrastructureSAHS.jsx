@@ -2,13 +2,7 @@ import React, { useState, useRef } from "react";
 import HLImg from "../../assets/Nursing/Nursing/Holistic Learning/1.jpg";
 import HLImg2 from "../../assets/Nursing/Nursing/Holistic Learning/2.jpg";
 
-const TABS = [
-  { key: "wardha", label: "SAHS Wardha" },
-  { key: "wana", label: "SAHS Wana" },
-];
-
 export default function InfrastructureSAHS({ activeTab }) {
-  const [activeCampus, setActiveCampus] = useState("wardha");
   const [activeIndex, setActiveIndex] = useState(0);
 
   const textRef = useRef(null);
@@ -71,37 +65,11 @@ Students gain competencies in:
     },
   ];
 
-  const sections = activeCampus === "wardha" ? sectionswardha : sectionswana;
+  const sections = activeTab === "wardha" ? sectionswardha : sectionswana;
 
   return (
-    <div className="pb-20 pt-1 bg-[#f2f2f2]">
+    <div className="pb-20 pt-16 bg-[#f2f2f2]">
       <div className="container px-4 mx-auto ">
-        {/* Toggle Campus */}
-        <div className="flex justify-center mb-10 mt-20 ">
-          <div className="inline-flex bg-[#f5f5f5] rounded-full shadow-sm border border-[#ececec] p-1">
-            {TABS.map((tab) => (
-              <button
-                key={tab.key}
-                onClick={() => setActiveCampus(tab.key)}
-                className={`px-4 md:px-7 py-2 rounded-full text-md md:text-lg font-bold transition-all duration-200
-          ${
-            activeCampus === tab.key
-              ? "bg-[#F04E30] text-white shadow-md"
-              : "text-[#58595B] hover:bg-[#fbe6e1] hover:text-[#F04E30]"
-          }
-        `}
-                style={
-                  {
-                    // minWidth: 160,
-                  }
-                }
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-        </div>
-
         <div className="flex flex-wrap items-start justify-center gap-12 ">
           {/* Text Section */}
           <div ref={textRef} className="flex-2 min-w-[300px] max-w-[500px]">

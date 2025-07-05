@@ -86,13 +86,7 @@ const nagpurData = [
   { image: Image5, title: "Psychology" },
 ];
 
-const TABS = [
-  { key: "wardha", label: "SAHS Wardha" },
-  { key: "nagpur", label: "SAHS Wana" },
-];
-
-function Departments() {
-  const [activeTab, setActiveTab] = useState("wardha");
+function Departments({ activeTab }) {
   const data = activeTab === "nagpur" ? nagpurData : wardhaData;
 
   // 8 per slide (4x2 grid)
@@ -108,30 +102,6 @@ function Departments() {
           <hr className="w-12 sm:w-20 border-[#F04E30] mb-2 border-t-4" />
           OUR DEPARTMENTS
         </h2>
-
-        {/* Tabs */}
-        <div className="flex justify-center mb-10 mt-20">
-          <div className="inline-flex bg-[#f5f5f5] rounded-full shadow-sm border border-[#ececec] p-1">
-            {TABS.map((tab) => (
-              <button
-                key={tab.key}
-                onClick={() => setActiveTab(tab.key)}
-                className={`px-7 py-2 rounded-full text-lg font-bold transition-all duration-200
-                  ${
-                    activeTab === tab.key
-                      ? "bg-[#F04E30] text-white shadow-md"
-                      : "text-[#58595B] hover:bg-[#fbe6e1] hover:text-[#F04E30]"
-                  }
-                `}
-                style={{
-                  minWidth: 160,
-                }}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-        </div>
 
         {/* Swiper Slider */}
         <div className="relative max-w-6xl mx-auto">
