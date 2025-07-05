@@ -87,7 +87,7 @@ const Collaborations = () => {
           </h3>
           <Swiper
             modules={[Autoplay, Pagination]}
-            style={{ paddingBottom: "2.5rem", cursor: "grab" }}
+            style={{ paddingBottom: "3rem", cursor: "grab" }}
             slidesPerView={5}
             spaceBetween={30}
             loop={true}
@@ -106,7 +106,7 @@ const Collaborations = () => {
             {nationalPartners.map((partner, idx) => (
               <SwiperSlide key={idx}>
                 <div className="flex flex-col items-center text-center">
-                  <div className="rounded-lg shadow p-3 mb-2 flex items-center justify-center h-[70px] w-[110px] bg-[#f7fafd]">
+                  <div className="rounded-lg  p-3 mb-2 flex items-center justify-center h-[70px] w-[110px] bg-[#f7fafd]">
                     <img
                       src={partner.logo}
                       alt={partner.name}
