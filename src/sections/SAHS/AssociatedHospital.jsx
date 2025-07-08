@@ -64,7 +64,7 @@ function AssociatedHospitalSAHS({ activeTab }) {
       </h2>
 
       <div
-        className="flex flex-wrap items-center justify-center gap-8 max-w-[1000px] m-auto rounded-lg mt-14"
+        className="flex flex-wrap items-center justify-center gap-16 max-w-[1000px] m-auto rounded-lg mt-14"
         style={{ backgroundColor: current.bg }}
       >
         <div className="min-w-[315px] flex-1 h-[400px] overflow-hidden">

@@ -17,6 +17,7 @@ import DMCP from "../pages/DMCP";
 import SPDC from "../pages/SPDC";
 import DAL from "../pages/DAL";
 import JNMC from "../pages/JNMC";
+import CadavericWetLab from "../pages/CadavericWetLab";
 
 export default function AppRoutes() {
   return (
@@ -37,13 +38,14 @@ export default function AppRoutes() {
         <Route path="/SRMMCON" element={<Nursing />} />
         <Route path="/sahs" element={<SAHS />} />
         <Route path="/IQAC" element={<IQAC />} />
-        <Route path="/jnmc" element={<JNMC/>}/>
+        <Route path="/jnmc" element={<JNMC />} />
         <Route path="/sas" element={<SaS />} />
         <Route path="/sahs" element={<SAHS />} />
         <Route path="/cdoe" element={<CDOE />} />
         <Route path="/rnpc" element={<RNPC />} />
         <Route path="/dmcp" element={<DMCP />} />
         <Route path="/SHER" element={<SHER />} />
+        <Route path="/cadaveric-wet-lab" element={<CadavericWetLab />} />
       </Route>
     </Routes>
   );

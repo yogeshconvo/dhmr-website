@@ -109,7 +109,7 @@ function Departments({ activeTab }) {
             spaceBetween={30}
             slidesPerView={1}
             loop={true}
-            className="pb-10"
+            className="pb-10 p-4 "
             breakpoints={{
               640: { slidesPerView: 1 },
               1024: { slidesPerView: 1 },
@@ -118,7 +118,7 @@ function Departments({ activeTab }) {
           >
             {slides.map((slideData, idx) => (
               <SwiperSlide key={idx}>
-                <div className="space-y-6 px-5 max-w-7x cursor-grab">
+                <div className="space-y-6 px-5 max-w-7x cursor-pointer">
                   {/* First Row - 4 boxes */}
                   <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
                     {slideData.slice(0, 4).map((item, index) => (
