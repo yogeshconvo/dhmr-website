@@ -9,9 +9,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-
 }
-
 
 .font-arial {
   font-family: Arial, sans-serif;
@@ -114,9 +112,11 @@ body {
 }
 
 @media (max-height: 650px) {
-  .swipper-height {}
+  .swipper-height {
+  }
 
-  .swipper-height {}
+  .swipper-height {
+  }
 }
 
 .why-study-with-du .slick-dots {
@@ -203,8 +203,6 @@ body {
 * {
   box-sizing: border-box;
 }
-
-
 
 .container {
   @apply max-w-6xl px-4 xl:px-0 mx-auto;
@@ -415,7 +413,6 @@ button {
   height: 78vh;
 }
 
-
 @media (min-width: 768px) {
   .hero-slider-hight {
     height: 70vh;
@@ -429,9 +426,6 @@ button {
     /* Laptops */
   }
 }
-
-
-
 
 /* 
 .custom-dots ul {
@@ -480,13 +474,15 @@ button {
 }
 
 .clip-path-message {
-  clip-path: polygon(0 23%,
-      100% 23%,
-      100% 75%,
-      100% 75%,
-      100% 100%,
-      82% 75%,
-      0% 75%);
+  clip-path: polygon(
+    0 23%,
+    100% 23%,
+    100% 75%,
+    100% 75%,
+    100% 100%,
+    82% 75%,
+    0% 75%
+  );
   width: 180px;
   /* Increased from 154px */
   height: 115px;
@@ -499,13 +495,15 @@ button {
 
 .clip-path-message .clip-path-message-inner {
   position: absolute;
-  clip-path: polygon(0 23%,
-      100% 23%,
-      100% 75%,
-      100% 75%,
-      100% 100%,
-      82% 75%,
-      0% 75%);
+  clip-path: polygon(
+    0 23%,
+    100% 23%,
+    100% 75%,
+    100% 75%,
+    100% 100%,
+    82% 75%,
+    0% 75%
+  );
   left: 3px;
   top: 4px;
   width: 174px;
@@ -674,7 +672,6 @@ button {
 } */
 
 @media (max-width: 762px) {
-
   .holistic-text::after,
   .holistic-text::before {
     display: none;
@@ -748,3 +745,9 @@ button {
     /* override text-xl (1.25rem) */
   }
 }
+
+/* .gallery-global-swiper .swiper-wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  row-gap: 24px;
+} */

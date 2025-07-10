@@ -18,6 +18,7 @@ import SPDC from "../pages/SPDC";
 import DAL from "../pages/DAL";
 import JNMC from "../pages/JNMC";
 import CadavericWetLab from "../pages/CadavericWetLab";
+import Global from "../pages/Global";
 
 export default function AppRoutes() {
   return (
@@ -46,6 +47,7 @@ export default function AppRoutes() {
         <Route path="/dmcp" element={<DMCP />} />
         <Route path="/SHER" element={<SHER />} />
         <Route path="/cadaveric-wet-lab" element={<CadavericWetLab />} />
+        <Route path="/global" element={<Global />} />
       </Route>
     </Routes>
   );
