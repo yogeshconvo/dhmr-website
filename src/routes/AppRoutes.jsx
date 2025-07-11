@@ -20,6 +20,7 @@ import JNMC from "../pages/JNMC";
 import CadavericWetLab from "../pages/CadavericWetLab";
 import Global from "../pages/Global";
 import Museum from "../pages/Museum";
+import Hospital from "../pages/Hospital";
 
 export default function AppRoutes() {
   return (
@@ -50,6 +51,7 @@ export default function AppRoutes() {
         <Route path="/cadaveric-wet-lab" element={<CadavericWetLab />} />
         <Route path="/global" element={<Global />} />
         <Route path="/museum" element={<Museum />} />
+        <Route path="/hospital" element={<Hospital />} />
       </Route>
     </Routes>
   );

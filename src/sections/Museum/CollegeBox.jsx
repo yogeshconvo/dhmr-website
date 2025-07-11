@@ -12,8 +12,9 @@ function CollegeBox({ data }) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left Content */}
           <div className="text-white space-y-6">
-            <h2 className="text-3xl md:text-3xl font-bold text-[#E1CD67] mb-6">
-              {data.titleOne}
+            <h2 className="text-3xl md:text-3xl font-bold text-[#E1CD67] mb-6 flex items-center gap-4 flex-col md:flex-row">
+              <span className="w-full md:w-[270%]">{data.titleOne}</span>
+              <span className="w-[100%] h-[1px] mt-2 bg-[#E1CD67]"></span>
             </h2>
             <div className="text-sm  leading-relaxed ">{data.paraOne}</div>
           </div>
@@ -52,8 +53,9 @@ function CollegeBox({ data }) {
 
         {/* Highlights Section */}
         <div className="mt-16">
-          <h3 className="text-3xl  font-bold text-[#E1CD67] mb-8">
-            {data.titleTwo}
+          <h3 className="text-3xl md:text-3xl font-bold text-[#E1CD67] mb-6 flex items-center gap-4 flex-col md:flex-row">
+            <span className=" ">{data.titleTwo}</span>
+            <span className="w-[100%] h-[1px] mt-2 bg-[#E1CD67]"></span>
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
