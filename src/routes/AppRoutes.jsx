@@ -19,6 +19,7 @@ import DAL from "../pages/DAL";
 import JNMC from "../pages/JNMC";
 import CadavericWetLab from "../pages/CadavericWetLab";
 import Global from "../pages/Global";
+import Museum from "../pages/Museum";
 
 export default function AppRoutes() {
   return (
@@ -48,6 +49,7 @@ export default function AppRoutes() {
         <Route path="/SHER" element={<SHER />} />
         <Route path="/cadaveric-wet-lab" element={<CadavericWetLab />} />
         <Route path="/global" element={<Global />} />
+        <Route path="/museum" element={<Museum />} />
       </Route>
     </Routes>
   );
