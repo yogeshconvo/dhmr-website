@@ -21,6 +21,7 @@ import CadavericWetLab from "../pages/CadavericWetLab";
 import Global from "../pages/Global";
 import Museum from "../pages/Museum";
 import Hospital from "../pages/Hospital";
+import CampusFacilities from "../pages/CampusFacilities";
 
 export default function AppRoutes() {
   return (
@@ -52,6 +53,7 @@ export default function AppRoutes() {
         <Route path="/global" element={<Global />} />
         <Route path="/museum" element={<Museum />} />
         <Route path="/hospital" element={<Hospital />} />
+        <Route path="/campus-facilities" element={<CampusFacilities />} />
       </Route>
     </Routes>
   );
